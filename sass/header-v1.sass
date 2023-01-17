@@ -1,0 +1,241 @@
+@import "fonts"
+@import "vars"
+
+.header-v1
+	border-radius: 6px
+	box-shadow: 0px 7px 6px 0 rgba(41, 41, 41, 0.1)
+	background: #fff
+	padding: 18px 0
+	.logo
+		margin: 0 auto
+
+.logo
+	max-width: 201px
+	width: 100%
+	@include d-flex
+
+.location-wrapper
+	margin: 0 18px
+	padding: 0 23px
+	.dropdown-menu
+		box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21)
+		border: solid 1px #ededed
+		border-radius: 6px
+		width: 100%
+		background-color: #fff
+		padding: 82px 14px 27px
+		left: 50% !important
+		top: -42px !important
+		transform: translate(-50%,0) !important
+
+.location-city
+	display: flex
+	align-items: center
+	color: #000
+	font-size: 16px
+	z-index: 1001
+	position: relative
+	&__icon
+		@include d-flex
+		margin: 0 10px 0 0
+		width: 12px
+		height: 14px
+		min-width: 12px
+		fill: $accent
+
+.form-search
+	width: 100%
+	position: relative
+	margin: 0 0 15px
+	label
+		margin: 0
+	button
+		padding: 0
+		position: absolute
+		top: 50%
+		transform: translate(0,-50%)
+		right: 10px
+		width: 15px
+		height: 15px
+		@include d-flex
+		background: transparent
+	input
+		background: #fff
+		padding: 0 25px 0 12px
+		&:focus
+			box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21)
+			border: solid 1px #6989ad
+
+.link-autosearch
+	margin: 0 0 27px
+	font-weight: bold
+
+.list-cities
+	li
+		margin: 0 0 7px
+		width: 100%
+		&:last-child
+			margin: 0
+		a
+			display: flex
+			align-items: center
+			justify-content: space-between
+			color: #000
+			width: 100%
+			&::after
+				content: ''
+				@include d-flex
+				width: 16px
+				height: 13px
+				background: url('../img/checked.svg') no-repeat center
+				background-size: 100%
+				opacity: 0
+			&:hover
+				color: #6989ad
+			&.checked
+				color: #6989ad
+				&::after
+					opacity: 1
+
+.btn-burger
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	width: 20px
+	height: 14px
+	span
+		display: block
+		width: 100%
+		height: 2px
+		border-radius: 2px
+		background: #000
+
+.phone
+	display: flex
+	align-items: center
+	color: #000
+	font-weight: bold
+	&:hover
+		color: $accent
+	&-icon
+		@include d-flex
+		width: 20px
+		min-width: 20px
+		height: 20px
+		margin: 0 9px 0 0
+		fill: $accent
+
+.mail
+	display: flex
+	align-items: center
+	color: #000
+	&:hover
+		color: $accent
+	&-icon
+		@include d-flex
+		width: 13px
+		min-width: 13px
+		height: 12px
+		margin: 0 11px 0 0
+		fill: $accent
+
+.header-box
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	.link-callback
+		border-bottom: 1px dashed #6989ad
+		margin: 0 0 0 12px
+		color: #000
+		&:hover
+			color: $accent
+
+.btn-search
+	width: 19px
+	height: 20px
+	min-width: 19px
+	@include d-flex
+	fill: #000
+
+.search-header
+	margin: 0 40px 0 43px
+
+// @media
+@media only screen and (max-width: 1300px)
+	.logo
+		max-width: 180px
+
+	.search-header
+		margin: 0 20px
+
+	.header-box
+		flex-direction: column
+		align-items: flex-start
+		.link-callback
+			margin: 0 0 0 30px
+
+@media only screen and (max-width: 1100px)
+	.location-wrapper
+		display: none
+
+	.btn-burger
+		margin: 0 40px 0 0
+
+@media only screen and (max-width: 870px)
+	.header-v1
+		.mail
+			margin: 0 10px 0 0
+		.logo
+			margin: 0
+			order: -1
+
+	.btn-burger
+		margin: 0 auto 0 20px
+
+	.logo
+		max-width: 140px
+
+@media only screen and (max-width: 800px)
+	.header-v1
+		.mail-text
+			display: none
+
+	.mail-icon
+		margin: 0
+		width: 20px
+		height: 20px
+		min-width: 20px
+
+	.header-box
+		.link-callback
+			display: none	
+
+@media only screen and (max-width: 670px)
+	.header-v1
+		.btn
+			padding: 0 18px
+			font-size: 14px
+			height: 42px
+		.phone-text
+			display: none
+		.phone-icon
+			margin: 0		
+
+
+@media only screen and (max-width: 480px)
+	.logo
+		max-width: 100px
+
+	.btn-burger
+		order: 1
+		margin: 0 0 0 20px
+
+	.header-v1
+		.logo
+			margin: 0 auto 0 0
+		.btn
+			display: none
+
+	.search-header
+		display: none					

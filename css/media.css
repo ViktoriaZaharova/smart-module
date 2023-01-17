@@ -1,0 +1,144 @@
+/*==========	Desktop First	==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1100px) {
+  .product-card {
+    padding: 20px;
+  }
+  .product-card__title {
+    margin: 0 auto 20px;
+    line-height: 1;
+  }
+  .product-card__price {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .catalog-card__body {
+    padding: 20px;
+  }
+  .catalog-card__text {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .h1 {
+    font-size: 50px;
+  }
+  .home-slider .box-text {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .home-slider__nav {
+    padding: 0 40px;
+    bottom: 40px;
+  }
+  .home-slider-item {
+    padding: 100px 40px;
+  }
+  .fixed-social {
+    right: 15px;
+  }
+  .types-cabins {
+    margin: 60px 0;
+  }
+  .mb-40 {
+    margin-bottom: 30px;
+  }
+  .section-catalog {
+    margin: 40px 0 60px;
+  }
+  .link-catalog {
+    margin: 10px 0 0;
+  }
+  .section-description {
+    margin: 18px 0 30px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .catalog-card__title {
+    font-size: 18px;
+  }
+  .best-offers h2 {
+    margin: 0;
+  }
+  .best-offers .list-sorting {
+    margin: 15px 0 30px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .list-sorting li {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .h1 {
+    font-size: 40px;
+  }
+  .home-slider .box-text {
+    font-size: 18px;
+  }
+  .home-slider__nav {
+    padding: 0 20px;
+    bottom: 20px;
+  }
+  .home-slider .btn {
+    padding: 0 18px;
+  }
+  .home-slider-item {
+    padding: 80px 20px;
+  }
+  .btn-md {
+    font-size: 15px;
+    height: 44px;
+  }
+  .advantages {
+    padding: 40px 0 30px;
+  }
+  .additional-equipment {
+    margin: 0 0 40px;
+  }
+  .additional-equipment-list {
+    font-size: 14px;
+  }
+  .additional-equipment-list-item {
+    padding: 9px 10px;
+  }
+  .additional-equipment-list-item__price {
+    white-space: nowrap;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .section-catalog {
+    margin: 40px 0 50px;
+  }
+  .types-cabins {
+    margin: 50px 0;
+  }
+  .modal-dialog {
+    margin: 20px auto;
+  }
+  .modal-content {
+    padding: 30px;
+  }
+  .modal-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .h1 {
+    font-size: 26px;
+  }
+  .home-slider .box-text {
+    font-size: 16px;
+  }
+  .list-sorting {
+    font-size: 14px;
+  }
+}
