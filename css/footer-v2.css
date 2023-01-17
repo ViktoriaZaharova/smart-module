@@ -19,39 +19,28 @@
   src: url("../fonts/Circe/Circe-Bold.eot");
   src: url("../fonts/Circe/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-Bold.woff") format("woff"), url("../fonts/Circe/Circe-Bold.ttf") format("truetype");
 }
-.footer-v1 {
-  background: #282828;
-  color: #999;
+.footer-v2 {
+  background: #f5f5f5;
+  color: #545454;
   line-height: 1.31;
-  padding: 63px 0 62px;
+  padding: 50px 0;
 }
-.footer-v1 .logo {
-  margin: 0 0 49px;
+.footer-v2 .logo {
+  margin: 0 0 30px;
 }
-
-.description-company {
-  max-width: 280px;
-}
-.description-company .link {
-  margin: 17px 0 0;
-  font-size: 13px;
-}
-
-.link-politics {
-  text-align: right;
-  margin: 0 0 0 auto;
+.footer-v2 a.color-grey {
+  color: #545454;
 }
 
 .footer-bottom {
   padding: 39px 0 0;
-  margin: 50px 0 0;
-  border-top: 1px solid rgba(153, 153, 153, 0.1);
+  margin: 39px 0 0;
+  border-top: 1px solid #d9d9d9;
 }
 
 .form-subscribe {
   position: relative;
-  max-width: 810px;
-  width: calc(100% - 24px - 184px - 16px - 37px);
+  width: 100%;
 }
 .form-subscribe label {
   margin: 0;
@@ -60,31 +49,33 @@
   position: absolute;
   right: 0;
   top: 0;
-  padding: 0 32px;
+  padding: 10px 12px;
+  width: 46px;
+  height: 100%;
 }
 .form-subscribe input {
-  border: solid 1px #999;
+  border: solid 1px #d9d9d9;
   color: #fff;
-  background-color: #282828;
-  padding: 0 170px 0 27px;
+  background-color: transparent;
+  padding: 0 46px 0 24px;
 }
 .form-subscribe input::-webkit-input-placeholder {
-  color: #999;
+  color: #a5a5a5;
 }
 .form-subscribe input::-moz-placeholder {
-  color: #999;
+  color: #a5a5a5;
 }
 .form-subscribe input:-ms-input-placeholder {
-  color: #999;
+  color: #a5a5a5;
 }
 .form-subscribe input::-ms-input-placeholder {
-  color: #999;
+  color: #a5a5a5;
 }
 .form-subscribe input::placeholder {
-  color: #999;
+  color: #a5a5a5;
 }
 .form-subscribe input:hover, .form-subscribe input:focus {
-  color: #fff;
+  color: #000;
 }
 
 .subscribe-wrapper {
@@ -96,41 +87,30 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 0 49px;
+}
+.subscribe-wrapper .box-text {
+  color: #545454;
+  max-width: 310px;
+  margin: 0 0 24px;
 }
 
-.subscribe-wrapper-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto 0 0;
+.footer-box {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
-.subscribe-wrapper-text__icon {
-  width: 37px;
-  min-width: 37px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.subscribe-wrapper-text__title {
-  max-width: 185px;
-  margin: 0 0 0 16px;
-  color: #fff;
-}
-
 .footer-box__title {
   font-weight: bold;
   font-size: 20px;
   margin: 0 0 27px;
+  color: #000;
+}
+
+.footer-box-catalog {
+  padding: 0 0 0 60px;
+  width: 100%;
+  margin: 0;
 }
 
 .footer-menu {
@@ -146,19 +126,14 @@
   margin: 0;
 }
 .footer-menu li a {
-  color: #999;
+  color: #545454;
 }
 .footer-menu li a:hover {
-  color: #fff;
-}
-.footer-menu li .color-white {
-  color: #fff;
-}
-.footer-menu li .color-white:hover {
   color: #6989ad;
 }
 .footer-menu li .footer-box__title {
   margin: 0;
+  color: #000;
 }
 
 .footer-contacts {
@@ -173,7 +148,7 @@
   padding: 0 0 0 29px;
 }
 .footer-contacts__icon {
-  fill: #fff;
+  fill: #6989ad;
   width: 20px;
   height: 20px;
   min-width: 20px;
@@ -191,7 +166,7 @@
   top: 0;
 }
 .footer-contacts a {
-  color: #fff;
+  color: #000;
 }
 .footer-contacts a:hover {
   color: #6989ad;
@@ -200,13 +175,20 @@
   fill: #6989ad;
 }
 
+.schedule-time {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 12px 0 0;
+  color: #010101;
+}
+
 .footer-phone {
   font-weight: bold;
   margin: 0 0 10px;
 }
 
 .link-callback {
-  border-bottom: 1px dashed #fff;
+  border-bottom: 1px dashed #000;
 }
 
 .list-social {
@@ -218,9 +200,10 @@
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 auto;
 }
 .list-social li {
-  margin: 0 19px 0 0;
+  margin: 0 23px 0 0;
 }
 .list-social li:last-child {
   margin: 0;
@@ -235,32 +218,36 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  -webkit-box-shadow: 0 0 18px 0 rgba(41, 41, 41, 0.1);
-          box-shadow: 0 0 18px 0 rgba(41, 41, 41, 0.1);
-  background: rgba(255, 255, 255, 0.1);
+  width: 19px;
+  height: 15px;
   fill: #999;
-  padding: 12px;
 }
 .list-social li a:hover {
-  background: #6989ad;
-  fill: #fff;
+  fill: #6989ad;
 }
 
-@media only screen and (max-width: 992px) {
-  .description-company {
+@media only screen and (max-width: 1200px) {
+  .footer-box-catalog {
+    padding: 0;
+  }
+  .footer-box {
+    margin: 0;
+  }
+  .subscribe-wrapper .box-text {
     max-width: none;
-    margin: 0 0 30px;
   }
-  .subscribe-wrapper {
-    margin: 0 0 30px;
+}
+@media only screen and (max-width: 992px) {
+  .footer-contacts {
+    margin: 0 auto 30px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
-  .footer-v1 {
+  .footer-v2 {
     padding: 30px 0;
   }
-  .footer-v1 .logo {
+  .footer-v2 .logo {
     margin: 0 auto 20px;
     max-width: 180px;
   }
@@ -276,6 +263,10 @@
   }
 }
 @media only screen and (max-width: 767px) {
+  .list-social {
+    width: 100%;
+    margin: 10px 0;
+  }
   .form-subscribe {
     max-width: none;
     width: 100%;
@@ -285,6 +276,16 @@
   }
 }
 @media only screen and (max-width: 576px) {
+  .list-social {
+    margin: 10px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .copyright {
+    text-align: center;
+    width: 100%;
+  }
   .footer-bottom {
     text-align: center;
   }
@@ -296,14 +297,5 @@
   }
   .footer-menu:last-child {
     margin: 0 0 10px;
-  }
-}
-@media only screen and (max-width: 420px) {
-  .form-subscribe button {
-    position: relative;
-    margin: 20px auto 0;
-  }
-  .form-subscribe input {
-    padding: 0 15px;
   }
 }
