@@ -19,13 +19,22 @@
   src: url("../fonts/Circe/Circe-Bold.eot");
   src: url("../fonts/Circe/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe/Circe-Bold.woff") format("woff"), url("../fonts/Circe/Circe-Bold.ttf") format("truetype");
 }
-.header-v2 {
+.header-v3 {
   border-radius: 6px;
-  -webkit-box-shadow: 0px 7px 6px 0 rgba(41, 41, 41, 0.1);
-          box-shadow: 0px 7px 6px 0 rgba(41, 41, 41, 0.1);
+  -webkit-box-shadow: 0px 11px 10px 0 rgba(41, 41, 41, 0.43);
+          box-shadow: 0px 11px 10px 0 rgba(41, 41, 41, 0.43);
   background: #fff;
   position: relative;
   z-index: 2;
+}
+.header-v3 .list-social {
+  margin: 0 30px 0 0;
+}
+.header-v3 .list-social a {
+  fill: rgba(153, 153, 153, 0.4);
+}
+.header-v3 .list-social a:hover {
+  fill: #999;
 }
 
 .logo {
@@ -42,15 +51,21 @@
           justify-content: center;
 }
 
+.logo-description {
+  color: #999;
+  max-width: 240px;
+  width: 100%;
+  line-height: 1.13;
+  margin: 0 0 0 30px;
+}
+
 .header-top {
-  padding: 16px 0;
+  padding: 11px 0 9px;
 }
 
 .header-bottom {
-  padding: 9px 0;
-  -webkit-box-shadow: 0px 7px 6px 0 rgba(41, 41, 41, 0.1);
-          box-shadow: 0px 7px 6px 0 rgba(41, 41, 41, 0.1);
-  background-color: #f5f5f5;
+  padding: 19px 0;
+  border-top: 1px solid rgba(192, 192, 192, 0.48);
 }
 .header-bottom .form-search {
   max-width: 346px;
@@ -77,8 +92,7 @@
 }
 
 .nav-menu {
-  width: calc(100% - 346px);
-  padding: 0 40px 0 0;
+  margin: 0 auto;
 }
 
 .menu {
@@ -96,15 +110,29 @@
   font-size: 18px;
   line-height: 1;
 }
+.menu li {
+  margin: 0 40px 0 0;
+}
+.menu li:last-child {
+  margin: 0;
+}
 .menu li a {
   color: #000;
 }
 .menu li a:hover {
   color: #6989ad;
 }
+.menu .dropdown-toggle {
+  width: 20px;
+  height: 6px;
+}
+.menu .dropdown-toggle::after {
+  display: none;
+}
 
 .location-wrapper {
-  margin: 0 auto 0 70px;
+  margin: 0 50px 0 0;
+  position: relative;
 }
 .location-wrapper .dropdown-menu {
   -webkit-box-shadow: 0px 11px 16px 0 rgba(41, 41, 41, 0.21);
@@ -117,6 +145,37 @@
   padding: 30px 39px 39px;
   left: -40px !important;
   top: 35px !important;
+}
+.location-wrapper .dropdown-toggle {
+  position: relative;
+}
+.location-wrapper .dropdown-toggle::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 3px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: calc(100% + 25px);
+  width: calc(100% + 46px);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: #6989ad;
+}
+.location-wrapper .dropdown-toggle.show {
+  color: #fff;
+}
+.location-wrapper .dropdown-toggle.show::before {
+  opacity: 1;
+}
+.location-wrapper .dropdown-toggle.show::after {
+  -webkit-filter: invert(1) grayscale(0);
+          filter: invert(1) grayscale(0);
+}
+.location-wrapper .dropdown-toggle.show .location-city__icon {
+  fill: #fff;
 }
 
 .dropdown-menu-head {
@@ -235,12 +294,6 @@
   font-weight: bold;
 }
 
-.column-count-3 {
-  -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3;
-}
-
 .list-cities li {
   margin: 0 0 7px;
   width: 100%;
@@ -269,7 +322,9 @@
 }
 
 .btn-burger {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -283,6 +338,7 @@
   width: 20px;
   height: 14px;
   cursor: pointer;
+  margin: 0 30px 0 0;
 }
 .btn-burger span {
   display: block;
@@ -386,7 +442,7 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 70px;
+  margin: 0 88px 0 auto;
 }
 .header-box .link-callback {
   border-bottom: 1px dashed #6989ad;
@@ -484,17 +540,37 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 1480px) {
-  .header-box {
-    margin: 0 25px;
-  }
-  .location-wrapper {
-    margin: 0 auto 0 30px;
-  }
-  .schedule-box {
-    margin: 0 30px 0 0;
-  }
+.btn-search {
+  width: 19px;
+  height: 20px;
+  min-width: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: #000;
 }
+
+.search-header {
+  margin: 0 40px 0 43px;
+}
+.search-header .dropdown-menu {
+  min-width: 300px;
+  padding: 10px;
+  border: solid 1px #ededed;
+  -webkit-box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21);
+          box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21);
+  top: 38px !important;
+}
+.search-header .form-search {
+  margin: 0;
+}
+
 @media only screen and (max-width: 1300px) {
   .logo {
     max-width: 180px;

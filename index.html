@@ -28,6 +28,65 @@
 
 	<div class="wrapper font-Circe">
 
+		<div class="mobile-menu">
+			<div class="mobile-menu__close"></div>
+			<div class="mobile-menu__head">
+				<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
+			</div>
+			<div class="mobile-menu__body">
+				<a href="#" class="location-city" data-bs-toggle="modal" data-bs-target="#locationModal">
+					<span class="location-city__icon"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#location"></use>
+						</svg></span>
+					<span class="location-city__text">Санкт-Петербург</span>
+				</a>
+		
+				<ul class="menu my-ul">
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="sales.html">Акции</a></li>
+					<li><a href="projects.html">Проекты</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="tehnology.html">Технология</a></li>
+					<li><a href="#">Отрасли</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="prices.html">Цены</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<form method="post" class="form-search">
+					<label>
+						<input type="text" placeholder="Поиск" name="search">
+						<button type="submit"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></button>
+					</label>
+				</form>
+			</div>
+			<div class="mobile-menu__footer">
+		
+				<a href="mailto:spb10@smart-module.ru" class="mail">
+					<span class="mail-icon"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#mail2"></use>
+						</svg>
+					</span>
+					<span class="mail-text">spb10@smart-module.ru</span>
+				</a>
+		
+				<div class="header-box">
+					<a href="tel:+78122004118" class="phone">
+						<span class="phone-icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#phone"></use>
+							</svg>
+						</span>
+						<span class="phone-text">8 (812) 200-41-18</span>
+					</a>
+				</div>
+		
+				<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать
+					заявку</a>
+			</div>
+		</div>
+
 		<header class="header-v1">
 			<div class="container">
 				<div class="row">
@@ -103,10 +162,21 @@
 								звонок</a>
 						</div>
 
-						<div class="search-header">
-							<a href="#" class="btn-search"><svg class="svg-icon">
+						<div class="search-header dropdown">
+							<a href="#" class="btn-search" data-bs-toggle="dropdown"><svg class="svg-icon">
 									<use xlink:href="img/sprite.svg#search"></use>
 								</svg></a>
+
+								<div class="dropdown-menu">
+									<form method="post" class="form-search">
+										<label>
+											<input type="text" placeholder="Поиск" name="search">
+											<button type="submit"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg></button>
+										</label>
+									</form>
+								</div>
 						</div>
 
 						<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать заявку</a>
@@ -182,7 +252,7 @@
 			</ul>
 		</main>
 
-		<section class="section-catalog section-catalog-v1">
+		<section class="section-catalog">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-lg-6">

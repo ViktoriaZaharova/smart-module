@@ -64,6 +64,24 @@
   background: #6989ad;
 }
 
+.btn-grey {
+  background: #f5f5f5;
+  color: #777;
+}
+.btn-grey:hover {
+  color: #fff;
+  background: #6989ad;
+}
+
+.btn-black-grey {
+  background: #282828;
+  color: #fff;
+}
+.btn-black-grey:hover {
+  background: #6989ad;
+  color: #fff;
+}
+
 .color-accent {
   color: #6989ad;
 }

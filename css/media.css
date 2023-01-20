@@ -178,7 +178,13 @@
   }
   .modal-title {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1;
+  }
+  .modal-header__photo {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    margin: 0 10px 0 0;
   }
   .home-v1 .fixed-social {
     display: none;
@@ -196,5 +202,11 @@
   }
   .list-sorting {
     font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .catalog-card-col {
+    width: 12.5%;
+    padding: 0 13px;
   }
 }

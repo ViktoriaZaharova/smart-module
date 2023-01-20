@@ -4,6 +4,7 @@
 // modal
 .modal-dialog
 	max-width: 400px
+	font-family: $font1
 
 .modal-content
 	border: none
@@ -23,6 +24,8 @@
 		height: 14px
 		@include d-flex
 		background: transparent
+		&:focus
+			box-shadow: none
 
 .modal-header
 	padding: 0

@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Smart-Module</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/header-v3.css">
+	<link rel="stylesheet" href="css/footer-v3.css">
+	<link rel="stylesheet" href="css/modal-v3.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper font-Circe">
+
+		<div class="mobile-menu">
+			<div class="mobile-menu__close"></div>
+			<div class="mobile-menu__head">
+				<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
+			</div>
+			<div class="mobile-menu__body">
+				<a href="#" class="location-city" data-bs-toggle="modal" data-bs-target="#locationModal">
+					<span class="location-city__icon"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#location"></use>
+						</svg></span>
+					<span class="location-city__text">Санкт-Петербург</span>
+				</a>
+
+				<ul class="menu my-ul">
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="sales.html">Акции</a></li>
+					<li><a href="projects.html">Проекты</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="tehnology.html">Технология</a></li>
+					<li><a href="#">Отрасли</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="prices.html">Цены</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<form method="post" class="form-search">
+					<label>
+						<input type="text" placeholder="Поиск" name="search">
+						<button type="submit"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></button>
+					</label>
+				</form>
+			</div>
+			<div class="mobile-menu__footer">
+				<div class="schedule-box">
+					<div class="schedule-box__icon">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#clock"></use>
+						</svg>
+					</div>
+					<div class="schedule-box__text">пн.-сб. 9:00 - 21:00</div>
+				</div>
+
+				<a href="mailto:spb10@smart-module.ru" class="mail">
+					<span class="mail-icon"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#mail2"></use>
+						</svg>
+					</span>
+					<span class="mail-text">spb10@smart-module.ru</span>
+				</a>
+
+				<div class="header-box">
+					<a href="tel:+78122004118" class="phone">
+						<span class="phone-icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#phone"></use>
+							</svg>
+						</span>
+						<span class="phone-text">8 (812) 200-41-18</span>
+					</a>
+				</div>
+
+				<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать
+					заявку</a>
+			</div>
+		</div>
+
+		<header class="header-v3">
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-flex flex-wrap align-items-center">
+							<div class="location-wrapper dropdown">
+								<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown">
+									<span class="location-city__icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#location"></use>
+										</svg></span>
+									<span class="location-city__text">Санкт-Петербург</span>
+								</a>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-head">
+										<div class="dropdown-menu-title">
+											<div class="h3">Выбор города</div>
+											<div class="value-cities">Всего 1 279 городов</div>
+										</div>
+										<a href="#" class="dropdown-menu__close"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#close"></use>
+											</svg></a>
+									</div>
+									<form method="post" class="form-search">
+										<label>
+											<input type="text" placeholder="Ваш город" name="search">
+											<button type="submit"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg></button>
+										</label>
+									</form>
+
+									<a href="#" class="link-autosearch color-accent">Автоопределение</a>
+
+									<ul class="list-cities my-ul column-count-3">
+										<li><a href="#">Москва</a></li>
+										<li><a href="#" class="checked">Санкт-Петербург</a></li>
+										<li><a href="#">Архангельск</a></li>
+										<li><a href="#">Владивосток</a></li>
+										<li><a href="#">Екатеренбург</a></li>
+										<li><a href="#">Волгоград</a></li>
+										<li><a href="#">Воронеж</a></li>
+										<li><a href="#">Екатеринбург</a></li>
+										<li><a href="#">Ижевск</a></li>
+										<li><a href="#">Иркутск</a></li>
+										<li><a href="#">Казань</a></li>
+										<li><a href="#">Кемерово</a></li>
+										<li><a href="#">Краснодар</a></li>
+										<li><a href="#">Красноярск</a></li>
+										<li><a href="#">Мурманск</a></li>
+										<li><a href="#">Набережные Челны</a></li>
+										<li><a href="#">Нижний Новгород</a></li>
+										<li><a href="#">Новосибирск</a></li>
+										<li><a href="#">Омск</a></li>
+										<li><a href="#">Пермь</a></li>
+										<li><a href="#">Ростов-на-Дону</a></li>
+										<li><a href="#">Саратов</a></li>
+										<li><a href="#">Самара</a></li>
+										<li><a href="#">Сочи</a></li>
+										<li><a href="#">Сургут</a></li>
+										<li><a href="#">Тверь</a></li>
+										<li><a href="#">Тольятти</a></li>
+										<li><a href="#">Тула</a></li>
+										<li><a href="#">Тюмень</a></li>
+										<li><a href="#">Ульяновск</a></li>
+										<li><a href="#">Уфа</a></li>
+										<li><a href="#">Хабаровск</a></li>
+										<li><a href="#">Челябинск</a></li>
+										<li><a href="#">Ярославль</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<a href="mailto:spb10@smart-module.ru" class="mail">
+								<span class="mail-icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#mail2"></use>
+									</svg>
+								</span>
+								<span class="mail-text">spb10@smart-module.ru</span>
+							</a>
+
+							<div class="header-box">
+								<a href="tel:+78122004118" class="phone">
+									<span class="phone-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#phone"></use>
+										</svg>
+									</span>
+									<span class="phone-text">8 (812) 200-41-18</span>
+								</a>
+
+								<a href="#" class="link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать
+									звонок</a>
+							</div>
+
+							<ul class="list-social my-ul">
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#telegram"></use>
+										</svg></a></li>
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#vk"></use>
+										</svg></a></li>
+								<li><a href="#"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#youtube"></use>
+										</svg></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-flex flex-wrap align-items-center">
+							<div class="btn-burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+
+							<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
+
+							<div class="logo-description">Строительство зданий и
+								быстровозводимых сооружений</div>
+
+							<nav class="nav-menu">
+								<ul class="menu my-ul">
+									<li><a href="catalog.html">Каталог</a></li>
+									<li><a href="sales.html">Акции</a></li>
+									<li><a href="projects.html">Проекты</a></li>
+									<li><a href="services.html">Услуги</a></li>
+									<li><a href="#">Отрасли</a></li>
+									<li><a href="blog.html">Блог</a></li>
+									<li class="dropdopwn">
+										<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"><img src="img/menu-dots.svg"
+												alt=""></a>
+										<div class="dropdown-menu">
+											<ul class="submenu menu my-ul">
+												<li><a href="about.html">О нас</a></li>
+												<li><a href="prices.html">Цены</a></li>
+												<li><a href="contacts.html">Контакты</a></li>
+											</ul>
+										</div>
+									</li>
+
+								</ul>
+							</nav>
+
+							<div class="search-header dropdown">
+								<a href="#" class="btn-search" data-bs-toggle="dropdown"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg></a>
+
+								<div class="dropdown-menu">
+									<form method="post" class="form-search">
+										<label>
+											<input type="text" placeholder="Поиск" name="search">
+											<button type="submit"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg></button>
+										</label>
+									</form>
+								</div>
+							</div>
+
+							<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать
+								заявку</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="home home-v2">
+			<div class="home-wrapper">
+				<div class="home-slider">
+					<div class="slide">
+						<div class="home-slider-item">
+							<img src="img/banner1.jpg" alt="" class="home-slider-item__bg">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-lg-10">
+										<div class="h1">Строительство зданий и
+											быстровозводимых соружений</div>
+										<div class="box-text">
+											<p>Компания «Смарт-модуль» – строительный подрядчик, поставщик сооружений
+												из металлоконструкций в Санкт-Петербурге, области. У нас доступны
+												металлические бытовки, контейнеры для возведения зданий любой площади.</p>
+										</div>
+
+										<a href="#" class="btn btn-border-white btn-md">Узнать подробности</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="slide">
+						<div class="home-slider-item">
+							<img src="img/banner1.jpg" alt="" class="home-slider-item__bg">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-lg-10">
+										<div class="h1">Строительство зданий и
+											быстровозводимых соружений</div>
+										<div class="box-text">
+											<p>Компания «Смарт-модуль» – строительный подрядчик, поставщик сооружений
+												из металлоконструкций в Санкт-Петербурге, области. У нас доступны
+												металлические бытовки, контейнеры для возведения зданий любой площади.</p>
+										</div>
+
+										<a href="#" class="btn btn-border-white btn-md">Узнать подробности</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="slide">
+						<div class="home-slider-item">
+							<img src="img/banner1.jpg" alt="" class="home-slider-item__bg">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 col-lg-10">
+										<div class="h1">Строительство зданий и
+											быстровозводимых соружений</div>
+										<div class="box-text">
+											<p>Компания «Смарт-модуль» – строительный подрядчик, поставщик сооружений
+												из металлоконструкций в Санкт-Петербурге, области. У нас доступны
+												металлические бытовки, контейнеры для возведения зданий любой площади.</p>
+										</div>
+
+										<a href="#" class="btn btn-border-white btn-md">Узнать подробности</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="slider-nav home-slider__nav"></div>
+			</div>
+
+		</main>
+
+		<section class="section-catalog section-catalog-v2">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 mb-40">
+						<h2>Каталог товаров</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category1.png" alt="">
+							</span>
+							<span class="catalog-card__title">Блок-контейнеры</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category2.png" alt="">
+							</span>
+							<span class="catalog-card__title">Бытовки</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category3.png" alt="">
+							</span>
+							<span class="catalog-card__title">Ангары</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category4.png" alt="">
+							</span>
+							<span class="catalog-card__title">Модульные здания</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category1.png" alt="">
+							</span>
+							<span class="catalog-card__title">Торговые павильоны</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category2.png" alt="">
+							</span>
+							<span class="catalog-card__title">Дома</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category3.png" alt="">
+							</span>
+							<span class="catalog-card__title">Быстровозводимые здания</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category4.png" alt="">
+							</span>
+							<span class="catalog-card__title">Станции</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="best-offers best-offers-v3">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg-4">
+						<h2>Лучшие предложения</h2>
+					</div>
+					<div class="col-12 col-lg-4">
+						<ul class="list-sorting list-sorting-v2 my-ul">
+							<li><a href="#" class="active">Хит</a></li>
+							<li><a href="#">Лидеры продаж</a></li>
+							<li><a href="#">Новинки</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-lg-4">
+						<a href="catalog.html" class="color-accent link-all-catalog">
+							<span class="link-catalog__text">весь каталог</span>
+							<span class="link-catalog__icon">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#next"></use>
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 products-wrapper">
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<a href="#" class="btn btn-load-products btn-grey">Показать еще</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="types-cabins">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 mb-40">
+						<h2>Виды бытовок</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="product-card types-cabins-card types-cabins-card-v3">
+							<div class="product-card-slider">
+								<div class="slide">
+									<a href="#" class="btn btn-black-grey">Взять в аренду</a>
+									<a href="types-cabins.html" class="product-card__img"><img src="img/product2.png" alt=""></a>
+								</div>
+							</div>
+							<div class="product-card__body">
+								<a href="types-cabins.html" class="product-card__title">Стандарт</a>
+							</div>
+
+							<div class="product-card__footer">
+								<div class="product-card__price">
+									от 8 000 руб/мес
+								</div>
+								<a href="#" class="color-black link-details">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="product-card types-cabins-card types-cabins-card-v3">
+							<div class="product-card-slider">
+								<div class="slide">
+									<a href="#" class="btn btn-black-grey">Взять в аренду</a>
+									<a href="types-cabins.html" class="product-card__img"><img src="img/product3.png" alt=""></a>
+								</div>
+							</div>
+							<div class="product-card__body">
+								<a href="types-cabins.html" class="product-card__title">С тамбуром</a>
+							</div>
+
+							<div class="product-card__footer">
+								<div class="product-card__price">
+									от 8 000 руб/мес
+								</div>
+								<a href="#" class="color-black link-details">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="product-card types-cabins-card types-cabins-card-v3">
+							<div class="product-card-slider">
+								<div class="slide">
+									<a href="#" class="btn btn-black-grey">Взять в аренду</a>
+									<a href="types-cabins.html" class="product-card__img"><img src="img/product4.png" alt=""></a>
+								</div>
+							</div>
+							<div class="product-card__body">
+								<a href="types-cabins.html" class="product-card__title">С перегородкой</a>
+							</div>
+
+							<div class="product-card__footer">
+								<div class="product-card__price">
+									от 8 000 руб/мес
+								</div>
+								<a href="#" class="color-black link-details">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="product-card types-cabins-card types-cabins-card-v3">
+							<div class="product-card-slider">
+								<div class="slide">
+									<a href="#" class="btn btn-black-grey">Взять в аренду</a>
+									<a href="types-cabins.html" class="product-card__img"><img src="img/product5.png" alt=""></a>
+								</div>
+							</div>
+							<div class="product-card__body">
+								<a href="types-cabins.html" class="product-card__title">Распашонка</a>
+							</div>
+
+							<div class="product-card__footer">
+								<div class="product-card__price">
+									от 8 000 руб/мес
+								</div>
+								<a href="#" class="color-black link-details">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="additional-equipment">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 mb-40">
+						<h2>Дополнительная комплектация</h2>
+					</div>
+					<div class="col-12">
+						<ul class="additional-equipment-list my-ul additional-equipment-list-v2">
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/pizza-oven.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Печка буржуйка, стальная</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/booth.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Печка самодельная, стальная</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/oven.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Печка буржуйка, чугунная</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/bunk-bed.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Нары двухъярусные, дерево</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/door.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Дверь, межкомнатная</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/door2.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Дверь, металлическая с замком</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/rectangle.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Перегородка</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/door3.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Дверь, металлическая (сварная)</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/ticket-window.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Окно пластиковое</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/fabric.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Линолиум</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/textile.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Линолиум, износостойкий</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/grid-on.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Оконная решетка</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/coil.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Открытая электропроводка</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/wire.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Электропроводка в кабель канале</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/heater.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Конвекторный электрообогреватель на 1,5 кВт
+								</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/blinds.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Ставни оконные, металлические</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/stairs.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Металлическая лестница, с перилами</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/window.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Ставни оконные, деревянные</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/steel.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Металлическое днище</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
+							<div class="additional-equipment-list-item__icon"><img src="img/bench.svg" alt=""></div>
+							<div class="additional-equipment-list-item__text">
+								<div class="additional-equipment-list-item__name">Лавочка, размеры (300ммХ450ммХ45мм.)</div>
+								<div class="additional-equipment-list-item__price">12 170 руб.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="advantages-v3">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="advantages-box advantages-box-v3">
+							<div class="advantages-box__icon">
+								<img src="img/advantages-icon1.svg" alt="">
+							</div>
+							<div class="advantages-box__text">
+								<div class="h3">Собственное производство</div>
+								<div class="box-text">
+									<p>У нас продукция собственого
+										производства, что экономит вам
+										время и средства при заказе</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="advantages-box advantages-box-v3">
+							<div class="advantages-box__icon">
+								<img src="img/advantages-icon2.svg" alt="">
+							</div>
+							<div class="advantages-box__text">
+								<div class="h3">Сертифицированные материалы</div>
+								<div class="box-text">
+									<p>У нас продукция собственого
+										производства, что экономит вам
+										время и средства при заказе</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="advantages-box advantages-box-v3">
+							<div class="advantages-box__icon">
+								<img src="img/advantages-icon3.svg" alt="">
+							</div>
+							<div class="advantages-box__text">
+								<div class="h3">Гарантия и сервис</div>
+								<div class="box-text">
+									<p>У нас продукция собственого
+										производства, что экономит вам
+										время и средства при заказе</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
+						<div class="advantages-box advantages-box-v3">
+							<div class="advantages-box__icon">
+								<img src="img/advantages-icon4.svg" alt="">
+							</div>
+							<div class="advantages-box__text">
+								<div class="h3">Индвидуальный подход</div>
+								<div class="box-text">
+									<p>У нас продукция собственого
+										производства, что экономит вам
+										время и средства при заказе</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<footer class="footer-v3">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="subscribe-wrapper">
+								<div class="subscribe-wrapper-text">
+									<div class="subscribe-wrapper-text__icon"><img src="img/send.svg" alt=""></div>
+									<div class="subscribe-wrapper-text__title">Подпишись на новости от компании Смарт-модуль
+										и будь всегда первым в курсе всех событий!</div>
+								</div>
+								<form method="post" class="form-subscribe">
+									<label>
+										<input type="text" placeholder="Ваш email" name="mail">
+									</label>
+									<button type="submit" class="btn btn-accent">Подписаться</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-6 col-lg-3">
+							<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
+						</div>
+						<div class="col-12 col-md-6 col-lg-2">
+							<div class="social-box">
+								<p>Мы в соцсетях:</p>
+								<ul class="list-social my-ul">
+									<li><a href="#"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#telegram"></use>
+											</svg></a></li>
+									<li><a href="#"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#vk"></use>
+											</svg></a></li>
+									<li><a href="#"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#youtube"></use>
+											</svg></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-7">
+							<div class="footer-wrapper">
+								<div class="footer-contacts">
+									<div class="footer-contacts__text">
+										<a href="tel:+78122004118" class="phone footer-phone">
+											<span class="phone-icon footer-contacts__icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#phone"></use>
+												</svg>
+											</span>
+											<span class="phone-text">8 (812) 200-41-18</span>
+										</a>
+									</div>
+									<a href="#" class="color-white link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать
+										звонок</a>
+								</div>
+								<div class="footer-contacts">
+									<div class="footer-contacts__text">
+										<a href="mailto:spb10@smart-module.ru" class="mail">
+											<span class="mail-icon footer-contacts__icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#mail2"></use>
+												</svg>
+											</span>
+											<span class="mail-text">spb10@smart-module.ru</span>
+										</a>
+									</div>
+								</div>
+								<div class="copyright">© Smart Module, 2022 г. Все права защищены.</div>
+
+								<ul class="footer-menu my-ul">
+									<li><a href="catalog.html">Каталог</a></li>
+									<li><a href="services.html">Услуги</a></li>
+									<li><a href="objects.html">Объекты</a></li>
+									<li><a href="articles.html">Статьи</a></li>
+									<li><a href="about.html">о нас</a></li>
+									<li><a href="contacts.html">контакты</a></li>
+									<li><a href="politics.html">Политика конфиденциальности</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+
+
+		<!-- Modal -->
+		<div class="modal modal-v2 fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-header-wrapper">
+							<div class="modal-header__photo"><img src="img/modal-image.jpg" alt=""></div>
+							<div class="modal-title">Оставьте заявку и наш
+								менеджер свяжется с Вами!</div>
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg></button>
+					</div>
+
+					<div class="modal-body">
+						<form method="post" class="form-modal">
+							<label>
+								<input type="text" placeholder="Ваше имя" name="name">
+							</label>
+							<label>
+								<input type="text" placeholder="Ваш телефон" name="phone">
+							</label>
+
+							<label class="label-checkbox">
+								<input type="checkbox" class="inp-check" name="checkbox" checked>
+								<span class="checkbox-custom"></span>
+								<span class="checkbox-text">Даю согласие на обработку <a href="#"
+										class="d-inline color-accent">персональных
+										данных</a></span>
+							</label>
+							<button type="submit" class="btn btn-green">Оставить заявку</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal-v2 fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Спасибо! Ваша заявка принята.
+					</div>
+					<div class="box-text">
+						<p>Мы свяжемся с вами в ближайше время.</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

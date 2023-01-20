@@ -1,0 +1,211 @@
+@import "fonts"
+@import "vars"
+
+// footer
+.footer-v3
+	background: #f5f5f5
+	color: #000
+	line-height: 1.31
+		
+.footer-top
+	background: #282828
+	color: #fff
+	padding: 24px 0		
+
+.footer-bottom
+	padding: 41px 0 
+
+.social-box
+	p
+		margin: 0 0 12px	
+
+.form-subscribe
+	position: relative
+	max-width: 890px
+	width: calc(100% - 24px - 470px - 16px - 37px)
+	label
+		margin: 0
+	button
+		position: absolute
+		right: 0
+		top: 0
+		padding: 0 32px
+	input
+		border: solid 1px #999
+		color: #fff
+		background-color: #282828
+		padding: 0 170px 0 27px
+		&::placeholder
+			color: #999
+		&:hover, &:focus
+			color: #fff
+
+.subscribe-wrapper
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+
+.subscribe-wrapper-text
+	display: flex
+	align-items: center
+	margin: 0 auto 0 0
+	&__icon
+		width: 37px
+		min-width: 37px
+		@include d-flex
+	&__title
+		max-width: 470px
+		margin: 0 0 0 23px
+		color: #fff
+		font-size: 20px
+
+.footer-menu
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	width: 100%
+	font-size: 13px
+	text-transform: uppercase
+	margin: 30px 0 0
+	li
+		display: flex
+		align-items: center
+		flex: auto
+		&:after
+			content: '•'
+			display: inline-block
+			margin: 0 auto
+		&:last-child
+			&::after
+				display: none
+		a
+			color: #000
+			&:hover
+				color: $accent
+		
+.footer-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap		
+
+.footer-contacts
+	display: flex
+	align-items: flex-start
+	position: relative
+	padding: 0 0 0 29px
+	&:nth-child(2)
+		margin: 0 auto
+	&__icon
+		fill: $accent
+		width: 20px
+		height: 20px
+		min-width: 20px
+		@include d-flex
+		position: absolute
+		left: 0
+		top: 0
+	a
+		color: #000
+		&:hover
+			color: $accent
+			.footer-contacts__icon
+				fill: $accent
+
+
+
+.footer-phone
+	font-weight: bold
+	margin: 0 0 10px
+
+.link-callback
+	border-bottom: 1px dashed $accent
+	margin: 0 0 0 11px
+
+.list-social
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 0 auto
+	li
+		margin: 0 23px 0 0
+		&:last-child
+			margin: 0
+		a
+			@include d-flex
+			width: 19px
+			height: 15px
+			fill: #999
+			&:hover
+				fill: $accent
+
+
+
+// @media
+@media only screen and (max-width: 1200px)
+	.footer-box-catalog
+		padding: 0
+
+	.footer-box
+		margin: 0
+
+	.subscribe-wrapper .box-text
+		max-width: none		
+
+
+@media only screen and (max-width: 992px)
+	.footer-contacts
+		margin: 0 auto 30px
+		width: fit-content
+
+	.footer-v2
+		padding: 30px 0
+		.logo
+			margin: 0 auto 20px		
+			max-width: 180px
+
+	.footer-box
+		margin: 0 0 30px
+		&__title
+			margin: 0 0 20px
+		
+	.footer-bottom
+		margin: 30px 0 0
+		padding: 20px 0 0	
+
+@media only screen and (max-width: 767px)
+	.list-social
+		width: 100%
+		margin: 10px 0
+
+
+
+	.form-subscribe
+		max-width: none
+		width: 100%
+
+	.subscribe-wrapper-text
+		margin: 0 auto 20px					
+
+@media only screen and (max-width: 576px)
+	.list-social
+		margin: 10px auto
+		justify-content: center
+
+	.copyright
+		text-align: center
+		width: 100%
+
+	.footer-bottom
+		text-align: center
+
+	.link-politics
+		margin: 5px auto 0	
+
+	.footer-menu
+		margin: 0 0 10px
+		&:last-child
+			margin: 0 0 10px	
+
+
+

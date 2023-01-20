@@ -302,9 +302,18 @@ h2 {
   text-transform: uppercase;
 }
 
+.dropdown-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .dropdown-toggle::after {
   border: none;
   width: 9px;
+  min-width: 9px;
   height: 5px;
   background: url("../img/arrow-bottom.svg") no-repeat center;
   background-size: 100%;
