@@ -31,6 +31,12 @@
   font-family: "Circe", sans-serif;
 }
 
+.btn-sm {
+  height: 36px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
 .btn-md {
   height: 54px;
   font-size: 20px;
@@ -80,6 +86,15 @@
 .btn-black-grey:hover {
   background: #6989ad;
   color: #fff;
+}
+
+.btn-black {
+  background: #282828;
+  color: #fff;
+}
+.btn-black:hover {
+  color: #fff;
+  background: #6989ad;
 }
 
 .color-accent {

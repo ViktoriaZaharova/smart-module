@@ -45,7 +45,21 @@
 					<li><a href="catalog.html">Каталог</a></li>
 					<li><a href="sales.html">Акции</a></li>
 					<li><a href="projects.html">Проекты</a></li>
-					<li><a href="services.html">Услуги</a></li>
+					<li class="dropdown"><a href="services.html" class="dropdown-toggle" data-bs-toggle="dropdown">Услуги</a>
+						<div class="dropdown-menu">
+							<ul class="submenu menu my-ul">
+								<li><a href="#">Вахтовые поселки</a></li>
+								<li><a href="#">Модульные здания</a></li>
+								<li><a href="#">Блок-контейнеры</a></li>
+								<li><a href="#">Переоборудование контейнеров</a></li>
+								<li><a href="#">Деревянные дома</a></li>
+								<li><a href="#">Пост охраны</a></li>
+								<li><a href="#">Павильоны</a></li>
+								<li><a href="#">Спец. контейнеры</a></li>
+								<li><a href="#">Деревянные бытовки</a></li>
+							</ul>
+						</div>
+					</li>
 					<li><a href="tehnology.html">Технология</a></li>
 					<li><a href="#">Отрасли</a></li>
 					<li><a href="blog.html">Блог</a></li>
@@ -56,9 +70,11 @@
 				<form method="post" class="form-search">
 					<label>
 						<input type="text" placeholder="Поиск" name="search">
-						<button type="submit"><svg class="svg-icon">
+						<button type="submit">
+							<svg class="svg-icon">
 								<use xlink:href="img/sprite.svg#search"></use>
-							</svg></button>
+							</svg>
+						</button>
 					</label>
 				</form>
 			</div>
@@ -110,60 +126,17 @@
 								<div class="dropdown-menu">
 									<div class="dropdown-menu-head">
 										<div class="dropdown-menu-title">
-											<div class="h3">Выбор города</div>
-											<div class="value-cities">Всего 1 279 городов</div>
+											<div class="h3">Информация будет отображаться
+												для региона:
+												<strong class="color-accent name-city">Санкт-Петербург</strong>
+											</div>
 										</div>
-										<a href="#" class="dropdown-menu__close"><svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#close"></use>
-											</svg></a>
 									</div>
-									<form method="post" class="form-search">
-										<label>
-											<input type="text" placeholder="Ваш город" name="search">
-											<button type="submit"><svg class="svg-icon">
-													<use xlink:href="img/sprite.svg#search"></use>
-												</svg></button>
-										</label>
-									</form>
 
-									<a href="#" class="link-autosearch color-accent">Автоопределение</a>
-
-									<ul class="list-cities my-ul column-count-3">
-										<li><a href="#">Москва</a></li>
-										<li><a href="#" class="checked">Санкт-Петербург</a></li>
-										<li><a href="#">Архангельск</a></li>
-										<li><a href="#">Владивосток</a></li>
-										<li><a href="#">Екатеренбург</a></li>
-										<li><a href="#">Волгоград</a></li>
-										<li><a href="#">Воронеж</a></li>
-										<li><a href="#">Екатеринбург</a></li>
-										<li><a href="#">Ижевск</a></li>
-										<li><a href="#">Иркутск</a></li>
-										<li><a href="#">Казань</a></li>
-										<li><a href="#">Кемерово</a></li>
-										<li><a href="#">Краснодар</a></li>
-										<li><a href="#">Красноярск</a></li>
-										<li><a href="#">Мурманск</a></li>
-										<li><a href="#">Набережные Челны</a></li>
-										<li><a href="#">Нижний Новгород</a></li>
-										<li><a href="#">Новосибирск</a></li>
-										<li><a href="#">Омск</a></li>
-										<li><a href="#">Пермь</a></li>
-										<li><a href="#">Ростов-на-Дону</a></li>
-										<li><a href="#">Саратов</a></li>
-										<li><a href="#">Самара</a></li>
-										<li><a href="#">Сочи</a></li>
-										<li><a href="#">Сургут</a></li>
-										<li><a href="#">Тверь</a></li>
-										<li><a href="#">Тольятти</a></li>
-										<li><a href="#">Тула</a></li>
-										<li><a href="#">Тюмень</a></li>
-										<li><a href="#">Ульяновск</a></li>
-										<li><a href="#">Уфа</a></li>
-										<li><a href="#">Хабаровск</a></li>
-										<li><a href="#">Челябинск</a></li>
-										<li><a href="#">Ярославль</a></li>
-									</ul>
+									<div class="btn-group">
+										<a href="#" class="btn btn-sm btn-black btn-close-dropdown">Да, все верно</a>
+										<a href="#" class="btn btn-sm btn-grey">Нет, изменить</a>
+									</div>
 								</div>
 							</div>
 
@@ -189,15 +162,21 @@
 							</div>
 
 							<ul class="list-social my-ul">
-								<li><a href="#"><svg class="svg-icon">
+								<li><a href="#">
+										<svg class="svg-icon">
 											<use xlink:href="img/sprite.svg#telegram"></use>
-										</svg></a></li>
-								<li><a href="#"><svg class="svg-icon">
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
 											<use xlink:href="img/sprite.svg#vk"></use>
-										</svg></a></li>
-								<li><a href="#"><svg class="svg-icon">
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
 											<use xlink:href="img/sprite.svg#youtube"></use>
-										</svg></a></li>
+										</svg>
+									</a></li>
 							</ul>
 						</div>
 					</div>
@@ -217,19 +196,35 @@
 							<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
 
 							<div class="logo-description">Строительство зданий и
-								быстровозводимых сооружений</div>
+								быстровозводимых сооружений
+							</div>
 
 							<nav class="nav-menu">
 								<ul class="menu my-ul">
 									<li><a href="catalog.html">Каталог</a></li>
 									<li><a href="sales.html">Акции</a></li>
 									<li><a href="projects.html">Проекты</a></li>
-									<li><a href="services.html">Услуги</a></li>
+									<li class="dropdown"><a href="services.html" class="dropdown-toggle"
+											data-bs-toggle="dropdown">Услуги</a>
+										<div class="dropdown-menu">
+											<ul class="submenu menu my-ul">
+												<li><a href="#">Вахтовые поселки</a></li>
+												<li><a href="#">Модульные здания</a></li>
+												<li><a href="#">Блок-контейнеры</a></li>
+												<li><a href="#">Переоборудование контейнеров</a></li>
+												<li><a href="#">Деревянные дома</a></li>
+												<li><a href="#">Пост охраны</a></li>
+												<li><a href="#">Павильоны</a></li>
+												<li><a href="#">Спец. контейнеры</a></li>
+												<li><a href="#">Деревянные бытовки</a></li>
+											</ul>
+										</div>
+									</li>
 									<li><a href="#">Отрасли</a></li>
 									<li><a href="blog.html">Блог</a></li>
 									<li class="dropdopwn">
-										<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown"><img src="img/menu-dots.svg"
-												alt=""></a>
+										<a href="#" class="dropdown-toggle dropdown-toggle-dots" data-bs-toggle="dropdown"><img
+												src="img/menu-dots.svg" alt=""></a>
 										<div class="dropdown-menu">
 											<ul class="submenu menu my-ul">
 												<li><a href="about.html">О нас</a></li>
@@ -243,17 +238,21 @@
 							</nav>
 
 							<div class="search-header dropdown">
-								<a href="#" class="btn-search" data-bs-toggle="dropdown"><svg class="svg-icon">
+								<a href="#" class="btn-search" data-bs-toggle="dropdown">
+									<svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#search"></use>
-									</svg></a>
+									</svg>
+								</a>
 
 								<div class="dropdown-menu">
 									<form method="post" class="form-search">
 										<label>
 											<input type="text" placeholder="Поиск" name="search">
-											<button type="submit"><svg class="svg-icon">
+											<button type="submit">
+												<svg class="svg-icon">
 													<use xlink:href="img/sprite.svg#search"></use>
-												</svg></button>
+												</svg>
+											</button>
 										</label>
 									</form>
 								</div>
@@ -261,6 +260,22 @@
 
 							<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать
 								заявку</a>
+
+							<a href="mailto:spb10@smart-module.ru" class="mail">
+								<span class="mail-icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#mail2"></use>
+									</svg>
+								</span>
+							</a>
+
+							<div class="header-box">
+								<a href="tel:+78122004118" class="phone">
+									<span class="phone-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#phone"></use>
+										</svg>
+									</span>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -277,7 +292,8 @@
 								<div class="row">
 									<div class="col-12 col-lg-10">
 										<div class="h1">Строительство зданий и
-											быстровозводимых соружений</div>
+											быстровозводимых соружений
+										</div>
 										<div class="box-text">
 											<p>Компания «Смарт-модуль» – строительный подрядчик, поставщик сооружений
 												из металлоконструкций в Санкт-Петербурге, области. У нас доступны
@@ -298,7 +314,8 @@
 								<div class="row">
 									<div class="col-12 col-lg-10">
 										<div class="h1">Строительство зданий и
-											быстровозводимых соружений</div>
+											быстровозводимых соружений
+										</div>
 										<div class="box-text">
 											<p>Компания «Смарт-модуль» – строительный подрядчик, поставщик сооружений
 												из металлоконструкций в Санкт-Петербурге, области. У нас доступны
@@ -319,7 +336,8 @@
 								<div class="row">
 									<div class="col-12 col-lg-10">
 										<div class="h1">Строительство зданий и
-											быстровозводимых соружений</div>
+											быстровозводимых соружений
+										</div>
 										<div class="box-text">
 											<p>Компания «Смарт-модуль» – строительный подрядчик, поставщик сооружений
 												из металлоконструкций в Санкт-Петербурге, области. У нас доступны
@@ -419,10 +437,10 @@
 		<section class="best-offers best-offers-v3">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-12 col-lg-4">
+					<div class="col-12 col-xl-4">
 						<h2>Лучшие предложения</h2>
 					</div>
-					<div class="col-12 col-lg-4">
+					<div class="col-12 col-md-6 col-xl-4">
 						<ul class="list-sorting list-sorting-v2 my-ul">
 							<li><a href="#" class="active">Хит</a></li>
 							<li><a href="#">Лидеры продаж</a></li>
@@ -430,7 +448,7 @@
 							<li><a href="#">Акции</a></li>
 						</ul>
 					</div>
-					<div class="col-12 col-lg-4">
+					<div class="col-12 col-md-6 col-xl-4">
 						<a href="catalog.html" class="color-accent link-all-catalog">
 							<span class="link-catalog__text">весь каталог</span>
 							<span class="link-catalog__icon">
@@ -858,7 +876,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/pizza-oven.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -867,7 +885,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/booth.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -876,7 +894,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/oven.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -885,7 +903,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/bunk-bed.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -894,7 +912,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/door.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -904,7 +922,7 @@
 						</div>
 					</div>
 
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/door2.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -914,7 +932,7 @@
 						</div>
 					</div>
 
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/rectangle.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -923,7 +941,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/door3.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -932,7 +950,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/ticket-window.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -941,7 +959,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/fabric.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -950,7 +968,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/textile.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -959,7 +977,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/grid-on.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -968,7 +986,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/coil.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -977,7 +995,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/wire.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -986,7 +1004,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/heater.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -996,7 +1014,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/blinds.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -1005,7 +1023,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/stairs.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -1014,7 +1032,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/window.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -1023,7 +1041,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/steel.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -1032,7 +1050,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-30">
 						<div class="additional-equipment-list-item additional-equipment-list-item-v2">
 							<div class="additional-equipment-list-item__icon"><img src="img/bench.svg" alt=""></div>
 							<div class="additional-equipment-list-item__text">
@@ -1122,7 +1140,8 @@
 								<div class="subscribe-wrapper-text">
 									<div class="subscribe-wrapper-text__icon"><img src="img/send.svg" alt=""></div>
 									<div class="subscribe-wrapper-text__title">Подпишись на новости от компании Смарт-модуль
-										и будь всегда первым в курсе всех событий!</div>
+										и будь всегда первым в курсе всех событий!
+									</div>
 								</div>
 								<form method="post" class="form-subscribe">
 									<label>
@@ -1139,22 +1158,28 @@
 			<div class="footer-bottom">
 				<div class="container">
 					<div class="row">
-						<div class="col-12 col-md-6 col-lg-3">
+						<div class="col-6 col-lg-3">
 							<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
 						</div>
-						<div class="col-12 col-md-6 col-lg-2">
+						<div class="col-6 col-lg-2">
 							<div class="social-box">
 								<p>Мы в соцсетях:</p>
 								<ul class="list-social my-ul">
-									<li><a href="#"><svg class="svg-icon">
+									<li><a href="#">
+											<svg class="svg-icon">
 												<use xlink:href="img/sprite.svg#telegram"></use>
-											</svg></a></li>
-									<li><a href="#"><svg class="svg-icon">
+											</svg>
+										</a></li>
+									<li><a href="#">
+											<svg class="svg-icon">
 												<use xlink:href="img/sprite.svg#vk"></use>
-											</svg></a></li>
-									<li><a href="#"><svg class="svg-icon">
+											</svg>
+										</a></li>
+									<li><a href="#">
+											<svg class="svg-icon">
 												<use xlink:href="img/sprite.svg#youtube"></use>
-											</svg></a></li>
+											</svg>
+										</a></li>
 								</ul>
 							</div>
 						</div>
@@ -1171,7 +1196,8 @@
 											<span class="phone-text">8 (812) 200-41-18</span>
 										</a>
 									</div>
-									<a href="#" class="color-white link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать
+									<a href="#" class="color-white link-callback" data-bs-toggle="modal"
+										data-bs-target="#callbackModal">Заказать
 										звонок</a>
 								</div>
 								<div class="footer-contacts">
@@ -1206,62 +1232,57 @@
 
 
 		<!-- Modal -->
-		<div class="modal modal-v2 fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel"
+		<div class="modal modal-v3 fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel"
 			aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
-					<div class="modal-header">
-						<div class="modal-header-wrapper">
-							<div class="modal-header__photo"><img src="img/modal-image.jpg" alt=""></div>
-							<div class="modal-title">Оставьте заявку и наш
-								менеджер свяжется с Вами!</div>
-						</div>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#close"></use>
-							</svg></button>
-					</div>
-
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg>
+					</button>
 					<div class="modal-body">
+						<div class="modal-header__photo"><img src="img/modal-image.jpg" alt=""></div>
 						<form method="post" class="form-modal">
+							<div class="modal-title">Оставьте заявку и наш
+								менеджер свяжется с Вами!
+							</div>
 							<label>
 								<input type="text" placeholder="Ваше имя" name="name">
 							</label>
 							<label>
 								<input type="text" placeholder="Ваш телефон" name="phone">
 							</label>
-
-							<label class="label-checkbox">
-								<input type="checkbox" class="inp-check" name="checkbox" checked>
-								<span class="checkbox-custom"></span>
-								<span class="checkbox-text">Даю согласие на обработку <a href="#"
-										class="d-inline color-accent">персональных
-										данных</a></span>
-							</label>
 							<button type="submit" class="btn btn-green">Оставить заявку</button>
+							<div class="consent">
+								Нажимая на кнопку “Оставить заявку” вы даете
+								согласие на обработку <a href="#" class="color-accent d-inline">персональных данных</a>
+							</div>
+
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="modal modal-v2 fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">Спасибо! Ваша заявка принята.
-					</div>
-					<div class="box-text">
-						<p>Мы свяжемся с вами в ближайше время.</p>
-					</div>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+		<div class="modal modal-v3 fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+						<svg class="svg-icon">
 							<use xlink:href="img/sprite.svg#close"></use>
-						</svg></button>
-				</div>
+						</svg>
+					</button>
+					<div class="modal-header">
+						<div class="modal-title">Спасибо! Ваша заявка принята. Наш специалист свяжется с вами
+							в ближайше время.
+						</div>
+					</div>
 
+				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 
 	<!-- add plugins js-->

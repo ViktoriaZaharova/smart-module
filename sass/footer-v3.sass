@@ -6,18 +6,18 @@
 	background: #f5f5f5
 	color: #000
 	line-height: 1.31
-		
+
 .footer-top
 	background: #282828
 	color: #fff
-	padding: 24px 0		
+	padding: 24px 0
 
 .footer-bottom
-	padding: 41px 0 
+	padding: 41px 0
 
 .social-box
 	p
-		margin: 0 0 12px	
+		margin: 0 0 12px
 
 .form-subscribe
 	position: relative
@@ -82,12 +82,12 @@
 			color: #000
 			&:hover
 				color: $accent
-		
+
 .footer-wrapper
 	width: 100%
 	display: flex
 	align-items: flex-start
-	flex-wrap: wrap		
+	flex-wrap: wrap
 
 .footer-contacts
 	display: flex
@@ -112,11 +112,8 @@
 			.footer-contacts__icon
 				fill: $accent
 
-
-
 .footer-phone
 	font-weight: bold
-	margin: 0 0 10px
 
 .link-callback
 	border-bottom: 1px dashed $accent
@@ -139,73 +136,85 @@
 			&:hover
 				fill: $accent
 
-
-
 // @media
 @media only screen and (max-width: 1200px)
-	.footer-box-catalog
-		padding: 0
+	.footer-menu
+		font-size: 12px
 
-	.footer-box
-		margin: 0
-
-	.subscribe-wrapper .box-text
-		max-width: none		
-
+	.footer-bottom
+		padding: 30px 0
 
 @media only screen and (max-width: 992px)
-	.footer-contacts
-		margin: 0 auto 30px
+	.subscribe-wrapper-text__title
+		max-width: 363px
+		font-size: 16px
+
+	.form-subscribe
+		width: calc(100% - 430px)
+
+	.social-box
 		width: fit-content
+		margin: 0 0 0 auto
 
-	.footer-v2
-		padding: 30px 0
-		.logo
-			margin: 0 auto 20px		
-			max-width: 180px
+	.footer-menu
+		order: -1
+		margin: 20px auto
+		justify-content: space-between
 
-	.footer-box
-		margin: 0 0 30px
-		&__title
-			margin: 0 0 20px
-		
-	.footer-bottom
-		margin: 30px 0 0
-		padding: 20px 0 0	
+	.copyright
+		width: 100%
+		text-align: center
+		margin: 20px auto 0
+		font-size: 14px
+
+	.footer-contacts:nth-child(2)
+		margin: 0 0 0 auto
 
 @media only screen and (max-width: 767px)
-	.list-social
-		width: 100%
-		margin: 10px 0
-
-
+	.footer-top
+		padding: 20px 0
 
 	.form-subscribe
 		max-width: none
 		width: 100%
+		button
+			padding: 0 20px
+			font-size: 16px
 
 	.subscribe-wrapper-text
-		margin: 0 auto 20px					
+		margin: 0 auto 20px
 
-@media only screen and (max-width: 576px)
 	.list-social
-		margin: 10px auto
-		justify-content: center
-
-	.copyright
-		text-align: center
 		width: 100%
 
-	.footer-bottom
-		text-align: center
+@media only screen and (max-width: 576px)
+	.subscribe-wrapper-text__title
+		font-size: 14px
+		margin: 0 0 0 10px
 
-	.link-politics
-		margin: 5px auto 0	
+	.list-social
+		justify-content: center
 
 	.footer-menu
-		margin: 0 0 10px
-		&:last-child
-			margin: 0 0 10px	
+		justify-content: center
+		li
+			margin: 0 0 5px
+			flex: none
+			&::after
+				margin: 0 10px
+
+	.footer-contacts
+		flex-direction: column
+
+	.link-callback
+		margin: 0
 
 
-
+@media only screen and (max-width: 420px)
+	.footer-contacts
+		width: 100%
+		width: fit-content
+		margin: 0 auto 20px
+		&:nth-child(2)
+			margin: 0 auto 
+			

@@ -125,6 +125,16 @@ button, .btn
 	border-radius: 6px
 	transition: 0.3s ease
 
+.btn-group
+	flex-wrap: wrap
+	width: 100%
+	.btn
+		width: fit-content
+		flex: none
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn
+	border-radius: 6px		
+
 .svg-icon
 	display: inline-block
 	width: 100%
@@ -224,6 +234,8 @@ h2
 	&.show
 		&::after
 			transform: rotate(180deg)
+
+			
 
 // slick
 .slick-slider

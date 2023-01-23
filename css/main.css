@@ -618,7 +618,7 @@
   overflow: hidden;
 }
 .product-card-v3 .product-card__footer {
-  opacity: 0;
+  display: none;
 }
 .product-card-v3 .product-card__title {
   margin: 0 0 20px;
@@ -637,7 +637,9 @@
   z-index: 2;
 }
 .product-card-v3:hover .product-card__footer {
-  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .product-card-v3:hover .btn {
   background: #6989ad;
@@ -722,12 +724,13 @@
   max-width: none;
   white-space: nowrap;
   opacity: 0;
+  z-index: 2;
 }
 .types-cabins-card-v3 .product-card__price {
   text-align: center;
 }
 .types-cabins-card-v3 .product-card__body {
-  margin: 19px auto 0;
+  margin: 19px auto;
 }
 .types-cabins-card-v3 .product-card__footer {
   opacity: 0;
@@ -741,10 +744,10 @@
   border: solid 2px #6989ad;
 }
 .types-cabins-card-v3:hover .product-card__img {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .types-cabins-card-v3:hover .btn {
-  background: #282828;
+  background: rgba(40, 40, 40, 0.6);
 }
 .types-cabins-card-v3:hover .slide .btn {
   opacity: 1;
