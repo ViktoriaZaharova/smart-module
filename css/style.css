@@ -258,6 +258,11 @@ ul, ol {
   padding: 0 16.5px;
 }
 
+h1 {
+  font-weight: bold;
+  width: 100%;
+}
+
 .h1 {
   font-size: 70px;
   font-weight: bold;
@@ -507,4 +512,10 @@ h2 {
 .scroll-verical::-webkit-resizer {
   background-color: #999;
   border-radius: 2px;
+}
+
+.column-count-3 {
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
 }

@@ -2,26 +2,44 @@
 @import "vars"
 
 header
-	box-shadow: 0px 7px 6px 0 rgba(41, 41, 41, 0.1)
-	background: #fff
+	background: transparent
 	position: absolute
 	left: 0
 	top: 0
 	width: 100%
 	z-index: 2
+	.list-social
+		margin: 0 
+		a
+			fill: #fff
+			&:hover
+				fill: $accent
 
 .logo
 	max-width: 201px
 	width: 100%
 	@include d-flex
 
+.logo-description
+	color: #999
+	max-width: 240px
+	width: 100%
+	line-height: 1.13
+	margin: 0 0 0 30px
+
 .header-top
-	padding: 16px 0
+	padding: 10px 0
+
+.header-bottom-wrapper
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	background: #fff
+	border-radius: 6px
+	padding: 18px 30px
 
 .header-bottom
-	padding: 9px 0
-	box-shadow: 0px 7px 6px 0 rgba(41, 41, 41, 0.1)
-	background-color: #f5f5f5
 	.form-search
 		max-width: 346px
 		margin: 0
@@ -30,10 +48,11 @@ header
 			padding: 0 36px 0 20px
 			&::placeholder
 				color: #000
+	.mail, .header-box
+		display: none
 
 .nav-menu
-	width: calc(100% - 346px)
-	padding: 0 40px 0 0
+	margin: 0 auto
 
 .menu
 	display: flex
@@ -43,21 +62,27 @@ header
 	font-size: 18px
 	line-height: 1
 	li
+		margin: 0 40px 0 0
+		&:last-child
+			margin: 0
 		a
 			color: #000
 			&:hover
 				color: $accent
+	.dropdown-toggle-dots
+		width: 20px
+		height: 6px
 	.dropdown-toggle
 		&::after
-			display: none			
+			display: none
 	.dropdown-menu
 		padding: 22px 23px 26px 24px
-		background-color: #f5f5f5
+		background-color: #fff
 		min-width: 314px
 		border: none
-		border-radius: 0 0 6px 6px 
+		border-radius: 0 0 6px 6px
 		left: -30px !important
-		top: 21px !important	
+		top: 40px !important
 
 .submenu
 	font-size: 18px
@@ -71,20 +96,65 @@ header
 			color: #000
 			&:hover
 				color: $accent
-				text-decoration: underline	
+				text-decoration: underline
+
+.dropdown-menu-hidden
+	display: none
 
 .location-wrapper
-	margin: 0 auto 0 70px
+	margin: 0 50px 0 0
+	position: relative
 	.dropdown-menu
-		box-shadow: 0px 11px 16px 0 rgba(41, 41, 41, 0.21)
+		box-shadow: 0px 0 16px 0 rgba(41, 41, 41, 0.21)
 		border: none
-		border-radius: 0
+		border-radius: 6px
 		width: 100%
-		min-width: 580px
+		min-width: 284px
 		background-color: #fff
-		padding: 30px 39px 39px
-		left: -40px !important
-		top: 35px !important
+		padding: 23px 16px 20px
+		left: 50% !important
+		top: 50px !important
+		transform: translate(-50%,0) !important
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: -15px
+			transform: translate(-50%,0)
+			width: 18px
+			height: 15px
+			clip-path: polygon(50% 0%, 0% 100%, 100% 100%)
+			background: #fff
+			box-shadow: 0px 0 16px 0 rgba(41, 41, 41, 0.21)
+		.btn-group
+			justify-content: space-between
+			.btn
+				padding: 10px 15px
+
+	.dropdown-toggle
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: calc(50% - 3px)
+			transform: translate(-50%,-50%)
+			height: calc(100% + 25px)
+			width: calc(100% + 46px)
+			z-index: -1
+			opacity: 0
+			transition: .3s ease
+			background: #6989ad
+		&:hover
+			color: $light_grey
+		&.show
+			color: #fff
+			&::before
+				opacity: 1
+			&::after
+				filter: brightness(0) invert(1)
+			.location-city__icon
+				fill: #fff
 
 .dropdown-menu-head
 	width: 100%
@@ -92,29 +162,38 @@ header
 	align-items: start
 	justify-content: space-between
 	flex-wrap: wrap
-	margin: 0 0 27px
+	margin: 0 0 18px
+	text-align: center
 	.h3
-		font-weight: bold
-		font-size: 20px
+		font-size: 16px
 		margin: 0
 		line-height: 1
+		text-align: center
+	.name-city
+		font-weight: bold
+		font-size: 18px
+		margin: 5px auto 0
+		display: block
+
+.dropdown-menu-title
+	width: 100%
+	text-align: center
+
+.dropdown-menu-body
+	padding: 21px 14px 19px 20px
+	border-radius: 6px
+	background-color: #f5f5f5
+	.scroll-verical
+		max-height: 246px
 
 .value-cities
 	color: #999
 	font-size: 14px
 
-.dropdown-menu__close
-	width: 14px
-	height: 14px
-	fill: #000
-	@include d-flex
-	&:hover
-		fill: $accent
-
 .location-city
 	display: flex
 	align-items: center
-	color: #000
+	color: #fff
 	font-size: 16px
 	position: relative
 	&__icon
@@ -123,7 +202,11 @@ header
 		width: 12px
 		height: 14px
 		min-width: 12px
-		fill: $accent
+		fill: #fff
+	.dropdown-toggle
+		&::after
+			filter: brightness(0) invert(1) 
+		
 
 .form-search
 	width: 100%
@@ -152,8 +235,6 @@ header
 	margin: 0 0 40px
 	font-weight: bold
 
-
-
 .list-cities
 	li
 		margin: 0 0 7px
@@ -170,16 +251,16 @@ header
 				color: #6989ad
 			&.checked
 				color: #6989ad
-				
 
 .btn-burger
-	display: none
+	display: flex
 	flex-direction: column
 	align-items: center
 	justify-content: space-between
 	width: 20px
 	height: 14px
 	cursor: pointer
+	margin: 0 30px 0 0
 	span
 		display: block
 		width: 100%
@@ -190,36 +271,35 @@ header
 .phone
 	display: flex
 	align-items: center
-	color: #000
+	color: #fff
 	font-weight: bold
 	&:hover
-		color: $accent
+		color: $light_grey
 	&-icon
 		@include d-flex
 		width: 20px
 		min-width: 20px
 		height: 20px
 		margin: 0 9px 0 0
-		fill: $accent
+		fill: #fff
 
 .mail
 	display: flex
 	align-items: center
-	color: #000
+	color: #fff
 	&:hover
-		color: $accent
+		color: $light_grey
 	&-icon
 		@include d-flex
 		width: 13px
 		min-width: 13px
 		height: 12px
 		margin: 0 11px 0 0
-		fill: $accent
+		fill: #fff
 
 .schedule-box
 	display: flex
 	align-items: center
-	margin: 0 70px 0 0
 	&__icon
 		@include d-flex
 		width: 14px
@@ -232,13 +312,13 @@ header
 	display: flex
 	align-items: center
 	flex-wrap: wrap
-	margin: 0 70px
+	margin: 0 auto 0 200px
 	.link-callback
-		border-bottom: 1px dashed $accent
+		border-bottom: 1px dashed #fff
 		margin: 0 0 0 12px
-		color: #000
+		color: #fff
 		&:hover
-			color: $accent
+			color: $light_grey
 
 .mobile-menu
 	display: none
@@ -276,17 +356,26 @@ header
 			transform: rotate(135deg)
 	.logo
 		max-width: 160px
-		margin: 0 auto 
+		margin: 0 auto
 	&__body
 		padding: 20px 0
-		border-top: 1px solid #ededed	
-		border-bottom: 1px solid #ededed	
+		border-top: 1px solid #ededed
+		border-bottom: 1px solid #ededed
 		margin: 20px 0
 	.location-city
 		margin: 0 auto 20px
-		justify-content: center	
+		justify-content: center
+		color: #000
+		&:hover
+			color: $accent
+	.location-city__icon
+		fill: $accent		
+	.mail, .phone
+		color: #000
+	.mail-icon, .phone-icon
+		fill: $accent		
 	.form-search
-		margin: 10px 0 0	
+		margin: 10px 0 0
 	.menu
 		font-size: 16px
 		li
@@ -299,7 +388,6 @@ header
 			transform: none !important
 			min-width: auto
 			padding: 10px
-			border-radius: 0
 		.submenu
 			margin: 10px 0 0
 			li
@@ -307,28 +395,55 @@ header
 				&:last-child
 					margin: 0
 				a
-					font-size: 14px			
+					font-size: 14px
 	.mail
 		margin: 10px 0
 	.header-box
 		margin: 0
 	.btn
 		margin: 30px 0 0
-		width: 100%		
+		width: 100%
 
+.btn-search
+	width: 19px
+	height: 20px
+	min-width: 19px
+	@include d-flex
+	fill: #000
+
+.search-header
+	margin: 0 40px 0 43px
+	.dropdown-menu
+		min-width: 300px
+		padding: 10px
+		border: solid 1px #ededed
+		box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21)
+		top: 38px !important
+	.form-search
+		margin: 0
 
 // @media
-@media only screen and (max-width: 1480px)
-	.header-box
-		margin: 0 25px 
+@media only screen and (max-width: 1450px)
+	.menu li
+		margin: 0 20px 0 0
 
-	.location-wrapper
-		margin: 0 auto 0 30px
+	.submenu li
+		margin: 0 0 18px
 
-	.schedule-box
-		margin: 0 30px 0 0
+	.menu .dropdown-menu
+		top: 36px !important
 
-@media only screen and (max-width: 1300px)
+	.location-wrapper .dropdown-menu
+		left: -10px !important
+		transform: none !important
+
+	.header-bottom-wrapper
+		padding: 18px
+
+	.search-header
+		margin: 0 20px		
+
+@media only screen and (max-width: 1320px)
 	.logo
 		max-width: 180px
 
@@ -339,82 +454,76 @@ header
 			margin: 0 0 0 30px
 
 	.location-wrapper .dropdown-menu
-		top: 30px !important		
+		left: -10px !important
+		top: 60px !important
+		transform: none !important
 
-@media only screen and (max-width: 1200px)
-	.header-bottom
+	.logo-description
 		display: none
 
-	.btn-burger
-		display: flex
-		margin: 0 20px 0 0
+	.location-wrapper .dropdown-toggle::before
+		height: calc(100% + 47px)
 
+	.search-header .dropdown-menu
+		top: 35px !important
+
+@media only screen and (max-width: 1200px)
 	.logo
 		max-width: 150px
 
-	.location-wrapper
-		margin: 0 0 0 20px
+	.search-header .dropdown-menu
+		top: 30px !important
 
-	.schedule-box
-		margin: 0 20px 0 auto	
+	.menu .dropdown-menu
+		top: 30px !important
 
-	header
-		.btn
-			padding: 0 15px
-
-	.header-box
-		margin: 0 15px		
-
-	.location-wrapper .dropdown-menu
-		top: 26px !important				
-
-@media only screen and (max-width: 1100px)
-	.location-wrapper
-		display: none
-
-	
 @media only screen and (max-width: 992px)
-	.schedule-box
+	.header-box
+		margin: 0 40px 0 auto
+
+	header .menu
 		display: none
 
-	.logo
-		margin: 0 auto 0 0
+	.location-wrapper
+		margin: 0 30px 0 0
 
-	header
-		.mail-text
-			display: none
 
-	.mail-icon
-		margin: 0
-		width: 20px
-		height: 20px
-		min-width: 20px
+@media only screen and (max-width: 768px)
+	.header-top
+		display: none
 
-	.header-box
-		.link-callback
-			display: none		
-
-@media only screen and (max-width: 576px)
-	header
-		.btn
-			padding: 0 18px
-			font-size: 14px
-			height: 42px
-		.phone-text
-			display: none
+	.header-bottom
+		.mail, .header-box
+			display: flex
+		.mail
+			margin: 0 20px
 		.phone-icon
 			margin: 0
+			fill: $accent
+		.mail-icon
+			margin: 0
+			width: 20px
+			height: 20px
+			min-width: 20px
+			fill: $accent
+
+	.header-box
+		margin: 0
+
+	.search-header
+		margin: 0 30px 0 0
+
+@media only screen and (max-width: 576px)
+	.header-bottom
+		.btn
+			display: none
+
+	.search-header
+		margin: 0
 
 @media only screen and (max-width: 480px)
 	.logo
 		max-width: 100px
 
 	.btn-burger
-		order: 1
-		margin: 0
-
-	header
-		.btn
-			display: none
-
-
+		margin: 0 20px 0 0

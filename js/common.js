@@ -27,3 +27,8 @@ $('.mobile-menu__close').on('click', function () {
 	$('.mobile-menu').fadeOut();
 });
 
+$('.btn-edit-location').on('click', function (e) {
+	e.preventDefault();
+	$('.dropdown-menu-hidden').fadeIn();
+	$('.dropdown-menu-visible').fadeOut();
+});

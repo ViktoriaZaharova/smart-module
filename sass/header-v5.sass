@@ -2,38 +2,36 @@
 @import "vars"
 
 header
-	box-shadow: 0px 11px 10px 0 rgba(41, 41, 41, 0.43)
-	background: #fff
+	background: transparent
 	position: absolute
 	left: 0
 	top: 0
 	width: 100%
 	z-index: 2
+	padding: 25px 0
 	.list-social
-		margin: 0 30px 0 0
+		margin: 0 
 		a
-			fill: rgba(#999, .4)
+			fill: #fff
 			&:hover
-				fill: #999
+				fill: $accent
 
 .logo
 	max-width: 201px
 	width: 100%
 	@include d-flex
 
-.logo-description
-	color: #999
-	max-width: 240px
-	width: 100%
-	line-height: 1.13
-	margin: 0 0 0 30px
 
-.header-top
-	padding: 11px 0 9px
+.header-bottom-wrapper
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	background: #fff
+	border-radius: 6px
+	padding: 18px 30px
 
 .header-bottom
-	padding: 19px 0
-	border-top: 1px solid rgba(#c0c0c0, .48)
 	.form-search
 		max-width: 346px
 		margin: 0
@@ -42,8 +40,6 @@ header
 			padding: 0 36px 0 20px
 			&::placeholder
 				color: #000
-	.mail, .header-box
-		display: none
 
 .nav-menu
 	margin: 0 auto
@@ -96,7 +92,7 @@ header
 	display: none
 
 .location-wrapper
-	margin: 0 50px 0 0
+	margin: 0 auto
 	position: relative
 	.dropdown-menu
 		box-shadow: 0px 0 16px 0 rgba(41, 41, 41, 0.21)
@@ -124,6 +120,24 @@ header
 			justify-content: space-between
 			.btn
 				padding: 10px 15px
+	.form-search
+		margin: 0 0 20px
+	.scroll-verical
+		max-height: 280px	
+
+.location-city
+	display: flex
+	align-items: center
+	color: #000
+	font-size: 16px
+	position: relative
+	&__icon
+		@include d-flex
+		margin: 0 10px 0 0
+		width: 12px
+		height: 14px
+		min-width: 12px
+		fill: #000				
 
 	.dropdown-toggle
 		position: relative
@@ -140,7 +154,7 @@ header
 			transition: .3s ease
 			background: #6989ad
 		&:hover
-			color: #000
+			color: $light_grey
 		&.show
 			color: #fff
 			&::before
@@ -180,31 +194,6 @@ header
 	.scroll-verical
 		max-height: 246px
 
-.value-cities
-	color: #999
-	font-size: 14px
-
-.dropdown-menu__close
-	width: 14px
-	height: 14px
-	fill: #000
-	@include d-flex
-	&:hover
-		fill: $accent
-
-.location-city
-	display: flex
-	align-items: center
-	color: #000
-	font-size: 16px
-	position: relative
-	&__icon
-		@include d-flex
-		margin: 0 10px 0 0
-		width: 12px
-		height: 14px
-		min-width: 12px
-		fill: $accent
 
 .form-search
 	width: 100%
@@ -286,14 +275,13 @@ header
 	align-items: center
 	color: #000
 	&:hover
-		color: $accent
+		color: $light_grey
 	&-icon
 		@include d-flex
-		width: 13px
-		min-width: 13px
-		height: 12px
-		margin: 0 11px 0 0
-		fill: $accent
+		width: 18px
+		min-width: 18px
+		height: 18px
+		fill: rgba(#000, .5)
 
 .schedule-box
 	display: flex
@@ -310,7 +298,7 @@ header
 	display: flex
 	align-items: center
 	flex-wrap: wrap
-	margin: 0 88px 0 auto
+	margin: 0 44px 0 0
 	.link-callback
 		border-bottom: 1px dashed $accent
 		margin: 0 0 0 12px
@@ -363,8 +351,16 @@ header
 	.location-city
 		margin: 0 auto 20px
 		justify-content: center
+		color: #000
 		&:hover
 			color: $accent
+	.location-city__icon
+		fill: $accent		
+	.mail, .phone
+		color: #000
+	.mail-icon, .phone-icon
+		fill: $accent		
+		margin: 0 5px 0 0
 	.form-search
 		margin: 10px 0 0
 	.menu
@@ -400,10 +396,10 @@ header
 	height: 20px
 	min-width: 19px
 	@include d-flex
-	fill: #000
+	fill: rgba(#000, .6)
 
 .search-header
-	margin: 0 40px 0 43px
+	margin: 0 32px
 	.dropdown-menu
 		min-width: 300px
 		padding: 10px
@@ -428,6 +424,12 @@ header
 		left: -10px !important
 		transform: none !important
 
+	.header-bottom-wrapper
+		padding: 18px
+
+	.search-header
+		margin: 0 20px		
+
 @media only screen and (max-width: 1320px)
 	.logo
 		max-width: 180px
@@ -435,6 +437,7 @@ header
 	.header-box
 		flex-direction: column
 		align-items: flex-start
+		margin: 0 20px 0 0
 		.link-callback
 			margin: 0 0 0 30px
 
@@ -452,6 +455,9 @@ header
 	.search-header .dropdown-menu
 		top: 35px !important
 
+	.menu
+		font-size: 16px	
+
 @media only screen and (max-width: 1200px)
 	.logo
 		max-width: 150px
@@ -462,41 +468,35 @@ header
 	.menu .dropdown-menu
 		top: 30px !important
 
+	header
+		.nav-menu
+			display: none	
+
 @media only screen and (max-width: 992px)
 	.header-box
-		margin: 0 40px 0 auto
+		margin: 0 20px 0 auto
 
-	header .menu
-		display: none
+	.btn-burger
+		margin: 0 20px 0 0
 
-	.location-wrapper
-		margin: 0 30px 0 0
+	header
+		padding: 15px 0
 
-	header .list-social
-		margin: 0
+@media only screen and (max-width: 880px)		
+	header
+		.location-wrapper
+			display: none			
 
 @media only screen and (max-width: 768px)
-	.header-top
-		display: none
-
-	.header-bottom
-		.mail, .header-box
-			display: flex
-		.mail
-			margin: 0 20px
-		.phone-icon
-			margin: 0
-		.mail-icon
-			margin: 0
-			width: 20px
-			height: 20px
-			min-width: 20px
-
-	.header-box
-		margin: 0
-
 	.search-header
-		margin: 0 30px 0 0
+		margin: 0 20px
+
+	header
+		.phone-text, .link-callback
+			display: none
+		.phone-icon
+			margin: 0	
+
 
 @media only screen and (max-width: 576px)
 	.header-bottom
@@ -504,11 +504,14 @@ header
 			display: none
 
 	.search-header
-		margin: 0
+		margin: 0 0 0 20px
 
 @media only screen and (max-width: 480px)
 	.logo
 		max-width: 100px
 
-	.btn-burger
-		margin: 0 20px 0 0
+	.search-header .dropdown-menu
+		top: 44px !important
+		right: -18px !important
+		left: auto !important
+		transform: none !important

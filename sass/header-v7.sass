@@ -2,48 +2,19 @@
 @import "vars"
 
 header
-	box-shadow: 0px 11px 10px 0 rgba(41, 41, 41, 0.43)
 	background: #fff
-	position: absolute
-	left: 0
-	top: 0
+	box-shadow: 0px 11px 10px 0 rgba(41, 41, 41, 0.43)
 	width: 100%
 	z-index: 2
-	.list-social
-		margin: 0 30px 0 0
-		a
-			fill: rgba(#999, .4)
-			&:hover
-				fill: #999
+	padding: 18px 0
+	.phone-icon
+		display: none
 
 .logo
 	max-width: 201px
 	width: 100%
 	@include d-flex
 
-.logo-description
-	color: #999
-	max-width: 240px
-	width: 100%
-	line-height: 1.13
-	margin: 0 0 0 30px
-
-.header-top
-	padding: 11px 0 9px
-
-.header-bottom
-	padding: 19px 0
-	border-top: 1px solid rgba(#c0c0c0, .48)
-	.form-search
-		max-width: 346px
-		margin: 0
-		input
-			font-size: 14px
-			padding: 0 36px 0 20px
-			&::placeholder
-				color: #000
-	.mail, .header-box
-		display: none
 
 .nav-menu
 	margin: 0 auto
@@ -56,7 +27,7 @@ header
 	font-size: 18px
 	line-height: 1
 	li
-		margin: 0 40px 0 0
+		margin: 0 30px 0 0
 		&:last-child
 			margin: 0
 		a
@@ -92,11 +63,9 @@ header
 				color: $accent
 				text-decoration: underline
 
-.dropdown-menu-hidden
-	display: none
 
 .location-wrapper
-	margin: 0 50px 0 0
+	margin: 0 0 5px
 	position: relative
 	.dropdown-menu
 		box-shadow: 0px 0 16px 0 rgba(41, 41, 41, 0.21)
@@ -124,6 +93,26 @@ header
 			justify-content: space-between
 			.btn
 				padding: 10px 15px
+	.form-search
+		margin: 0 0 20px
+	.scroll-verical
+		max-height: 280px
+
+.location-city
+	display: flex
+	align-items: center
+	color: #000
+	font-size: 16px
+	position: relative
+	&:hover
+		color: $accent
+	&__icon
+		@include d-flex
+		margin: 0 10px 0 0
+		width: 12px
+		height: 14px
+		min-width: 12px
+		fill: $accent
 
 	.dropdown-toggle
 		position: relative
@@ -140,7 +129,7 @@ header
 			transition: .3s ease
 			background: #6989ad
 		&:hover
-			color: #000
+			color: $accent
 		&.show
 			color: #fff
 			&::before
@@ -149,6 +138,9 @@ header
 				filter: brightness(0) invert(1)
 			.location-city__icon
 				fill: #fff
+
+.header-contacts
+	margin: 0 30px				
 
 .dropdown-menu-head
 	width: 100%
@@ -179,32 +171,6 @@ header
 	background-color: #f5f5f5
 	.scroll-verical
 		max-height: 246px
-
-.value-cities
-	color: #999
-	font-size: 14px
-
-.dropdown-menu__close
-	width: 14px
-	height: 14px
-	fill: #000
-	@include d-flex
-	&:hover
-		fill: $accent
-
-.location-city
-	display: flex
-	align-items: center
-	color: #000
-	font-size: 16px
-	position: relative
-	&__icon
-		@include d-flex
-		margin: 0 10px 0 0
-		width: 12px
-		height: 14px
-		min-width: 12px
-		fill: $accent
 
 .form-search
 	width: 100%
@@ -286,14 +252,14 @@ header
 	align-items: center
 	color: #000
 	&:hover
-		color: $accent
+		color: $light_grey
 	&-icon
 		@include d-flex
 		width: 13px
 		min-width: 13px
 		height: 12px
-		margin: 0 11px 0 0
 		fill: $accent
+		margin: 0 11px 0 0
 
 .schedule-box
 	display: flex
@@ -308,13 +274,12 @@ header
 
 .header-box
 	display: flex
-	align-items: center
-	flex-wrap: wrap
-	margin: 0 88px 0 auto
+	align-items: flex-start
+	flex-direction: column
 	.link-callback
 		border-bottom: 1px dashed $accent
-		margin: 0 0 0 12px
 		color: #000
+		margin: 0
 		&:hover
 			color: $accent
 
@@ -363,8 +328,16 @@ header
 	.location-city
 		margin: 0 auto 20px
 		justify-content: center
+		color: #000
 		&:hover
 			color: $accent
+	.location-city__icon
+		fill: $accent
+	.mail, .phone
+		color: #000
+	.mail-icon, .phone-icon
+		fill: $accent
+		margin: 0 5px 0 0
 	.form-search
 		margin: 10px 0 0
 	.menu
@@ -403,7 +376,7 @@ header
 	fill: #000
 
 .search-header
-	margin: 0 40px 0 43px
+	margin: 0 32px
 	.dropdown-menu
 		min-width: 300px
 		padding: 10px
@@ -415,8 +388,10 @@ header
 
 // @media
 @media only screen and (max-width: 1450px)
-	.menu li
-		margin: 0 20px 0 0
+	.menu
+		font-size: 16px
+		li
+			margin: 0 20px 0 0
 
 	.submenu li
 		margin: 0 0 18px
@@ -428,87 +403,84 @@ header
 		left: -10px !important
 		transform: none !important
 
-@media only screen and (max-width: 1320px)
-	.logo
-		max-width: 180px
+	.search-header
+		margin: 0 20px 0 0
 
-	.header-box
-		flex-direction: column
-		align-items: flex-start
-		.link-callback
-			margin: 0 0 0 30px
+@media only screen and (max-width: 1350px)
+	.logo
+		max-width: 150px
 
 	.location-wrapper .dropdown-menu
 		left: -10px !important
 		top: 60px !important
 		transform: none !important
 
-	.logo-description
-		display: none
-
-	.location-wrapper .dropdown-toggle::before
-		height: calc(100% + 47px)
 
 	.search-header .dropdown-menu
-		top: 35px !important
+		top: 32px !important
 
-@media only screen and (max-width: 1200px)
-	.logo
-		max-width: 150px
+	.menu
+		font-size: 14px
 
-	.search-header .dropdown-menu
-		top: 30px !important
+@media only screen and (max-width: 1230px)
+	.header-contacts
+		margin: 0 auto 0 30px
 
-	.menu .dropdown-menu
-		top: 30px !important
+	.search-header
+		margin: 0 20px
+		.dropdown-menu
+			top: 30px !important
+
+
+	header
+		.nav-menu
+			display: none
 
 @media only screen and (max-width: 992px)
-	.header-box
-		margin: 0 40px 0 auto
+	.btn-burger
+		margin: 0 20px 0 0
 
-	header .menu
-		display: none
-
-	.location-wrapper
-		margin: 0 30px 0 0
-
-	header .list-social
-		margin: 0
-
-@media only screen and (max-width: 768px)
-	.header-top
-		display: none
-
-	.header-bottom
-		.mail, .header-box
-			display: flex
-		.mail
-			margin: 0 20px
+@media only screen and (max-width: 880px)
+	header
+		.location-wrapper
+			display: none
+		.phone-text, .link-callback
+			display: none
 		.phone-icon
 			margin: 0
+			display: flex	
+			
+	.search-header
+		margin: 0 20px
+
+@media only screen and (max-width: 768px)
+	header
+		.mail-text
+			display: none
 		.mail-icon
-			margin: 0
 			width: 20px
 			height: 20px
 			min-width: 20px
+			margin: 0	
 
-	.header-box
-		margin: 0
-
-	.search-header
-		margin: 0 30px 0 0
+	.header-contacts
+		margin: 0 20px 0 auto 
 
 @media only screen and (max-width: 576px)
-	.header-bottom
+	header
+		padding: 15px 0
 		.btn
 			display: none
 
 	.search-header
-		margin: 0
+		margin: 0 0 0 20px
 
 @media only screen and (max-width: 480px)
 	.logo
 		max-width: 100px
 
-	.btn-burger
-		margin: 0 20px 0 0
+	.search-header .dropdown-menu
+		top: 44px !important
+		right: -18px !important
+		left: auto !important
+		transform: none !important

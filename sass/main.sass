@@ -30,6 +30,10 @@
 			&:hover
 				fill: #999
 
+.fixed-social-scroll
+	position: fixed
+					
+
 .home-wrapper
 	position: relative
 	width: 100%
@@ -95,11 +99,75 @@
 					fill: $accent
 	.home-slider-item
 		border-radius: 0
-		padding: 182px 0 212px
+		padding: 337px 0 212px
 		&__bg
 			border-radius: 0
 		&::before
 			border-radius: 0
+
+.home-v3
+	.home-slider
+		&__nav
+			padding: 0 16.5px
+			bottom: 58px
+			left: 50%
+			transform: translate(-50%,0)
+			max-width: 1533px
+			.slick-arrow
+				fill: #fff
+				&:hover
+					fill: $accent
+	.home-slider-item
+		border-radius: 0
+		padding: 204px 0
+		&__bg
+			border-radius: 0
+		&::before
+			border-radius: 0	
+
+.home-v4
+	text-align: center
+	.home-slider 
+		.box-text	
+			margin: 40px auto
+		.btn
+			margin: 0 auto	
+		&__nav
+			justify-content: center
+
+.home-v5
+	.home-slider
+		color: #000
+		background: #f5f5f5
+		&__nav
+			padding: 0 16.5px
+			bottom: 58px
+			left: 50%
+			transform: translate(-50%,0)
+			max-width: 1533px
+			.slick-arrow
+				fill: rgba(#000, .5)		
+				&:hover
+					fill: $accent		
+	.home-slider-item
+		border-radius: 0
+		padding: 0
+		&__bg
+			border-radius: 0
+			position: relative
+			min-width: 959px
+			height: 100%
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&::before
+			display: none		
+		&__content
+			padding: 132px 0 177px
+		
+
+
 // home
 
 // section-catalog
