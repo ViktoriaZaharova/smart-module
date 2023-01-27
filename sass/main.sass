@@ -32,7 +32,6 @@
 
 .fixed-social-scroll
 	position: fixed
-					
 
 .home-wrapper
 	position: relative
@@ -123,15 +122,15 @@
 		&__bg
 			border-radius: 0
 		&::before
-			border-radius: 0	
+			border-radius: 0
 
 .home-v4
 	text-align: center
-	.home-slider 
-		.box-text	
+	.home-slider
+		.box-text
 			margin: 40px auto
 		.btn
-			margin: 0 auto	
+			margin: 0 auto
 		&__nav
 			justify-content: center
 
@@ -146,9 +145,9 @@
 			transform: translate(-50%,0)
 			max-width: 1533px
 			.slick-arrow
-				fill: rgba(#000, .5)		
+				fill: rgba(#000, .5)
 				&:hover
-					fill: $accent		
+					fill: $accent
 	.home-slider-item
 		border-radius: 0
 		padding: 0
@@ -162,11 +161,9 @@
 				height: 100%
 				object-fit: cover
 		&::before
-			display: none		
+			display: none
 		&__content
 			padding: 132px 0 177px
-		
-
 
 // home
 
@@ -560,7 +557,7 @@
 	.product-card__price
 		text-align: center
 	.product-card__body
-		margin: 19px auto 
+		margin: 19px auto
 	.product-card__footer
 		opacity: 0
 	.product-card__title
@@ -711,7 +708,7 @@
 		max-width: 230px
 
 .advantages-v2
-	margin: 128px 0
+	margin: 100px 0 130px
 	.advantages-box
 		.h3
 			white-space: nowrap
@@ -742,7 +739,7 @@
 	.advantages-box__icon
 		filter: none
 		position: relative
-		margin: 0 auto 30px	
+		margin: 0 auto 30px
 		z-index: 1
 		&::before
 			content: ''
@@ -757,5 +754,310 @@
 			transform: translate(0,-50%)
 	.box-text
 		max-width: 230px
-		margin: 0 auto		
+		margin: 0 auto
 // advantages end
+
+// page politics	
+.page-title-wrapper
+	padding: 40px 0
+
+.page-title-wrapper-v2
+	margin: 38px 0 42px
+	padding: 15px 20px 20px
+	border-radius: 12px
+	background: #f5f5f5
+
+.page-title-wrapper-v3
+	background: #e7ecf2
+	margin: 0 0 30px
+	padding: 30px 0
+
+.page-politics
+	padding: 0 0 120px
+	h2
+		font-size: 30px
+		margin: 0 0 30px
+	.box-text
+		margin: 0 0 50px
+		line-height: 1.56
+		font-size: 18px
+		&:last-child
+			margin: 0
+		p
+			margin: 0 0 30px
+			&:last-child
+				margin: 0
+	h3
+		margin: 0 0 24px
+		font-size: 24px
+		font-weight: bold
+
+.box-text__title
+	font-size: 18px
+	line-height: 1.3
+	font-weight: bold
+	width: 100%
+	margin: 0 0 20px
+
+.info-box
+	width: 100%
+	display: flex
+	align-items: center
+	margin: 0 0 30px
+	background: #e7ecf2
+	border-radius: 12px
+	line-height: 1.3
+	font-size: 18px
+	padding: 12px 30px 12px 26px
+	&__icon
+		width: 30px
+		height: 30px
+		min-width: 30px
+		fill: $accent
+		@include d-flex
+		margin: 0 18px 0 0
+
+.meta-box
+	width: 100%
+	padding: 12px 80px 12px 25px
+	border-radius: 12px
+	border: solid 2px #29bd35
+	background-color: #fff
+	font-size: 18px
+	line-height: 1.3
+	margin: 30px 0
+
+.description-box
+	margin: 0 0 30px
+	width: 100%
+	padding: 12px 45px 12px 27px
+	font-size: 18px
+	line-height: 1.3
+	background: #f5f5f5
+	border-left: 2px solid #6989ad
+
+// page politics end
+
+// page contacts
+.page-contacts-v1
+	margin: 0 0 113px
+
+.contacts-advantage-card
+	width: 100%
+	height: 100%
+	position: relative
+	z-index: 1
+	overflow: hidden
+	padding: 40px 40px 80px
+	color: #fff
+	border-radius: 30px
+	&__title
+		color: #fff
+		max-width: 245px
+		font-size: 22px
+		line-height: 1.2
+		font-weight: bold
+		margin: 0 0 19px
+		&:hover
+			color: $accent
+	&__bg
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		z-index: -1
+		width: 100%
+		height: 100%
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background: linear-gradient(to right, rgba(0,0,0,.7) 0%,rgba(255,255,255,0) 100%)
+	.link
+		text-transform: uppercase
+		font-size: 13px
+	.link-icon
+		fill: #fff
+		width: 5px
+		height: 9px
+
+.contacts-map
+	width: 100%
+	border-radius: 6px
+	iframe
+		width: 100%
+		height: 100%
+		border-radius: 6px
+
+.contacts-map-v1
+	height: 100%
+
+.contacts-box
+	width: 100%
+	height: 100%
+	text-align: center
+	padding: 29px 30px 40px
+	border-radius: 6px
+	background-color: #f5f5f5
+	line-height: 1.1
+	&__icon
+		@include d-flex
+		width: 30px
+		min-width: 30px
+		height: 30px
+		margin: 0 auto 34px
+	&__title
+		font-weight: bold
+		font-size: 22px
+		line-height: 1.1
+		width: 100%
+		margin: 0 auto 20px
+	.address
+		font-size: 20px
+		line-height: 1.1
+	.schedule
+		font-size: 16px
+		margin: 24px 0 0
+	&__list-social
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 30px 0 0
+		li
+			margin: 0 20px 0 0
+			&:last-child
+				margin: 0
+			a
+				width: 30px
+				height: 30px
+				min-width: 30px
+				@include d-flex
+
+.phone-box
+	margin: 0 auto 24px
+	&:last-child
+		margin: 0
+	a
+		margin: 0 auto
+		font-size: 20px
+		color: #000
+		&:hover
+			color: $accent
+
+.callback-contacts
+	width: 100%
+	line-height: 1
+	&__title
+		margin: 0 0 15px
+		font-size: 22px
+		font-weight: bold
+	&__subtitle
+		font-size: 18px
+		margin: 0 0 24px
+	textarea
+		height: 120px
+	[type='submit']
+		padding: 0 42px
+	.consent
+		margin: 0 0 0 20px
+		color: #999
+		font-size: 13px
+
+.page-contacts-v2
+	margin: 0 0 120px
+
+.contacts-map-v2
+	height: 400px
+
+.contacts-box-v2
+	box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21)
+	background-color: #e7ecf2
+	padding: 36px 20px 34px
+	font-size: 20px
+	.contacts-box__icon
+		margin: 0 auto 24px
+		fill: $accent
+	a
+		color: #000
+		margin: 0 auto
+
+.callback-contacts-v2
+	margin: 42px 0 0
+	[type="submit"]
+		margin: 0 auto
+	.consent
+		text-align: center
+		margin: 10px auto	25px
+	.callback-contacts
+		&__title, &__subtitle
+			text-align: center
+
+.contacts-box-v3
+	box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21)
+	background-color: #fff
+	position: relative
+	text-align: left
+	padding: 19px 40px 19px 30px
+	font-size: 20px
+	display: flex
+	align-items: center
+	.contacts-box__icon
+		margin: 0 20px 0 0
+		fill: $accent
+	a
+		color: #000
+		&:hover
+			color: $accent
+	.contacts-box__list-social
+		margin: 0
+		justify-content: flex-start
+		margin: 0 0 0 18px
+	.contacts-box__text
+		min-width: 140px				
+
+
+.callback-contacts-wrapper
+	width: 100%
+	border-radius: 6px
+	background-color: #f5f5f5
+	padding: 50px
+
+.callback-contacts-v3
+	.consent
+		max-width: 363px
+
+.callback-contacts__form-v2
+	input, textarea
+		background: #fff
+
+.callback-contacts-manager
+	width: 100%
+	text-align: center
+	line-height: 1.1
+	&__photo
+		@include d-flex
+		width: 100%
+		max-width: 340px
+		height: 258px
+		@include d-flex
+		margin: 0 auto 17px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.name
+		font-size: 18px
+		margin: 0 auto 5px
+	.position
+		font-weight: 300
+
+// page contacts end

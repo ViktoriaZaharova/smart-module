@@ -11,16 +11,22 @@
     min-width: auto;
     width: calc(100% + 16.5px);
   }
-}
-@media only screen and (max-width: 1400px) {
   .advantages-v2 .advantages-box .h3 {
     white-space: normal;
   }
+}
+@media only screen and (max-width: 1400px) {
   .catalog-card-v2 {
     padding: 18px;
   }
   .catalog-card-v2 .catalog-card__bg {
     margin: 0 20px 0 0;
+  }
+  .contacts-box-v3 {
+    font-size: 16px;
+  }
+  .contacts-box-v3 .contacts-box__text {
+    min-width: auto;
   }
 }
 @media only screen and (max-width: 1330px) {
@@ -29,6 +35,21 @@
   }
   .list-sorting-v2 li {
     margin: 0 20px 0 0;
+  }
+  .contacts-box {
+    padding: 20px;
+  }
+  .contacts-box__title {
+    font-size: 16px;
+  }
+  .contacts-box .address {
+    font-size: 16px;
+  }
+  .phone-box a {
+    font-size: 18px;
+  }
+  .callback-contacts-v3 .consent {
+    max-width: 300px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -51,6 +72,34 @@
   }
   .h1 {
     font-size: 58px;
+  }
+  .page-contacts-v1 {
+    margin: 0 0 70px;
+  }
+  .contacts-map-v1 {
+    height: 300px;
+    margin: 30px 0 0;
+  }
+  .contacts-box-v2 {
+    font-size: 16px;
+  }
+  .contacts-box__list-social {
+    margin: 24px auto 0;
+  }
+  .callback-contacts-v3 .consent {
+    width: 100%;
+    max-width: none;
+    margin: 10px auto 0;
+    text-align: center;
+  }
+  .callback-contacts-v3 [type=submit] {
+    margin: 0 auto;
+  }
+  .callback-contacts-wrapper {
+    padding: 30px;
+  }
+  .callback-contacts-manager__photo {
+    height: auto;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -80,6 +129,16 @@
   }
   .product-card-v3 {
     padding: 0;
+  }
+  .callback-contacts .consent {
+    max-width: 300px;
+  }
+  .callback-contacts-v2 .consent {
+    max-width: none;
+  }
+  .callback-contacts-v3 .consent {
+    width: 100%;
+    max-width: none;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -176,6 +235,16 @@
   .home-v5 .home-slider__nav .slick-arrow {
     fill: #fff;
   }
+  .contacts-advantage-card {
+    padding: 30px 40px;
+    border-radius: 20px;
+  }
+  .page-contacts-v2 {
+    margin: 0 0 60px;
+  }
+  .contacts-box-v3 .contacts-box__text {
+    min-width: 110px;
+  }
 }
 @media only screen and (max-width: 768px) {
   h2 {
@@ -198,6 +267,9 @@
   }
   .best-offers-v3 .list-sorting {
     margin: 10px 0 20px;
+  }
+  .callback-contacts-manager {
+    margin: 0 auto 30px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -298,6 +370,79 @@
   .advantages-box-v3 {
     padding: 30px 20px;
   }
+  h1 {
+    font-size: 30px;
+  }
+  .page-title-wrapper {
+    padding: 30px 0;
+  }
+  .page-title-wrapper-v2 {
+    padding: 15px 20px;
+    margin: 20px 0;
+  }
+  .page-politics {
+    padding: 0 0 70px;
+  }
+  .page-politics h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
+  .page-politics h3 {
+    font-size: 20px;
+    margin: 0 0 20px;
+  }
+  .page-politics .box-text {
+    font-size: 16px;
+    line-height: 1.35;
+    margin: 0 0 30px;
+  }
+  .page-politics .box-text:last-child {
+    margin: 0;
+  }
+  .page-politics .box-text p {
+    margin: 0 0 20px;
+  }
+  .info-box, .meta-box, .description-box {
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 1.35;
+    margin: 20px 0;
+  }
+  .info-box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .info-box__icon {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    margin: 0 10px 0 0;
+  }
+  .callback-contacts [type=submit] {
+    margin: 0 auto;
+  }
+  .callback-contacts .consent {
+    max-width: none;
+    margin: 10px auto 0;
+    text-align: center;
+    width: 100%;
+  }
+  .contacts-box__icon {
+    margin: 0 auto 24px;
+  }
+  .contacts-advantage-card {
+    padding: 20px 30px;
+  }
+  .contacts-map-v2 {
+    height: 300px;
+  }
+  .callback-contacts-v2 .consent {
+    margin: 0 auto 20px;
+  }
+  .callback-contacts-wrapper {
+    padding: 20px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .h1 {
@@ -329,6 +474,12 @@
   }
   .home-v3 .home-slider-item {
     padding: 80px 40px 120px 0;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  .breadcrumbs li a::after {
+    margin: 0 5px;
   }
 }
 @media only screen and (min-width: 1200px) {

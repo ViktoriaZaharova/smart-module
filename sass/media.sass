@@ -7,31 +7,49 @@
 
 	.product-card-v3
 		.product-card__img
-			height: 140px	
+			height: 140px
 
-	.home-v5 
-		.home-slider-item__bg		
+	.home-v5
+		.home-slider-item__bg
 			min-width: auto
 			width: calc(100% + 16.5px)
 
-@media only screen and (max-width: 1400px)
 	.advantages-v2
 		.advantages-box
 			.h3
 				white-space: normal
 
+@media only screen and (max-width: 1400px)
 	.catalog-card-v2
 		padding: 18px
 		.catalog-card__bg
 			margin: 0 20px 0 0
+
+	.contacts-box-v3
+		font-size: 16px
+		.contacts-box__text
+			min-width: auto		
 
 @media only screen and (max-width: 1330px)
 	.product-card-v3
 		width: 25%
 
 	.list-sorting-v2 li
-		margin: 0 20px 0 0	
+		margin: 0 20px 0 0
 
+	.contacts-box
+		padding: 20px
+		&__title
+			font-size: 16px
+		.address
+			font-size: 16px
+
+	.phone-box
+		a
+			font-size: 18px
+
+	.callback-contacts-v3 .consent
+		max-width: 300px
 @media only screen and (max-width: 1200px)
 	.advantages-v2
 		margin: 70px 0
@@ -48,9 +66,37 @@
 
 	.best-offers-v3 .list-sorting
 		justify-content: flex-start
-	
+
 	.h1
-		font-size: 58px	
+		font-size: 58px
+
+	.page-contacts-v1
+		margin: 0 0 70px
+
+	.contacts-map-v1
+		height: 300px
+		margin: 30px 0 0
+
+	.contacts-box-v2
+		font-size: 16px
+
+	.contacts-box__list-social
+		margin: 24px auto 0	
+
+	.callback-contacts-v3 
+		.consent
+			width: 100%
+			max-width: none
+			margin: 10px auto 0
+			text-align: center			
+		[type="submit"]
+			margin: 0 auto	
+
+	.callback-contacts-wrapper
+		padding: 30px
+
+	.callback-contacts-manager__photo
+		height: auto	
 
 @media only screen and (max-width: 1100px)
 	.product-card
@@ -76,7 +122,18 @@
 				margin: 0 0 30px
 
 	.product-card-v3
-		padding: 0			
+		padding: 0
+
+	.callback-contacts
+		.consent
+			max-width: 300px
+
+	.callback-contacts-v2 .consent
+		max-width: none	
+
+	.callback-contacts-v3 .consent	
+		width: 100%	
+		max-width: none
 
 @media only screen and (max-width: 992px)
 	.h1
@@ -133,8 +190,8 @@
 
 	.home-v2
 		.home-slider-item
-			padding: 250px 0 70px	
-		.home-slider__nav	
+			padding: 250px 0 70px
+		.home-slider__nav
 			bottom: 30px
 
 	.product-card-v3
@@ -143,28 +200,38 @@
 			width: fit-content
 
 	.list-sorting-v2 li
-		margin: 0 20px 0 0	
+		margin: 0 20px 0 0
 
 	.advantages-v3
-		margin: 60px 0				
+		margin: 60px 0
 
 	.additional-equipment
 		margin: 0 0 60px
 
-	.home-v3 
-		.home-slider-item	
+	.home-v3
+		.home-slider-item
 			padding: 150px 40px 150px 0
 
-	.home-v5 
+	.home-v5
 		.home-slider-item__bg
 			width: 100%
 		.home-slider-item__content
-			padding: 70px 0	
+			padding: 70px 0
 		.home-slider__nav
 			justify-content: center
 			bottom: 40px
 			.slick-arrow
 				fill: #fff
+
+	.contacts-advantage-card
+		padding: 30px 40px
+		border-radius: 20px
+
+	.page-contacts-v2
+		margin: 0 0 60px
+
+	.contacts-box-v3 .contacts-box__text
+		min-width: 110px	
 
 @media only screen and (max-width: 768px)
 	h2
@@ -184,10 +251,13 @@
 		width: 50%
 
 	.link-all-catalog
-		margin: 0 0 20px			
+		margin: 0 0 20px
 
 	.best-offers-v3 .list-sorting
 		margin: 10px 0 20px
+
+	.callback-contacts-manager
+		margin: 0 auto 30px	
 
 @media only screen and (max-width: 576px)
 	.h1
@@ -205,8 +275,8 @@
 	.home-slider-item
 		padding: 80px 20px
 
-	.home-v2 
-		.home-slider-item	
+	.home-v2
+		.home-slider-item
 			padding: 130px 0 70px
 
 	.btn-md
@@ -250,7 +320,7 @@
 		width: 80px
 		height: 80px
 		min-width: 80px
-		margin: 0 10px 0 0	
+		margin: 0 10px 0 0
 
 	.home-v1
 		.fixed-social
@@ -268,7 +338,7 @@
 			margin: 0
 			height: auto
 		.form-modal
-			width: calc(100% - 180px)	
+			width: calc(100% - 180px)
 
 	.product-card-v3
 		width: 100%
@@ -277,14 +347,80 @@
 			display: flex
 
 	.product-card-wrapper
-		position: relative	
+		position: relative
 
 	.types-cabins-card-v3
 		.product-card__footer
-			opacity: 1	
+			opacity: 1
 
 	.advantages-box-v3
-		padding: 30px 20px						
+		padding: 30px 20px
+
+	h1
+		font-size: 30px
+
+	.page-title-wrapper
+		padding: 30px 0
+
+	.page-title-wrapper-v2
+		padding: 15px 20px
+		margin: 20px 0
+
+	.page-politics
+		padding: 0 0 70px
+		h2
+			font-size: 24px
+			margin: 0 0 20px
+		h3
+			font-size: 20px
+			margin: 0 0 20px
+		.box-text
+			font-size: 16px
+			line-height: 1.35
+			margin: 0 0 30px
+			&:last-child
+				margin: 0
+			p
+				margin: 0 0 20px
+
+	.info-box, .meta-box, .description-box
+		padding: 15px 20px
+		font-size: 16px
+		line-height: 1.35
+		margin: 20px 0
+
+	.info-box
+		align-items: flex-start
+		&__icon
+			width: 20px
+			height: 20px
+			min-width: 20px
+			margin: 0 10px 0 0
+
+	.callback-contacts
+		[type='submit']
+			margin: 0 auto
+		.consent
+			max-width: none
+			margin: 10px auto 0
+			text-align: center
+			width: 100%
+
+	.contacts-box
+		&__icon		
+			margin: 0 auto 24px
+
+	.contacts-advantage-card
+		padding: 20px 30px		
+
+	.contacts-map-v2
+		height: 300px
+
+	.callback-contacts-v2 .consent
+		margin: 0 auto 20px
+		
+	.callback-contacts-wrapper
+		padding: 20px			
 
 @media only screen and (max-width: 480px)
 	.h1
@@ -303,20 +439,26 @@
 			margin: 0 0 20px
 		.form-modal
 			padding: 0
-			width: 100%		
+			width: 100%
 
 @media only screen and (max-width: 420px)
 	.mb-30
 		margin-bottom: 20px
 
 	.column-count-3
-		column-count: 2	
+		column-count: 2
 
-	.home-v3 
-		.home-slider-item	
+	.home-v3
+		.home-slider-item
 			padding: 80px 40px 120px 0
 
-@media only screen and (max-width: 370px)
+	h1
+		font-size: 26px
+
+	.breadcrumbs li a::after
+		margin: 0 5px
+
+// @media only screen and (max-width: 370px)
 
 @media only screen and (min-width: 1200px)
 	.catalog-card-col
