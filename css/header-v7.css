@@ -156,7 +156,7 @@ header .phone-icon {
 .location-wrapper .form-search {
   margin: 0 0 20px;
 }
-.location-wrapper .scroll-verical {
+.location-wrapper .scroll-vertical {
   max-height: 280px;
 }
 
@@ -268,7 +268,7 @@ header .phone-icon {
   border-radius: 6px;
   background-color: #f5f5f5;
 }
-.dropdown-menu-body .scroll-verical {
+.dropdown-menu-body .scroll-vertical {
   max-height: 246px;
 }
 

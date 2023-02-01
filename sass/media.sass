@@ -2,6 +2,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1460px)
+	.product-card
+		padding: 30px 20px
+
 	.product-card-wrapper
 		padding: 30px 25px
 
@@ -19,6 +22,15 @@
 			.h3
 				white-space: normal
 
+	.table-category
+		font-size: 14px
+		margin: 0 0 30px
+		thead
+			font-size: 16px
+		td, th
+			&:first-child
+				max-width: 220px
+
 @media only screen and (max-width: 1400px)
 	.catalog-card-v2
 		padding: 18px
@@ -28,7 +40,7 @@
 	.contacts-box-v3
 		font-size: 16px
 		.contacts-box__text
-			min-width: auto		
+			min-width: auto
 
 @media only screen and (max-width: 1330px)
 	.product-card-v3
@@ -81,22 +93,31 @@
 		font-size: 16px
 
 	.contacts-box__list-social
-		margin: 24px auto 0	
+		margin: 24px auto 0
 
-	.callback-contacts-v3 
+	.callback-contacts-v3
 		.consent
 			width: 100%
 			max-width: none
 			margin: 10px auto 0
-			text-align: center			
+			text-align: center
 		[type="submit"]
-			margin: 0 auto	
+			margin: 0 auto
 
 	.callback-contacts-wrapper
 		padding: 30px
 
 	.callback-contacts-manager__photo
-		height: auto	
+		height: auto
+
+	.category-list__item
+		font-size: 16px
+
+	.category-list
+		margin: 0 -7.5px 20px
+
+	.filter-category
+		margin: 0 0 20px
 
 @media only screen and (max-width: 1100px)
 	.product-card
@@ -129,10 +150,10 @@
 			max-width: 300px
 
 	.callback-contacts-v2 .consent
-		max-width: none	
+		max-width: none
 
-	.callback-contacts-v3 .consent	
-		width: 100%	
+	.callback-contacts-v3 .consent
+		width: 100%
 		max-width: none
 
 @media only screen and (max-width: 992px)
@@ -231,7 +252,7 @@
 		margin: 0 0 60px
 
 	.contacts-box-v3 .contacts-box__text
-		min-width: 110px	
+		min-width: 110px
 
 @media only screen and (max-width: 768px)
 	h2
@@ -257,7 +278,70 @@
 		margin: 10px 0 20px
 
 	.callback-contacts-manager
-		margin: 0 auto 30px	
+		margin: 0 auto 30px
+
+	.category-list-col, .category-list-col-btn
+		width: 25%
+
+	.category-list__item
+		font-size: 14px
+
+	.product-card-line
+		padding: 10px 20px
+		&__image
+			width: 150px
+			margin: 0 auto 20px
+		&__body
+			width: 100%
+			text-align: center
+		&__title
+			margin: 0 auto 5px
+		.availability-item
+			margin: 0 auto
+			justify-content: center
+		&__footer
+			width: 100%
+			margin: 10px 0 0
+			justify-content: center
+
+	.table-category
+		text-align: left
+		thead
+			display: none
+		tr
+			display: flex
+			align-items: flex-start
+			flex-wrap: wrap
+		tbody
+			td
+				height: auto	
+		td
+			height: auto
+			padding: 10px
+			width: 25%
+			&::before
+				content: attr(data-table)
+				display: block
+				font-weight: 700
+				text-decoration: underline
+				color: #999
+				margin: 0 0 3px
+			&:first-child
+				max-width: none
+				width: 50%
+				padding: 10px
+			&:last-child
+				width: 25%
+				max-width: none
+				min-width: auto
+		.btn-order
+			height: 36px
+			font-size: 14px	
+			width: 100%
+		.availability-item
+			justify-content: flex-start
+			margin: 0		
+				
 
 @media only screen and (max-width: 576px)
 	.h1
@@ -407,21 +491,58 @@
 			width: 100%
 
 	.contacts-box
-		&__icon		
+		&__icon
 			margin: 0 auto 24px
 
 	.contacts-advantage-card
-		padding: 20px 30px		
+		padding: 20px 30px
 
 	.contacts-map-v2
 		height: 300px
 
 	.callback-contacts-v2 .consent
 		margin: 0 auto 20px
-		
-	.callback-contacts-wrapper
-		padding: 20px			
 
+	.callback-contacts-wrapper
+		padding: 20px
+
+	.category-list-col, .category-list-col-btn
+		width: 33.33%
+
+	.category-list-all
+		font-size: 16px
+		line-height: 1
+
+	.sorting-box
+		p
+			margin: 0 0 5px
+			width: 100%
+
+	.table-category
+		td
+			width: 33.33%
+			&:first-child
+				width: 100%
+			&:last-child
+				width: 33.33%			
+
+	.page-category
+		margin: 0 0 70px
+
+	.filter-category-item .dropdown-toggle::after
+		margin: 0 0 0 10px
+
+	.filter-category-item
+		margin: 0 10px 10px 0
+		font-size: 14px
+		&:last-child
+			margin: 0 0 10px
+		.dropdown-menu 
+			min-width: 160px
+			.label-checkbox	
+				font-size: 12px
+				
+		
 @media only screen and (max-width: 480px)
 	.h1
 		font-size: 26px
@@ -441,6 +562,9 @@
 			padding: 0
 			width: 100%
 
+	.category-list-col, .category-list-col-btn
+		width: 50%
+
 @media only screen and (max-width: 420px)
 	.mb-30
 		margin-bottom: 20px
@@ -457,6 +581,33 @@
 
 	.breadcrumbs li a::after
 		margin: 0 5px
+
+	.product-card-line
+		&__footer
+			flex-direction: column
+		&__price
+			margin: 0 auto 10px
+
+	.table-category
+		td
+			width: 50%
+			&:last-child
+				width: 50%					
+
+	.pagination 
+		.page-item
+			margin: 0 7px 0 0
+			&:last-child
+				margin: 0
+		.page-link
+			width: 32px
+			height: 32px
+			min-width: 32px
+
+	.btn-load-category
+		margin: 30px auto 0
+
+
 
 // @media only screen and (max-width: 370px)
 

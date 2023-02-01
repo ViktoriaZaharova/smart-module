@@ -32,3 +32,13 @@ $('.btn-edit-location').on('click', function (e) {
 	$('.dropdown-menu-hidden').fadeIn();
 	$('.dropdown-menu-visible').fadeOut();
 });
+
+$('.category-list-col-btn').on('click', function (e) {
+	e.preventDefault();
+	$(this).parent('.category-list').find('.category-list-col:hidden').css('display', 'flex');
+
+	var onBlock = $(this).parent('.category-list').find('.category-list-col:hidden').length;
+	if (onBlock <= 0) {
+		$(this).hide();
+	}
+});

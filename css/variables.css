@@ -160,3 +160,10 @@ a.color-black:hover {
 .bg-light-green {
   background: #e4f7e5;
 }
+
+.accent-green .btn-accent {
+  background: #29bd35;
+}
+.accent-green .btn-accent:hover {
+  background: #6989ad;
+}

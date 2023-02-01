@@ -1,6 +1,9 @@
 /*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1460px) {
+  .product-card {
+    padding: 30px 20px;
+  }
   .product-card-wrapper {
     padding: 30px 25px;
   }
@@ -13,6 +16,16 @@
   }
   .advantages-v2 .advantages-box .h3 {
     white-space: normal;
+  }
+  .table-category {
+    font-size: 14px;
+    margin: 0 0 30px;
+  }
+  .table-category thead {
+    font-size: 16px;
+  }
+  .table-category td:first-child, .table-category th:first-child {
+    max-width: 220px;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -100,6 +113,15 @@
   }
   .callback-contacts-manager__photo {
     height: auto;
+  }
+  .category-list__item {
+    font-size: 16px;
+  }
+  .category-list {
+    margin: 0 -7.5px 20px;
+  }
+  .filter-category {
+    margin: 0 0 20px;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -270,6 +292,92 @@
   }
   .callback-contacts-manager {
     margin: 0 auto 30px;
+  }
+  .category-list-col, .category-list-col-btn {
+    width: 25%;
+  }
+  .category-list__item {
+    font-size: 14px;
+  }
+  .product-card-line {
+    padding: 10px 20px;
+  }
+  .product-card-line__image {
+    width: 150px;
+    margin: 0 auto 20px;
+  }
+  .product-card-line__body {
+    width: 100%;
+    text-align: center;
+  }
+  .product-card-line__title {
+    margin: 0 auto 5px;
+  }
+  .product-card-line .availability-item {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product-card-line__footer {
+    width: 100%;
+    margin: 10px 0 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .table-category {
+    text-align: left;
+  }
+  .table-category thead {
+    display: none;
+  }
+  .table-category tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .table-category tbody td {
+    height: auto;
+  }
+  .table-category td {
+    height: auto;
+    padding: 10px;
+    width: 25%;
+  }
+  .table-category td::before {
+    content: attr(data-table);
+    display: block;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #999;
+    margin: 0 0 3px;
+  }
+  .table-category td:first-child {
+    max-width: none;
+    width: 50%;
+    padding: 10px;
+  }
+  .table-category td:last-child {
+    width: 25%;
+    max-width: none;
+    min-width: auto;
+  }
+  .table-category .btn-order {
+    height: 36px;
+    font-size: 14px;
+    width: 100%;
+  }
+  .table-category .availability-item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -443,6 +551,45 @@
   .callback-contacts-wrapper {
     padding: 20px;
   }
+  .category-list-col, .category-list-col-btn {
+    width: 33.33%;
+  }
+  .category-list-all {
+    font-size: 16px;
+    line-height: 1;
+  }
+  .sorting-box p {
+    margin: 0 0 5px;
+    width: 100%;
+  }
+  .table-category td {
+    width: 33.33%;
+  }
+  .table-category td:first-child {
+    width: 100%;
+  }
+  .table-category td:last-child {
+    width: 33.33%;
+  }
+  .page-category {
+    margin: 0 0 70px;
+  }
+  .filter-category-item .dropdown-toggle::after {
+    margin: 0 0 0 10px;
+  }
+  .filter-category-item {
+    margin: 0 10px 10px 0;
+    font-size: 14px;
+  }
+  .filter-category-item:last-child {
+    margin: 0 0 10px;
+  }
+  .filter-category-item .dropdown-menu {
+    min-width: 160px;
+  }
+  .filter-category-item .dropdown-menu .label-checkbox {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .h1 {
@@ -462,6 +609,9 @@
     padding: 0;
     width: 100%;
   }
+  .category-list-col, .category-list-col-btn {
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 420px) {
   .mb-30 {
@@ -480,6 +630,35 @@
   }
   .breadcrumbs li a::after {
     margin: 0 5px;
+  }
+  .product-card-line__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-card-line__price {
+    margin: 0 auto 10px;
+  }
+  .table-category td {
+    width: 50%;
+  }
+  .table-category td:last-child {
+    width: 50%;
+  }
+  .pagination .page-item {
+    margin: 0 7px 0 0;
+  }
+  .pagination .page-item:last-child {
+    margin: 0;
+  }
+  .pagination .page-link {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+  .btn-load-category {
+    margin: 30px auto 0;
   }
 }
 @media only screen and (min-width: 1200px) {
