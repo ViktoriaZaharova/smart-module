@@ -393,6 +393,9 @@
 			max-height: 100%
 	&__body
 		margin: 30px 0
+		display: flex
+		align-items: flex-start
+		flex-wrap: wrap
 	&__footer
 		width: 100%
 		margin: auto 0 0
@@ -416,9 +419,54 @@
 			background: $green
 			color: #fff
 
+.time-rent
+	margin: 0 0 0 auto
+	&__title
+		font-weight: bold
+		margin: 0 0 10px
+
+.list-radio
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	li
+		margin: 0 14px 5px 0
+		&:last-child
+			margin: 0 0 5px
+
+.label-radio-time
+	padding: 13px 16px
+	border-radius: 6px
+	line-height: 1
+	z-index: 1
+	cursor: pointer
+	.inp-radio
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		width: 100%
+		background: #f5f5f5
+		border: 1px solid transparent
+		border-radius: 6px
+		z-index: -1
+		&:checked
+			border: solid 1px $accent
+			~ .radio-text
+					color: $accent
+
+
 .product-card-v2
 	border: none
-	padding: 30px 24px
+	padding: 0
+	background: transparent
+	position: relative
+	min-height: 355px
+	overflow: hidden
+	.product-card-wrapper
+		padding: 30px 24px
+		border: solid 1px transparent
+		border-radius: 12px
 	.product-card__title
 		margin: 10px 0 0
 		font-weight: normal
@@ -429,6 +477,12 @@
 	.product-card__footer
 		opacity: 0
 	&:hover
+		z-index: 2
+		overflow: visible
+		box-shadow: none
+		.product-card-wrapper
+			box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21)
+			border: solid 1px #f6f6f6
 		.product-card__footer
 			opacity: 1
 		.product-card__title
@@ -1067,12 +1121,24 @@
 
 .sidebar
 	width: 100%
+	position: relative
+	&-close
+		width: 18px
+		height: 18px
+		fill: $accent
+		right: 20px
+		top: 20px
+		align-items: center
+		justify-content: center
+		display: none
+		position: absolute
 
 .sidebar-menu
 	width: 100%
 	border-radius: 6px
 	background: rgba($accent, .16)
 	padding: 16px 0
+	margin: 0 0 30px
 
 .sidebar-menu-list
 	width: 100%
@@ -1080,6 +1146,7 @@
 	line-height: 1
 	li
 		margin: 0 0 13px
+		border-left: 1px solid transparent
 		&:last-child
 			margin: 0
 		a
@@ -1087,20 +1154,107 @@
 			display: flex
 			align-items: center
 			color: #000
-			border-left: 1px solid transparent
+
 			padding: 0 0 0 24px
 			&:hover
 				border-color: $accent
-			&.active
-				border-color: $accent
-				.sidebar-menu-list__icon
-					display: none
+		&.active
+			border-color: $accent
+			.sidebar-menu-list__icon
+				display: none
 	&__icon
 		@include d-flex
 		width: 7px
 		min-width: 7px
 		height: 13px
 		margin: 0 10px 0 0
+
+.sidebar-submenu-list
+	margin: 15px 0 0
+	padding: 0 0 0 15px
+	li
+		margin: 0 0 14px
+		&:last-child
+			margin: 0
+		a
+			font-size: 18px
+			font-weight: 300
+			color: #000
+			&:hover
+				color: $accent
+
+.sidebar-filter
+	width: 100%
+	.list-checkbox
+		li
+			margin: 0 0 14px
+			&:last-child
+				margin: 0
+
+.accordion
+	width: 100%
+
+.accordion-item
+	border: none
+	border-radius: 6px
+	background: #f5f5f5
+	margin: 0 0 4px
+	&:last-child
+		margin: 0
+	&:last-of-type
+		border-radius: 6px
+	&:first-of-type
+		.accordion-button
+			border-radius: 6px
+
+.accordion-button
+	background: transparent
+	padding: 18px 20px
+	line-height: 1
+	&:not(.collapsed)
+		box-shadow: none
+		background: transparent
+		color: $accent
+		font-weight: bold
+		&::after
+			background: url('../img/dropdown-icon-blue.svg') no-repeat center
+			background-size: 100%
+	&:after
+		border: none
+		margin: 0 0 0 auto
+		width: 7px
+		height: 7px
+		background: url('../img/dropdown-icon.svg') no-repeat center
+		background-size: 100%
+	&:focus
+		box-shadow: none
+
+.accordion-body
+	padding: 0 20px 20px
+
+.sidebar-title
+	margin: 0 0 20px
+	font-size: 22px
+	font-weight: bold
+	line-height: 1
+
+.sidebar-title-mobile
+	display: none
+
+.btn-clear
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: normal
+	width: 100%
+	justify-content: center
+	margin: 20px 0 0
+	&__icon
+		@include d-flex
+		width: 13px
+		height: 15px
+		min-width: 13px
+		margin: 0 8px 0 0
+		fill: #777
 
 .sidebar-callback
 	margin: 30px 0 0
@@ -1142,6 +1296,7 @@
 		width: 20%
 		display: none
 		margin: 0 0 10px
+		max-width: 225px
 		&:nth-child(-n+4)
 			display: block
 	&__item
@@ -1263,6 +1418,8 @@
 		&.show
 			border-color: transparent
 			z-index: 1001
+			// &:after
+			// 	margin: 0 0 0 50px
 	&__clear
 		position: absolute
 		right: 10px
@@ -1453,5 +1610,75 @@
 		color: #000
 		&:hover
 			color: $accent
+
+.btn-sidebar
+	display: none
+	width: 100%
+	margin: 0 0 20px
+
+.accordion-v2
+	border-top: 1px solid rgba(#d8d8d8, .5)
+	border-bottom: 1px solid rgba(#d8d8d8, .5)
+	padding: 10px 0
+	.accordion-item
+		margin: 0
+		background: transparent
+	.accordion-button
+		padding: 10px 0
+	.accordion-body
+		background: #e7ecf2
+		border-radius: 6px
+		padding: 19px 20px
+
+.selected-filters
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	margin: 0 0 20px
+
+.selected-filters-item
+	display: flex
+	align-items: center
+	color: #fff
+	position: relative
+	background: $accent
+	margin: 0 16px 10px 0
+	border-radius: 6px
+	padding: 12px 34px 12px 15px
+	line-height: 1
+	&:last-child
+		margin: 0 0 10px
+	&__close
+		@include d-flex
+		position: absolute
+		top: 50%
+		transform: translate(0,-50%)
+		right: 14px
+		width: 10px
+		height: 10px
+		fill: #fff
+
+.list-sorting-v3
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+	li
+		margin: 0 20px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #010101
+			padding: 0
+			border-bottom: 1px solid transparent
+			border-radius: 0
+			&:hover
+				color: $accent
+				background: transparent
+			&.active
+				background: transparent
+				color: $accent
+				border-color: $accent
 
 // page-category	end

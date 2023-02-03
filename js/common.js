@@ -33,12 +33,35 @@ $('.btn-edit-location').on('click', function (e) {
 	$('.dropdown-menu-visible').fadeOut();
 });
 
+
+
 $('.category-list-col-btn').on('click', function (e) {
 	e.preventDefault();
-	$(this).parent('.category-list').find('.category-list-col:hidden').css('display', 'flex');
 
-	var onBlock = $(this).parent('.category-list').find('.category-list-col:hidden').length;
-	if (onBlock <= 0) {
-		$(this).hide();
+	var
+		$this = $(this),
+		content = $(this).parent('.category-list');
+
+
+	if (!$this.hasClass('trigger')) {
+		$this.addClass('trigger');
+		$this.find('.category-list-all').html('Свернуть');
+
+		content.find('.category-list-col:hidden').slideDown();
+	} else {
+		$this.removeClass('trigger');
+		$this.find('.category-list-all').html('Показать все');
+
+		content.find('.category-list-col').slice(4).slideUp();
 	}
+});
+
+$('.btn-sidebar').on('click', function (e) {
+	e.preventDefault();
+	$('.sidebar').fadeToggle();
+});
+
+$('.sidebar-close').on('click', function (e) {
+	e.preventDefault();
+	$('.sidebar').fadeOut();
 });

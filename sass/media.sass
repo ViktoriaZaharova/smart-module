@@ -129,6 +129,11 @@
 			width: 100%
 			margin: 0 0 10px
 
+	.product-card-v2
+		padding: 0
+		.product-card-wrapper
+			padding: 20px
+
 	.catalog-card
 		&__body
 			padding: 20px
@@ -206,6 +211,10 @@
 		li
 			margin: 0
 
+	.list-sorting-v3
+		li
+			margin: 0 10px 0 0		
+
 	.types-cabins-card-v2 .product-card__body, .types-cabins-card-v2 .product-card__footer, .product-card-v2 .product-card__footer
 		opacity: 1
 
@@ -214,6 +223,9 @@
 			padding: 250px 0 70px
 		.home-slider__nav
 			bottom: 30px
+
+	.product-card-v2
+		min-height: 315px
 
 	.product-card-v3
 		width: 33.33%
@@ -254,6 +266,31 @@
 	.contacts-box-v3 .contacts-box__text
 		min-width: 110px
 
+	.btn-sidebar
+		display: flex
+
+	.sidebar
+		display: none
+		position: fixed
+		left: 0
+		top: 0
+		width: 100%
+		max-width: 280px
+		height: 100%
+		overflow-y: auto
+		z-index: 5
+		background: #fff
+		box-shadow: 0 0 10px rgba(#000, .4)
+		padding: 20px 20px
+		&-close
+			display: flex
+
+		.sidebar-callback
+			display: none
+
+	.sidebar-title-mobile
+		display: block
+
 @media only screen and (max-width: 768px)
 	h2
 		font-size: 30px
@@ -265,8 +302,10 @@
 	.additional-equipment-wrapper
 		padding: 30px 20px 10px
 
-	.product-card-v2 .product-card__body
-		margin: 25px 0 15px
+	.product-card-v2
+		min-height: 290px
+		.product-card__body
+			margin: 25px 0 15px
 
 	.product-card-v3
 		width: 50%
@@ -314,7 +353,7 @@
 			flex-wrap: wrap
 		tbody
 			td
-				height: auto	
+				height: auto
 		td
 			height: auto
 			padding: 10px
@@ -336,12 +375,23 @@
 				min-width: auto
 		.btn-order
 			height: 36px
-			font-size: 14px	
+			font-size: 14px
 			width: 100%
 		.availability-item
 			justify-content: flex-start
-			margin: 0		
-				
+			margin: 0
+
+	.mt-90
+		margin-top: 70px
+
+	.list-sorting-v3 
+		li
+			margin: 0 10px 5px 0
+			&:last-child
+				margin: 0 0 5px
+
+	.selected-filters
+		margin: 0 0 10px				
 
 @media only screen and (max-width: 576px)
 	.h1
@@ -423,6 +473,9 @@
 			height: auto
 		.form-modal
 			width: calc(100% - 180px)
+
+	.product-card-v2
+		min-height: auto
 
 	.product-card-v3
 		width: 100%
@@ -524,7 +577,7 @@
 			&:first-child
 				width: 100%
 			&:last-child
-				width: 33.33%			
+				width: 33.33%
 
 	.page-category
 		margin: 0 0 70px
@@ -537,12 +590,14 @@
 		font-size: 14px
 		&:last-child
 			margin: 0 0 10px
-		.dropdown-menu 
+		.dropdown-menu
 			min-width: 160px
-			.label-checkbox	
+			.label-checkbox
 				font-size: 12px
-				
-		
+
+	.mt-90
+		margin-top: 30px
+
 @media only screen and (max-width: 480px)
 	.h1
 		font-size: 26px
@@ -592,9 +647,9 @@
 		td
 			width: 50%
 			&:last-child
-				width: 50%					
+				width: 50%
 
-	.pagination 
+	.pagination
 		.page-item
 			margin: 0 7px 0 0
 			&:last-child
@@ -606,8 +661,6 @@
 
 	.btn-load-category
 		margin: 30px auto 0
-
-
 
 // @media only screen and (max-width: 370px)
 

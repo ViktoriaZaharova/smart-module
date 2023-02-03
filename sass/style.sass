@@ -214,6 +214,12 @@ h2
 .mb-40
 	margin-bottom: 40px
 
+.mt-40
+	margin-top: 40px
+
+.mt-90
+	margin-top: 90px	
+
 .link
 	display: flex
 	align-items: center
@@ -338,7 +344,30 @@ h2
 .inp-check:checked ~ .checkbox-custom
 	background: #fff url("../img/checked-black.svg") no-repeat center
 	background-size: 10px
+
+.label-checkbox-v2
+	color: #000
+	font-size: 16px
+	.checkbox-custom
+		margin: 0 9px 0 0
+		width: 18px
+		height: 18px
+		min-width: 18px
+	.inp-check:checked ~ .checkbox-custom
+		background: $accent url("../img/checked-white.svg") no-repeat center
+		background-size: 9px
+		border-color: $accent
+	.inp-check:checked ~ .checkbox-text
+		color: $accent	
+
 //checkbox my end
+
+// radio my	
+.label-radio
+	position: relative
+
+		
+// radio my end	
 
 // scroll-vertical
 .scroll-vertical
@@ -398,13 +427,14 @@ h2
 	align-items: center
 	.page-item
 		margin: 0 12px 0 0
-		&:not(:first-child) 
+		&:not(:first-child)
 			.page-link
 				margin: 0
 		&.active
 			.page-link
+				z-index: 1
 				background: #282828
-				color: #fff		
+				color: #fff
 	.page-link
 		width: 36px
 		height: 36px
@@ -427,13 +457,12 @@ h2
 			background: transparent
 			&:hover
 				fill: $accent
-			
+
 .select-my
 	border: none
 	border-radius: 0
 	height: auto
 	width: fit-content
-	padding: 0 10px 0 0	
+	padding: 0 10px 0 0
 	background: url('../img/dropdown-icon.svg') no-repeat right center
 	background-size: 7px
-

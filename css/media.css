@@ -136,6 +136,12 @@
     width: 100%;
     margin: 0 0 10px;
   }
+  .product-card-v2 {
+    padding: 0;
+  }
+  .product-card-v2 .product-card-wrapper {
+    padding: 20px;
+  }
   .catalog-card__body {
     padding: 20px;
   }
@@ -213,6 +219,9 @@
   .list-sorting li {
     margin: 0;
   }
+  .list-sorting-v3 li {
+    margin: 0 10px 0 0;
+  }
   .types-cabins-card-v2 .product-card__body, .types-cabins-card-v2 .product-card__footer, .product-card-v2 .product-card__footer {
     opacity: 1;
   }
@@ -221,6 +230,9 @@
   }
   .home-v2 .home-slider__nav {
     bottom: 30px;
+  }
+  .product-card-v2 {
+    min-height: 315px;
   }
   .product-card-v3 {
     width: 33.33%;
@@ -267,6 +279,37 @@
   .contacts-box-v3 .contacts-box__text {
     min-width: 110px;
   }
+  .btn-sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sidebar {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 280px;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 5;
+    background: #fff;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 20px 20px;
+  }
+  .sidebar-close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .sidebar .sidebar-callback {
+    display: none;
+  }
+  .sidebar-title-mobile {
+    display: block;
+  }
 }
 @media only screen and (max-width: 768px) {
   h2 {
@@ -277,6 +320,9 @@
   }
   .additional-equipment-wrapper {
     padding: 30px 20px 10px;
+  }
+  .product-card-v2 {
+    min-height: 290px;
   }
   .product-card-v2 .product-card__body {
     margin: 25px 0 15px;
@@ -379,6 +425,18 @@
             justify-content: flex-start;
     margin: 0;
   }
+  .mt-90 {
+    margin-top: 70px;
+  }
+  .list-sorting-v3 li {
+    margin: 0 10px 5px 0;
+  }
+  .list-sorting-v3 li:last-child {
+    margin: 0 0 5px;
+  }
+  .selected-filters {
+    margin: 0 0 10px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .h1 {
@@ -459,6 +517,9 @@
   }
   .modal-v3 .form-modal {
     width: calc(100% - 180px);
+  }
+  .product-card-v2 {
+    min-height: auto;
   }
   .product-card-v3 {
     width: 100%;
@@ -589,6 +650,9 @@
   }
   .filter-category-item .dropdown-menu .label-checkbox {
     font-size: 12px;
+  }
+  .mt-90 {
+    margin-top: 30px;
   }
 }
 @media only screen and (max-width: 480px) {
