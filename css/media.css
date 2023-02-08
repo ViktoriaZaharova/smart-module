@@ -72,7 +72,7 @@
   .advantages-wrapper {
     padding: 30px 20px;
   }
-  .additional-equipment-v2 .additional-equipment-list-item {
+  .additional-equipment-list-item-v3 {
     padding: 0 0 0 65px;
   }
   .types-cabins {
@@ -154,11 +154,11 @@
   .catalog-card__text {
     font-size: 14px;
   }
-  .additional-equipment-v2 .additional-equipment-list-item {
+  .additional-equipment-list-item-v3 {
     width: 33.33%;
     margin: 0 0 30px;
   }
-  .additional-equipment-v2 .additional-equipment-list-item:last-child {
+  .additional-equipment-list-item-v3:last-child {
     margin: 0 0 30px;
   }
   .product-card-v3 {
@@ -336,7 +336,7 @@
   h2 {
     font-size: 30px;
   }
-  .additional-equipment-v2 .additional-equipment-list-item {
+  .additional-equipment-list-item-v3 {
     width: 50%;
   }
   .additional-equipment-wrapper {
@@ -458,6 +458,23 @@
   .selected-filters {
     margin: 0 0 10px;
   }
+  .nav-tabs-product-v3 {
+    font-size: 16px;
+    margin: 40px 0 0;
+  }
+  .nav-tabs-product-v3 .nav-item {
+    margin: 0;
+  }
+  .nav-tabs-product-v3 .nav-link {
+    border-radius: 6px;
+  }
+  .nav-tabs-product-v3 .nav-link.active {
+    border-bottom-color: #6989ad;
+  }
+  .tab-content-product-v2 {
+    padding: 15px;
+    border-radius: 6px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .h1 {
@@ -526,7 +543,7 @@
   .home-v1 .fixed-social {
     display: none;
   }
-  .additional-equipment-v2 .additional-equipment-list-item {
+  .additional-equipment-list-item-v3 {
     width: 100%;
   }
   .modal-v3 .modal-header__photo {
@@ -705,6 +722,22 @@
   .nav-tabs-product-v2 {
     margin: 40px 0 0;
     font-size: 15px;
+  }
+  .additional-equipment-wrapper-v2 {
+    padding: 20px;
+  }
+  .additional-equipment-wrapper-v2::before {
+    display: none;
+  }
+  .additional-equipment-wrapper-v2 .additional-equipment-list-item {
+    width: 100%;
+    padding: 0 0 0 65px;
+  }
+  .nav-tabs-product-v3 {
+    margin: 40px 0 0;
+  }
+  .tab-content-product {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 480px) {

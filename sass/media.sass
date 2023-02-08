@@ -69,9 +69,8 @@
 	.advantages-wrapper
 		padding: 30px 20px
 
-	.additional-equipment-v2
-		.additional-equipment-list-item
-			padding: 0 0 0 65px
+	.additional-equipment-list-item-v3
+		padding: 0 0 0 65px
 
 	.types-cabins
 		margin: 70px 0
@@ -120,10 +119,10 @@
 		margin: 0 0 20px
 
 	.time-rent
-		margin: 10px 0 0	
+		margin: 10px 0 0
 
 	.product-gallery-item
-		padding: 30px	
+		padding: 30px
 
 @media only screen and (max-width: 1100px)
 	.product-card
@@ -146,12 +145,11 @@
 		&__text
 			font-size: 14px
 
-	.additional-equipment-v2
-		.additional-equipment-list-item
-			width: 33.33%
+	.additional-equipment-list-item-v3
+		width: 33.33%
+		margin: 0 0 30px
+		&:last-child
 			margin: 0 0 30px
-			&:last-child
-				margin: 0 0 30px
 
 	.product-card-v3
 		padding: 0
@@ -219,7 +217,7 @@
 
 	.list-sorting-v3
 		li
-			margin: 0 10px 0 0		
+			margin: 0 10px 0 0
 
 	.types-cabins-card-v2 .product-card__body, .types-cabins-card-v2 .product-card__footer, .product-card-v2 .product-card__footer
 		opacity: 1
@@ -301,22 +299,21 @@
 		margin: 30px 0
 
 	.product-order-info-v2
-		margin: 0	
+		margin: 0
 
 	.slider-nav-v2
 		justify-content: center
 		margin: 10px 0 0
-		
+
 	.recommended-products
-		margin: 60px 0 0				
+		margin: 60px 0 0
 
 @media only screen and (max-width: 768px)
 	h2
 		font-size: 30px
 
-	.additional-equipment-v2
-		.additional-equipment-list-item
-			width: 50%
+	.additional-equipment-list-item-v3
+		width: 50%
 
 	.additional-equipment-wrapper
 		padding: 30px 20px 10px
@@ -403,14 +400,28 @@
 	.mt-90
 		margin-top: 70px
 
-	.list-sorting-v3 
+	.list-sorting-v3
 		li
 			margin: 0 10px 5px 0
 			&:last-child
 				margin: 0 0 5px
 
 	.selected-filters
-		margin: 0 0 10px				
+		margin: 0 0 10px
+
+	.nav-tabs-product-v3
+		font-size: 16px
+		margin: 40px 0 0
+		.nav-item
+			margin: 0
+		.nav-link
+			border-radius: 6px
+			&.active
+				border-bottom-color: #6989ad
+
+	.tab-content-product-v2
+		padding: 15px
+		border-radius: 6px			
 
 @media only screen and (max-width: 576px)
 	.h1
@@ -479,9 +490,8 @@
 		.fixed-social
 			display: none
 
-	.additional-equipment-v2
-		.additional-equipment-list-item
-			width: 100%
+	.additional-equipment-list-item-v3
+		width: 100%
 
 	.modal-v3
 		.modal-header__photo
@@ -617,36 +627,50 @@
 	.mt-90
 		margin-top: 30px
 
-	.box-text 
+	.box-text
 		p
-			margin: 0 0 20px 
+			margin: 0 0 20px
 			&:last-child
 				margin: 0
 
-	.accordion-v3 
-		.accordion-button		
+	.accordion-v3
+		.accordion-button
 			font-size: 16px
 
 	.menu-catalog
-		font-size: 16px		
+		font-size: 16px
 
 	.nav-tabs-v2
 		font-size: 16px
 		.nav-item
 			margin: 0 5px 5px 0
 			&:last-child
-				margin: 0 0 5px		
+				margin: 0 0 5px
 
-	.product-card 
+	.product-card
 		.btn
 			padding: 0 14px
-			
+
 	.product-gallery-item
-		padding: 20px			
+		padding: 20px
 
 	.nav-tabs-product-v2
 		margin: 40px 0 0
-		font-size: 15px					
+		font-size: 15px
+
+	.additional-equipment-wrapper-v2
+		padding: 20px
+		&::before
+			display: none
+		.additional-equipment-list-item
+			width: 100%
+			padding: 0 0 0 65px
+
+	.nav-tabs-product-v3
+		margin: 40px 0 0
+
+	.tab-content-product
+		font-size: 16px	
 
 @media only screen and (max-width: 480px)
 	.h1
@@ -687,7 +711,7 @@
 			left: 0
 		.slick-next
 			left: auto
-			right: 0				
+			right: 0
 
 @media only screen and (max-width: 420px)
 	.mb-30

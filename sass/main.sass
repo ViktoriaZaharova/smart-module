@@ -670,52 +670,77 @@
 			margin: 0 0 0 auto
 
 // .additional-equipment-v2
-.additional-equipment-v2
-	.additional-equipment-list
+.additional-equipment-list-v3
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	font-size: 18px
+	line-height: 1
+
+.additional-equipment-list-item-v3
+	margin: 0 0 30px
+	border: none
+	background: transparent
+	padding: 0 20px 0 66px
+	width: 25%
+	min-height: 48px
+	position: relative
+	flex-direction: column
+	align-items: flex-start
+	.additional-equipment-list-item__icon
+		border-radius: 6px
+		background-color: #6989ad
+		width: 48px
+		height: 48px
+		min-width: 48px
+		padding: 10px
+		margin: 0
+		position: absolute
+		left: 0
+		top: 0
+		img
+			filter: invert(1) grayscale(0)
+	.additional-equipment-list-item__price
 		width: 100%
-		display: flex
-		align-items: flex-start
-		flex-wrap: wrap
-		font-size: 18px
-		line-height: 1
-	.additional-equipment-list-item
-		margin: 0 0 40px
-		border: none
+		font-size: 14px
+		margin: 5px 0 0
+	&:last-child
+		border-radius: 0
+		margin: 0 0 30px
+	&:first-child
+		border-radius: 0
 		background: transparent
-		padding: 0 20px 0 66px
-		width: 25%
-		min-height: 48px
-		position: relative
-		flex-direction: column
-		align-items: flex-start
-		&__icon
-			border-radius: 6px
-			background-color: #6989ad
-			width: 48px
-			height: 48px
-			min-width: 48px
-			padding: 10px
-			margin: 0
-			position: absolute
-			left: 0
-			top: 0
-			img
-				filter: invert(1) grayscale(0)
-		&__price
-			width: 100%
-			font-size: 14px
-			margin: 5px 0 0
-		&:last-child
-			border-radius: 0
-			margin: 0 0 56px
-		&:first-child
-			border-radius: 0
 
 .additional-equipment-wrapper
 	width: 100%
 	border-radius: 20px
 	background-color: #f5f5f5
 	padding: 40px 40px 10px
+
+.additional-equipment-wrapper-v2
+	padding: 20px 20px 4px
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		left: 47%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: 1px
+		height: calc(100% - 40px)
+		background: rgba(#e1e1e1, .5)
+	.additional-equipment-list-item
+		width: 50%
+		margin: 0 0 16px
+		font-size: 16px
+		justify-content: center
+	.additional-equipment-list-item__price
+		font-size: 14px
+		color: #999
+
+.additional-equipment-wrapper-v3
+	padding-bottom: 0
 
 .additional-equipment-list-item-v2
 	padding: 15px 10px 15px 25px
@@ -1819,6 +1844,16 @@
 	&-box
 		margin: 0 0 30px
 		line-height: 1.1
+		ul
+			li
+				margin: 0 0 8px
+				&:last-child
+					margin: 0
+		.list-radio
+			li
+				margin: 0 14px 5px 0
+				&:last-child
+					margin: 0 0 5px
 		&:last-child
 			margin: 0
 		&__title
@@ -1866,13 +1901,13 @@
 	input
 		display: none
 		&:checked
-			~ .radio-checked
-				display: flex
-				align-items: center
-				justify-content: center
 			~ .radio-text
 				text-decoration: underline
 				color: $accent
+				.radio-checked
+					display: flex
+					align-items: center
+					justify-content: center
 	.radio-image
 		border-radius: 6px
 		background-color: #282828
@@ -1880,8 +1915,8 @@
 		width: 48px
 		height: 48px
 		min-width: 48px
-		overflow: hidden
 		img
+			border-radius: 6px
 			width: 100%
 			height: 100%
 			object-fit: cover
@@ -1920,10 +1955,40 @@
 				box-shadow: 0px 4px 5px 0 rgba(105, 137, 173, 0.21)
 			~ .radio-text
 				text-decoration: none
-				color: #000	
+				color: #000
 				.radio-checked
 					border-color: $accent
 					background: $accent
+
+.label-radio-product-v3
+	font-size: 14px
+	font-weight: normal
+	.radio-image
+		position: relative
+		border: none
+		overflow: visible
+
+		&::before
+			content: ''
+			position: absolute
+			left: 50%
+			top: 50%
+			width: calc(100% + 8px)
+			height: calc(100% + 8px)
+			transform: translate(-50%,-50%)
+			border-radius: 6px
+			border: 2px solid $accent
+			opacity: 0
+	.radio-checked
+		top: -8px
+		right: -8px		
+	input
+		&:checked
+			~ .radio-image
+				&::before
+					opacity: 1
+			~ .radio-text
+				text-decoration: none		
 
 .radio-checked
 	top: 3px
@@ -1958,8 +2023,12 @@
 .product-order-info-v2
 	padding: 0
 	box-shadow: none
+	max-width: 300px
 	.price
 		margin: 0 0 20px
+
+.product-order-info-v3
+	margin-left: auto
 
 .tooltip-wrapper
 	position: relative
@@ -2054,6 +2123,29 @@
 		&.active
 			background: $accent
 			color: #fff
+
+.nav-tabs-product-v3
+	margin: 80px 0 0
+	.nav-item
+		margin: 0 10px 0 0
+		&:last-child
+			margin: 0
+	.nav-link
+		border-radius: 6px 6px 0 0
+		background: transparent
+		margin-bottom: -1px
+		&.active
+			color: #000
+			background: #e7ecf2
+			border-bottom-color: transparent		
+
+.tab-content-product-v2
+	margin: 0
+	background: #e7ecf2
+	border: 1px solid $accent		
+	border-radius: 0 6px 6px 6px
+	padding: 28px 34px 27px 17px
+
 
 .recommended-products
 	margin: 87px 0 0
