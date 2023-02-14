@@ -26,6 +26,7 @@
 
 .font-Circe {
   font-family: "Circe", sans-serif;
+  line-height: 1.3;
 }
 .font-Circe button, .font-Circe btn, .font-Circe input, .font-Circe textarea, .font-Circe select {
   font-family: "Circe", sans-serif;

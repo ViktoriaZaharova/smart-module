@@ -27,6 +27,22 @@
   .table-category td:first-child, .table-category th:first-child {
     max-width: 220px;
   }
+  .calculate-box .btn {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .calculate-box .dropdown {
+    margin: 0 0 30px;
+  }
+  .information-box {
+    margin: 20px 0 0;
+  }
+  .calculate-box-range {
+    margin: 0 0 30px;
+  }
+  .accordion-item-v2 .accordion-collapse {
+    max-width: 800px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   .catalog-card-v2 {
@@ -40,6 +56,12 @@
   }
   .contacts-box-v3 .contacts-box__text {
     min-width: auto;
+  }
+  .landing-home h1 {
+    font-size: 50px;
+  }
+  .landing-home-advantages-item {
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 1330px) {
@@ -63,6 +85,15 @@
   }
   .callback-contacts-v3 .consent {
     max-width: 300px;
+  }
+  .accordion-item-v2 .accordion-collapse {
+    max-width: 650px;
+  }
+  .clients-slider-item {
+    padding: 0 10px;
+  }
+  .clients h2 {
+    margin: 0 auto 30px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -127,6 +158,46 @@
     margin: 10px 0 0;
   }
   .product-gallery-item {
+    padding: 30px;
+  }
+  .landing-home-callback {
+    padding: 30px 40px;
+  }
+  .callback-offer {
+    margin: 70px 0;
+  }
+  .callback-offer-wrapper {
+    padding: 0 30px;
+  }
+  .callback-offer-content {
+    margin: 50px 0;
+  }
+  .works-slider-gallery-item {
+    height: 600px;
+  }
+  .accordion-item-v2 .accordion-collapse {
+    max-width: none;
+    width: 100%;
+  }
+  .accordion-item-v2 .accordion-item__arrow {
+    position: relative;
+    margin: 0 0 0 auto;
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+    right: 0;
+  }
+  .accordion-item-v2 .accordion-header {
+    width: 100%;
+  }
+  .accordion-item-v2 .accordion-body {
+    padding: 0 0 20px;
+  }
+  .accordion-item-v2 .accordion-button:not(.collapsed) .accordion-item__title {
+    padding: 0;
+    max-width: none;
+  }
+  .contacts-section-wrapper {
     padding: 30px;
   }
 }
@@ -331,6 +402,57 @@
   .recommended-products {
     margin: 60px 0 0;
   }
+  .landing-home-callback {
+    margin: 30px auto 0;
+  }
+  .landing-home-advantages-item {
+    max-width: 540px;
+    margin: 0 auto 20px;
+    font-size: 22px;
+  }
+  .landing-home-advantages-item:last-child {
+    margin: 0 auto;
+  }
+  .callback-offer-image {
+    margin: 0 auto;
+  }
+  .works-slider-gallery {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .works-slider-content {
+    max-width: none;
+    padding: 0;
+    margin: 0 0 20px;
+    width: 100%;
+  }
+  .works-slider-content__info {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .works-slider-content__info-item {
+    margin-right: 20px;
+  }
+  .advantages-company, .video-reviews, .employee, .clients {
+    margin: 70px 0;
+  }
+  .advantages-company-box {
+    padding: 30px 20px;
+  }
+  .clients-slider__nav {
+    margin: 30px auto 0;
+  }
+  .contacts-section {
+    padding: 0;
+  }
+  .contacts-section__map {
+    position: relative;
+    height: 400px;
+    margin: 20px auto 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   h2 {
@@ -474,6 +596,47 @@
   .tab-content-product-v2 {
     padding: 15px;
     border-radius: 6px;
+  }
+  .landing-home {
+    padding: 80px 0;
+  }
+  .landing-home h1 {
+    font-size: 40px;
+    margin: 0 auto 30px;
+  }
+  .landing-home-advantages-item {
+    font-size: 18px;
+  }
+  .landing-home-advantages-item__icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    padding: 12px;
+    margin: 0 10px 0 0;
+  }
+  .video-reviews-slider__nav, .certificates-slider__nav {
+    margin: 20px auto 0;
+  }
+  .accordion-item-v2 .accordion-item__arrow {
+    max-width: 50px;
+    min-width: 50px;
+    height: 50px;
+    padding: 15px;
+  }
+  .accordion-item-v2 .accordion-item__number {
+    margin: 0 20px 0 0;
+    min-width: 67px;
+  }
+  .accordion-item-v2 .accordion-item__number span {
+    font-size: 60px;
+  }
+  .accordion-item-v2 .accordion-item__number svg {
+    width: 60px;
+    min-width: 60px;
+    height: 50px;
+  }
+  .accordion-item-v2 .accordion-item__title {
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -739,6 +902,72 @@
   .tab-content-product {
     font-size: 16px;
   }
+  .landing-home-callback {
+    padding: 30px;
+  }
+  .landing-home-callback__title {
+    font-size: 20px;
+  }
+  .landing-home h1 {
+    font-size: 30px;
+  }
+  .form-callback-offer {
+    max-width: none;
+  }
+  .form-callback-offer label, .form-callback-offer button, .form-callback-offer .consent {
+    width: 100%;
+    max-width: none;
+  }
+  .form-callback-offer .consent {
+    margin: 10px 0 0;
+  }
+  .works-slider-gallery-item {
+    height: 400px;
+  }
+  .accordion-item-v2 .accordion-item__number {
+    min-width: 50px;
+  }
+  .accordion-item-v2 .accordion-item__number span {
+    font-size: 40px;
+  }
+  .accordion-item-v2 .accordion-item__number svg {
+    width: 40px;
+    min-width: 40px;
+    height: 30px;
+  }
+  .accordion-item-v2 .accordion-button {
+    padding: 20px 0;
+  }
+  .accordion-item-v2 .accordion-item__arrow {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    padding: 7px;
+  }
+  .accordion-item-v2 .accordion-collapse {
+    font-size: 16px;
+  }
+  .contacts-section-box {
+    margin: 0 0 30px;
+  }
+  .contacts-section-box:last-child {
+    margin: 0 0 30px;
+  }
+  .contacts-section-box__title {
+    font-size: 18px;
+  }
+  .contacts-section-box .address {
+    font-size: 16px;
+  }
+  .contacts-section-box .phone-box, .contacts-section-box .mail-box {
+    margin: 0 0 20px;
+  }
+  .contacts-section-box .phone-box a, .contacts-section-box .mail-box a {
+    font-size: 17px;
+  }
+  .contacts-section-wrapper {
+    padding: 30px 20px 0;
+  }
 }
 @media only screen and (max-width: 480px) {
   .h1 {
@@ -788,6 +1017,9 @@
     left: auto;
     right: 0;
   }
+  h2 {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 420px) {
   .mb-30 {
@@ -835,6 +1067,9 @@
   }
   .btn-load-category {
     margin: 30px auto 0;
+  }
+  .works-slider-gallery-item {
+    height: 340px;
   }
 }
 @media only screen and (min-width: 1200px) {

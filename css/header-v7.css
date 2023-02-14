@@ -88,9 +88,20 @@ header .phone-icon {
   background-color: #fff;
   min-width: 314px;
   border: none;
-  border-radius: 0 0 6px 6px;
+  border-radius: 6px;
   left: -30px !important;
-  top: 40px !important;
+  top: 38px !important;
+  -webkit-filter: drop-shadow(0px 0 10px rgba(41, 41, 41, 0.43));
+          filter: drop-shadow(0px 0 10px rgba(41, 41, 41, 0.43));
+}
+.menu .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: -15px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 15px solid #fff;
 }
 
 .submenu {

@@ -136,12 +136,12 @@ header .list-social a:hover {
 }
 .menu .dropdown-menu {
   padding: 22px 23px 26px 24px;
-  background-color: #fff;
+  background-color: #6989ad;
   min-width: 314px;
   border: none;
-  border-radius: 0 0 6px 6px;
+  border-radius: 20px;
   left: -30px !important;
-  top: 40px !important;
+  top: 20px !important;
 }
 
 .submenu {
@@ -156,10 +156,10 @@ header .list-social a:hover {
 }
 .submenu li a {
   font-size: 18px;
-  color: #000;
+  color: #fff;
 }
 .submenu li a:hover {
-  color: #6989ad;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -686,9 +686,6 @@ header .list-social a:hover {
   }
   .submenu li {
     margin: 0 0 18px;
-  }
-  .menu .dropdown-menu {
-    top: 36px !important;
   }
   .location-wrapper .dropdown-menu {
     left: -10px !important;

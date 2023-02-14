@@ -68,6 +68,10 @@ body {
   color: #000;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
