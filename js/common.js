@@ -180,13 +180,13 @@ $('.clients-slider2').slick({
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
 	responsive: [
 		{
-			breakpoint: 576,
+			breakpoint: 768,
 			settings: {
 				slidesToShow: 3,
 			}
 		},
 		{
-			breakpoint: 420,
+			breakpoint: 576,
 			settings: {
 				slidesToShow: 2,
 			}
@@ -339,6 +339,20 @@ $('.works-slider2').slick({
 	appendArrows: '.works-slider__nav2',
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
 });
 
 $('.reviews-slider1').slick({
@@ -346,6 +360,20 @@ $('.reviews-slider1').slick({
 	appendArrows: '.reviews-slider__nav1',
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
 });
 
 $('.employee-slider1').slick({
@@ -353,6 +381,26 @@ $('.employee-slider1').slick({
 	appendArrows: '.employee-slider__nav1',
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
 });
 // slider end
 

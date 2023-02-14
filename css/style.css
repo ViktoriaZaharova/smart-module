@@ -185,6 +185,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   text-align: center;
   padding: 10px 25px;
   font-size: 18px;
+  line-height: 1.1;
   font-weight: bold;
   height: 46px;
   border-radius: 6px;

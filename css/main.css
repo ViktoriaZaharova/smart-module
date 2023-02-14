@@ -700,8 +700,7 @@
 .product-card-v2 .product-card__title {
   margin: 10px 0 0;
   font-weight: normal;
-  -moz-text-align-last: left;
-       text-align-last: left;
+  text-align: left;
   font-size: 16px;
 }
 .product-card-v2 .product-card__body {
@@ -4451,6 +4450,7 @@
   font-size: 22px;
   font-weight: bold;
   min-height: 40px;
+  color: #000;
 }
 .accordion-item-v3 .accordion-button:after {
   display: none;
@@ -4467,6 +4467,9 @@
 }
 .accordion-item-v3 .accordion-button:not(.collapsed) .accordion-item__icon::before {
   height: 0;
+}
+.accordion-item-v3:first-of-type {
+  border-radius: 0;
 }
 .accordion-item-v3:first-of-type .accordion-button {
   border-radius: 0;
