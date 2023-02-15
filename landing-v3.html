@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Smart-Module</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/header-v1.css">
+	<link rel="stylesheet" href="css/footer-v3.css">
+	<link rel="stylesheet" href="css/modal-v1.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper font-Circe">
+
+		<div class="mobile-menu">
+			<div class="mobile-menu__close"></div>
+			<div class="mobile-menu__head">
+				<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
+			</div>
+			<div class="mobile-menu__body">
+				<a href="#" class="location-city" data-bs-toggle="modal" data-bs-target="#locationModal">
+					<span class="location-city__icon"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#location"></use>
+						</svg></span>
+					<span class="location-city__text">Санкт-Петербург</span>
+				</a>
+
+				<ul class="menu my-ul">
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="sales.html">Акции</a></li>
+					<li><a href="projects.html">Проекты</a></li>
+					<li class="dropdown"><a href="services.html" class="dropdown-toggle" data-bs-toggle="dropdown">Услуги</a>
+						<div class="dropdown-menu">
+							<ul class="submenu menu my-ul">
+								<li><a href="#">Вахтовые поселки</a></li>
+								<li><a href="#">Модульные здания</a></li>
+								<li><a href="#">Блок-контейнеры</a></li>
+								<li><a href="#">Переоборудование контейнеров</a></li>
+								<li><a href="#">Деревянные дома</a></li>
+								<li><a href="#">Пост охраны</a></li>
+								<li><a href="#">Павильоны</a></li>
+								<li><a href="#">Спец. контейнеры</a></li>
+								<li><a href="#">Деревянные бытовки</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="technology.html">Технология</a></li>
+					<li><a href="industries.html">Отрасли</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="prices.html">Цены</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+				<form method="post" class="form-search">
+					<label>
+						<input type="text" placeholder="Поиск" name="search">
+						<button type="submit">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</label>
+				</form>
+			</div>
+			<div class="mobile-menu__footer">
+
+				<a href="mailto:spb10@smart-module.ru" class="mail">
+					<span class="mail-icon"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#mail2"></use>
+						</svg>
+					</span>
+					<span class="mail-text">spb10@smart-module.ru</span>
+				</a>
+
+				<div class="header-box">
+					<a href="tel:+78122004118" class="phone">
+						<span class="phone-icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#phone"></use>
+							</svg>
+						</span>
+						<span class="phone-text">8 (812) 200-41-18</span>
+					</a>
+				</div>
+
+				<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать
+					заявку</a>
+			</div>
+		</div>
+
+		<header class="header-v1">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap align-items-center">
+						<div class="btn-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+
+						<div class="location-wrapper dropdown">
+							<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown">
+								<span class="location-city__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#location"></use>
+									</svg></span>
+								<span class="location-city__text">Санкт-Петербург</span>
+							</a>
+							<div class="dropdown-menu">
+								<form method="post" class="form-search">
+									<label>
+										<input type="text" placeholder="Ваш город" name="search">
+										<button type="submit">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#search"></use>
+											</svg>
+										</button>
+									</label>
+								</form>
+
+								<a href="#" class="link-autosearch color-accent">Автоопределение</a>
+
+								<ul class="list-cities my-ul scroll-vertical">
+									<li><a href="#">Москва</a></li>
+									<li><a href="#" class="checked">Санкт-Петербург</a></li>
+									<li><a href="#">Казань</a></li>
+									<li><a href="#">Нижний Новгород</a></li>
+									<li><a href="#">Екатеренбург</a></li>
+									<li><a href="#">Самара</a></li>
+									<li><a href="#">Ростов-на-Дону</a></li>
+									<li><a href="#">Уфа</a></li>
+									<li><a href="#">Челябинск</a></li>
+									<li><a href="#">Саратов</a></li>
+									<li><a href="#">Самара</a></li>
+									<li><a href="#">Аксай</a></li>
+									<li><a href="#">Александров</a></li>
+									<li><a href="#">Александров Гай</a></li>
+									<li><a href="#">Александровск</a></li>
+									<li><a href="#">Алексеевка
+											(Самарская область)</a></li>
+									<li><a href="#">Баксан</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<a href="mailto:spb10@smart-module.ru" class="mail">
+							<span class="mail-icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#mail2"></use>
+								</svg>
+							</span>
+							<span class="mail-text">spb10@smart-module.ru</span>
+						</a>
+
+						<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
+
+						<div class="header-box">
+							<a href="tel:+78122004118" class="phone">
+								<span class="phone-icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#phone"></use>
+									</svg>
+								</span>
+								<span class="phone-text">8 (812) 200-41-18</span>
+							</a>
+
+							<a href="#" class="link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать
+								звонок</a>
+						</div>
+
+						<div class="search-header dropdown">
+							<a href="#" class="btn-search" data-bs-toggle="dropdown">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+							</a>
+
+							<div class="dropdown-menu">
+								<form method="post" class="form-search">
+									<label>
+										<input type="text" placeholder="Поиск" name="search">
+										<button type="submit">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#search"></use>
+											</svg>
+										</button>
+									</label>
+								</form>
+							</div>
+						</div>
+
+						<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать заявку</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="home home-v2 landing-home landing-home-v1 landing-home-v3">
+			<img src="img/lp-bg1.jpg" alt="" class="landing-home__bg">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-lg-7 col-xl-8">
+						<h1>Быстровозводимые соружения
+							от производителя</h1>
+
+						<div class="box-text">
+							<p>Компания «Смарт-модуль» – строительный подрядчик, поставщик сооружений
+								из металлоконструкций в Санкт-Петербурге, области. У нас доступны
+								металлические бытовки, контейнеры для возведения зданий любой площади.</p>
+						</div>
+
+						<div class="special-offer special-offer-v2">
+							<div class="special-offer__title">Получите специальное предложение!</div>
+							<form method="post" class="special-offer-form special-offer-form-v2">
+								<label>
+									<input type="text" placeholder="Ваше телефон" name="phone">
+								</label>
+								<button type="submit" class="btn btn-green">Отправить</button>
+								<label class="label-checkbox">
+									<input type="checkbox" class="inp-check" name="checkbox" checked>
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">Даю согласие на обработку <a href="#"
+											class="d-inline color-accent">персональных
+											данных</a></span>
+								</label>
+							</form>
+
+						</div>
+					</div>
+
+					<div class="col-12 col-lg-5 col-xl-4">
+						<div class="landing-home-advantages-item">
+							<div class="landing-home-advantages-item__icon"><img src="img/lp-home1.svg" alt=""></div>
+							<div class="landing-home-advantages-item__body">Аренда от <strong>5000р без залога</strong></div>
+						</div>
+						<div class="landing-home-advantages-item">
+							<div class="landing-home-advantages-item__icon"><img src="img/lp-home2.svg" alt=""></div>
+							<div class="landing-home-advantages-item__body"><strong>Срочная доставка</strong> в день заказа</div>
+						</div>
+						<div class="landing-home-advantages-item">
+							<div class="landing-home-advantages-item__icon"><img src="img/lp-home3.svg" alt=""></div>
+							<div class="landing-home-advantages-item__body">Автопарк манипуляторов <strong>работает 24/7</strong>
+							</div>
+						</div>
+						<div class="landing-home-advantages-item">
+							<div class="landing-home-advantages-item__icon"><img src="img/lp-home4.svg" alt=""></div>
+							<div class="landing-home-advantages-item__body">На складе <strong>более 100 бытовок</strong></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<ul class="fixed-social my-ul">
+				<li><a href="#">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#telegram"></use>
+						</svg>
+					</a></li>
+				<li><a href="#">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#vk"></use>
+						</svg>
+					</a></li>
+				<li><a href="#">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#youtube"></use>
+						</svg>
+					</a></li>
+			</ul>
+		</main>
+
+		<section class="prices-services">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="page-title-wrapper">
+							<ul class="breadcrumbs my-ul">
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="services.html">Услуги</a></li>
+								<li><span>Название услуги</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12">
+						<h2>Узнайте стоимость за 2 минуты и получите подарок!</h2>
+						<div class="section-description">
+							<p>Мы подготовили для Вас тест из 6 вопросов. Выберите, что нужно сделать, а мы займемся расчетом</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-catalog section-catalog-v2">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 mb-40 text-center">
+						<h2>Каталог товаров</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category1.png" alt="">
+							</span>
+							<span class="catalog-card__title">Блок-контейнеры</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category2.png" alt="">
+							</span>
+							<span class="catalog-card__title">Бытовки</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category3.png" alt="">
+							</span>
+							<span class="catalog-card__title">Ангары</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category4.png" alt="">
+							</span>
+							<span class="catalog-card__title">Модульные здания</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category1.png" alt="">
+							</span>
+							<span class="catalog-card__title">Торговые павильоны</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category2.png" alt="">
+							</span>
+							<span class="catalog-card__title">Дома</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category3.png" alt="">
+							</span>
+							<span class="catalog-card__title">Быстровозводимые здания</span>
+						</a>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4 catalog-card-col mb-30">
+						<a href="catalog.html" class="catalog-card catalog-card-v3">
+							<span class="catalog-card__bg">
+								<img src="img/category4.png" alt="">
+							</span>
+							<span class="catalog-card__title">Станции</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="best-offers best-offers-v3">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-12 col-xl-4">
+						<h2>Лучшие предложения</h2>
+					</div>
+					<div class="col-12 col-md-6 col-xl-4">
+						<ul class="list-sorting list-sorting-v2 my-ul">
+							<li><a href="#" class="active">Хит</a></li>
+							<li><a href="#">Лидеры продаж</a></li>
+							<li><a href="#">Новинки</a></li>
+							<li><a href="#">Акции</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-6 col-xl-4">
+						<a href="catalog.html" class="color-accent link-all-catalog">
+							<span class="link-catalog__text">весь каталог</span>
+							<span class="link-catalog__icon">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#next"></use>
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 products-wrapper">
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+						<div class="product-card product-card-v3">
+							<div class="product-card-wrapper">
+								<div class="product-card-slider">
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+									<div class="slide">
+										<a href="product.html" class="product-card__img"><img src="img/product1.png" alt=""></a>
+									</div>
+								</div>
+								<div class="product-card__body">
+									<a href="product.html" class="product-card__title">Блок-контейнер мини 4х2,45</a>
+									<ul class="my-ul">
+										<li>Материал: профлист</li>
+										<li>Пол: ДСП панели</li>
+										<li>Крыша: металлический лист</li>
+									</ul>
+								</div>
+
+								<div class="product-card__footer">
+									<div class="product-card__price">
+										366600 руб.
+									</div>
+									<a href="#" class="btn btn-accent btn-add-card">Заказать</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12">
+						<a href="#" class="btn btn-load-products btn-grey">Показать еще</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="quick-calculation quick-calculation-v2">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="quick-calculation-wrapper">
+							<div class="row">
+								<div class="col-12">
+									<h2>Быстрый расчет стоимости</h2>
+									<div class="section-description">
+										<p>Оставьте свой телефон и наши специалисты свяжутся с вами для уточнения точной стоимости</p>
+									</div>
+
+									<form method="post" class="special-offer-form special-offer-form-v3">
+										<label>
+											<input type="text" placeholder="Ваш телефон" name="phone">
+										</label>
+										<button type="submit" class="btn btn-black">Оставить заявку</button>
+										<div class="consent">Нажимая на кнопку “Оставить заявку” вы даете согласие на обработку персональных данных</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="works">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h2>Выполненные работы</h2>
+					</div>
+				</div>
+		
+				<div class="row">
+					<div class="col-12">
+						<div class="works-slider works-slider2">
+							<div class="slide">
+								<a href="img/work1.jpg" class="works-slider-gallery-item" data-fancybox="work"><img src="img/work1.jpg"
+										alt=""></a>
+							</div>
+							<div class="slide">
+								<a href="img/work2.jpg" class="works-slider-gallery-item" data-fancybox="work"><img src="img/work2.jpg"
+										alt=""></a>
+							</div>
+							<div class="slide">
+								<a href="img/work3.jpg" class="works-slider-gallery-item" data-fancybox="work"><img src="img/work3.jpg"
+										alt=""></a>
+							</div>
+							<div class="slide">
+								<a href="img/work1.jpg" class="works-slider-gallery-item" data-fancybox="work"><img src="img/work1.jpg"
+										alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="quick-calculation quick-calculation-v3">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="quick-calculation-wrapper">
+							<div class="row">
+								<div class="col-12 col-lg-7">
+									<h2>Быстрый расчет стоимости</h2>
+									<div class="section-description">
+										<p>Оставьте свой телефон и наши специалисты свяжутся с вами для уточнения
+											точной стоимости и подготовят для вас специальное предложение</p>
+									</div>
+								</div>
+								<div class="col-12 col-lg-5">
+									<!-- <div class="quick-calculation__image"><img src="img/" alt=""></div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="advantages-company advantages-company-v2">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="advantages-company-title">
+							<div class="advantages-company-title__number"><span>8</span></div>
+							<h2>Главных причин
+								обратиться в компанию
+								Смарт-модуль</h2>
+						</div>
+
+						<div class="advantages-company-description">
+							<ul>
+								<li>Компания смарт-модуль на сегодняшний день предлагает
+									своим клиентам интеллектуальные решения под ключ.</li>
+
+								<li>Мы профессионально занимаемся производством и
+									продажей модульных зданий повышенной комфортности.</li>
+
+								<li>Вы можете заказать у нас как типовые конструкции, так и
+									нестандартные проекты, учитывающие индивидуальное
+									назначение помещения и специфику его эксплуатации.</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-12 col-lg-6">
+						<div class="row">
+							<div class="col-12 col-sm-6 col-md-4 col-lg-6 mb-60">
+								<div class="advantages-company-box advantages-company-box-v2">
+									<div class="advantages-company-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
+									<div class="advantages-company-box__text">
+										<p>8 лет на
+											рынке</p>
+										<span>У нас продукция собственого
+											производства, что экономит вам
+											время и средства при заказе</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-6 mb-60">
+								<div class="advantages-company-box advantages-company-box-v2">
+									<div class="advantages-company-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
+									<div class="advantages-company-box__text">
+										<p>Меньше затрат
+											на обустройство
+											площадки</p>
+										<span>У нас продукция собственого
+											производства, что экономит вам
+											время и средства при заказе</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-6 mb-60">
+								<div class="advantages-company-box advantages-company-box-v2">
+									<div class="advantages-company-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
+									<div class="advantages-company-box__text">
+										<p>Скидки
+											постоянным
+											клиентам</p>
+										<span>У нас продукция собственого
+											производства, что экономит вам
+											время и средства при заказе</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-4 col-lg-6 mb-60">
+								<div class="advantages-company-box advantages-company-box-v2">
+									<div class="advantages-company-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
+									<div class="advantages-company-box__text">
+										<p>Опыт
+											водителей
+											более 10 лет</p>
+										<span>У нас продукция собственого
+											производства, что экономит вам
+											время и средства при заказе</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="advantages-company-box advantages-company-box-v2">
+							<div class="advantages-company-box__icon"><img src="img/adv-icon7.svg" alt=""></div>
+							<div class="advantages-company-box__text">
+								<p>Техническое
+									состояни бытовок
+									всегда на высоте</p>
+								<span>У нас продукция собственого
+									производства, что экономит вам
+									время и средства при заказе</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="advantages-company-box advantages-company-box-v2">
+							<div class="advantages-company-box__icon"><img src="img/adv-icon8.svg" alt=""></div>
+							<div class="advantages-company-box__text">
+								<p>Экономия на
+									хранении и
+									обслуживании</p>
+								<span>У нас продукция собственого
+									производства, что экономит вам
+									время и средства при заказе</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-60">
+						<div class="advantages-company-box advantages-company-box-v2">
+							<div class="advantages-company-box__icon"><img src="img/adv-icon5.svg" alt=""></div>
+							<div class="advantages-company-box__text">
+								<p>>150 крупных
+									клиентов</p>
+								<span>У нас продукция собственого
+									производства, что экономит вам
+									время и средства при заказе</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-30">
+						<div class="advantages-company-box advantages-company-box-v2">
+							<div class="advantages-company-box__icon"><img src="img/adv-icon6.svg" alt=""></div>
+							<div class="advantages-company-box__text">
+								<p>Доставка и
+									установка это <br>
+									наша забота</p>
+								<span>У нас продукция собственого
+									производства, что экономит вам
+									время и средства при заказе</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<section class="certificates bg-grey p-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h2>Сертификаты</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<div class="certificates-slider certificates-slider3">
+							<div class="slide">
+								<a href="img/certificate.jpg" data-fancybox="certificate1"
+									class="certificates-slider-item certificates-slider-item-v3">
+									<img src="img/certificate.jpg" alt="">
+								</a>
+							</div>
+							<div class="slide">
+								<a href="img/certificate.jpg" data-fancybox="certificate1"
+									class="certificates-slider-item certificates-slider-item-v3">
+									<img src="img/certificate.jpg" alt="">
+								</a>
+							</div>
+							<div class="slide">
+								<a href="img/certificate.jpg" data-fancybox="certificate1"
+									class="certificates-slider-item certificates-slider-item-v3">
+									<img src="img/certificate.jpg" alt="">
+								</a>
+							</div>
+							<div class="slide">
+								<a href="img/certificate.jpg" data-fancybox="certificate1"
+									class="certificates-slider-item certificates-slider-item-v3">
+									<img src="img/certificate.jpg" alt="">
+								</a>
+							</div>
+							<div class="slide">
+								<a href="img/certificate.jpg" data-fancybox="certificate1"
+									class="certificates-slider-item certificates-slider-item-v3">
+									<img src="img/certificate.jpg" alt="">
+								</a>
+							</div>
+							<div class="slide">
+								<a href="img/certificate.jpg" data-fancybox="certificate1"
+									class="certificates-slider-item certificates-slider-item-v3">
+									<img src="img/certificate.jpg" alt="">
+								</a>
+							</div>
+							<div class="slide">
+								<a href="img/certificate.jpg" data-fancybox="certificate1"
+									class="certificates-slider-item certificates-slider-item-v3">
+									<img src="img/certificate.jpg" alt="">
+								</a>
+							</div>
+							<div class="slide">
+								<a href="img/certificate.jpg" data-fancybox="certificate1"
+									class="certificates-slider-item certificates-slider-item-v3">
+									<img src="img/certificate.jpg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reviews m-130">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h2>Что говорят о нас клиенты</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<div class="reviews-slider reviews-slider2">
+							<div class="slide">
+								<div class="manager-quote reviews-card reviews-card-v2">
+									<div class="manager-quote__body">
+										<div class="manager-quote__title">Краткий заголовок отзыва, который
+											может написан в две строчки</div>
+										<div class="manager-quote__content">
+
+											<p>Выражаю огромную благодарность
+												специалистам фирме за
+												ответственный подход к работе,
+												отзывчивость и нимательность!
+												Мебель качественная и стильная.
+												Также благодарность доставщикам.
+												Техническое состояние бытовок
+												на высоте!</p>
+										</div>
+									</div>
+									<div class="manager-quote-author">
+										<div class="manager-quote-author__body">
+											<p>Сергей Петров</p>
+											<span>Директор фирмы “Строим на века”</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="manager-quote reviews-card reviews-card-v2">
+									<div class="manager-quote__body">
+										<div class="manager-quote__title">Краткий заголовок отзыва</div>
+										<div class="manager-quote__content">
+											<p>Необходимо было установить
+												модульное здание под хозблок.
+												Обратился в компанию. Приехал
+												консультант, согласовали все
+												вопросы. Заказал модульное здание
+												по своим размерам. Остались
+												довольны выполненной работой!</p>
+										</div>
+									</div>
+									<div class="manager-quote-author">
+										<div class="manager-quote-author__body">
+											<p>Сергей Петров</p>
+											<span>Директор фирмы “Строим на века”</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="manager-quote reviews-card reviews-card-v2">
+									<div class="manager-quote__body">
+										<div class="manager-quote__title">Краткий заголовок отзыва, который
+											может написан в две строчки</div>
+										<div class="manager-quote__content">
+											<a href="https://youtu.be/njX2bu-_Vw4" data-fancybox="video2"
+												class="video-reviews-slider-item video-reviews-slider-item-v2">
+												<img src="img/video-preview2.jpg" alt="" class="video-reviews-slider-item__preview">
+												<span class="icon-play"></span>
+											</a>
+										</div>
+									</div>
+									<div class="manager-quote-author">
+										<div class="manager-quote-author__body">
+											<p>Сергей Петров</p>
+											<span>Директор фирмы “Строим на века”</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="manager-quote reviews-card reviews-card-v2">
+									<div class="manager-quote__body">
+										<div class="manager-quote__title">Краткий заголовок отзыва, который
+											может написан в две строчки</div>
+										<div class="manager-quote__content">
+
+											<p>Выражаю огромную благодарность
+												специалистам фирме за
+												ответственный подход к работе,
+												отзывчивость и нимательность!
+												Мебель качественная и стильная.
+												Также благодарность доставщикам.
+												Техническое состояние бытовок
+												на высоте!</p>
+										</div>
+									</div>
+									<div class="manager-quote-author">
+										<div class="manager-quote-author__body">
+											<p>Сергей Петров</p>
+											<span>Директор фирмы “Строим на века”</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="employee employee-v2 m-130">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h2>Наши высококвалифицированные сотрудники</h2>
+					</div>
+
+					<div class="col-12">
+						<div class="employee-slider employee-slider2">
+							<div class="slide">
+								<div class="employee-card employee-card-v3">
+									<div class="employee-card__photo"><img src="img/employee1.jpg" alt=""></div>
+									<div class="employee-card__body">
+										<div class="employee-card__name">Никита Иванов</div>
+										<div class="employee-card__position">Сварщик 5 разряда</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="employee-card employee-card-v3">
+									<div class="employee-card__photo"><img src="img/employee2.jpg" alt=""></div>
+									<div class="employee-card__body">
+										<div class="employee-card__name">Александр Дектярев</div>
+										<div class="employee-card__position">Специалист по общению с клиентами</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="employee-card employee-card-v3">
+									<div class="employee-card__photo"><img src="img/employee3.jpg" alt=""></div>
+									<div class="employee-card__body">
+										<div class="employee-card__name">Матвей Дементьев</div>
+										<div class="employee-card__position">Электрик 5 разряда</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="employee-card employee-card-v3">
+									<div class="employee-card__photo"><img src="img/employee4.jpg" alt=""></div>
+
+									<div class="employee-card__body">
+										<div class="employee-card__name">Алексей Левченко</div>
+										<div class="employee-card__position">Руководитель отдела развития</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="question question-v2 bg-grey p-130">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h2>Часто задаваемые вопросы</h2>
+					</div>
+
+					<div class="col-12">
+						<div class="accordion accordion-v4" id="accordionExample">
+							<div class="accordion-item accordion-item-v2 accordion-item-v4">
+								<div class="accordion-header" id="headingOne">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										<span class="accordion-item__number">
+											<span>01.</span>
+										</span>
+										<span class="accordion-item__title">Какие есть разновидности модульных зданий для
+											сада/огорода?</span>
+										<span class="accordion-item__arrow">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+								<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p>В классических технологиях строительства используются конструкционные материалы, из которых
+											возводятся стены,
+											перекрытия, крыша здания. В модульном
+											домостроении применяются крупногабаритные сборочные единицы, устанавливаемые по аналогии
+											конструктора вплотную
+											между
+											собой и/или друг на друга. В свою
+											очередь блок контейнеры так же собирают из отдельных конструкционных материалов.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item accordion-item-v2 accordion-item-v4">
+								<div class="accordion-header" id="headingTwo">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+										aria-expanded="false" aria-controls="collapseTwo">
+										<span class="accordion-item__number">
+											<span>02.</span>
+										</span>
+										<span class="accordion-item__title">Какие существуют варианты остекления модульного дома?</span>
+										<span class="accordion-item__arrow">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+								<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p>В классических технологиях строительства используются конструкционные материалы, из которых
+											возводятся
+											стены, перекрытия, крыша здания. В модульном домостроении применяются крупногабаритные
+											сборочные
+											единицы, устанавливаемые по аналогии конструктора вплотную между собой и/или друг на друга.
+											В свою
+											очередь блок контейнеры так же собирают из отдельных конструкционных материалов.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item accordion-item-v2 accordion-item-v4">
+								<div class="accordion-header" id="headingThree">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<span class="accordion-item__number">
+											<span>03.</span>
+										</span>
+										<span class="accordion-item__title">Какие есть способы увеличения этажности?</span>
+										<span class="accordion-item__arrow">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+								<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p>В классических технологиях строительства используются конструкционные материалы, из которых
+											возводятся
+											стены, перекрытия, крыша здания. В модульном домостроении применяются крупногабаритные
+											сборочные
+											единицы, устанавливаемые по аналогии конструктора вплотную между собой и/или друг на друга.
+											В свою
+											очередь блок контейнеры так же собирают из отдельных конструкционных материалов.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item accordion-item-v2 accordion-item-v4">
+								<div class="accordion-header" id="headingFour">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapsFour">
+										<span class="accordion-item__number">
+											<span>04.</span>
+										</span>
+										<span class="accordion-item__title">Какие существуют варианты остекления модульного дома?</span>
+										<span class="accordion-item__arrow">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+								<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p>В классических технологиях строительства используются конструкционные материалы, из которых
+											возводятся
+											стены, перекрытия, крыша здания. В модульном домостроении применяются крупногабаритные
+											сборочные
+											единицы, устанавливаемые по аналогии конструктора вплотную между собой и/или друг на друга.
+											В свою
+											очередь блок контейнеры так же собирают из отдельных конструкционных материалов.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item accordion-item-v2 accordion-item-v4">
+								<div class="accordion-header" id="headingFive">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+										<span class="accordion-item__number">
+											<span>05.</span>
+										</span>
+										<span class="accordion-item__title">Какие есть способы
+											увеличения этажности?</span>
+										<span class="accordion-item__arrow">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+								<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p>В классических технологиях строительства используются конструкционные материалы, из которых
+											возводятся
+											стены, перекрытия, крыша здания. В модульном домостроении применяются крупногабаритные
+											сборочные
+											единицы, устанавливаемые по аналогии конструктора вплотную между собой и/или друг на друга.
+											В свою
+											очередь блок контейнеры так же собирают из отдельных конструкционных материалов.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item accordion-item-v2 accordion-item-v4">
+								<div class="accordion-header" id="headingSex">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseSex" aria-expanded="true" aria-controls="collapsSex">
+										<span class="accordion-item__number">
+											<span>06.</span>
+										</span>
+										<span class="accordion-item__title">Какие есть разновидности модульных зданий для
+											сада/огорода?</span>
+										<span class="accordion-item__arrow">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+								<div id="collapseSex" class="accordion-collapse collapse" aria-labelledby="headingSex"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p>В классических технологиях строительства используются конструкционные материалы, из которых
+											возводятся
+											стены, перекрытия, крыша здания. В модульном домостроении применяются крупногабаритные
+											сборочные
+											единицы, устанавливаемые по аналогии конструктора вплотную между собой и/или друг на друга.
+											В свою
+											очередь блок контейнеры так же собирают из отдельных конструкционных материалов.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="accordion-item accordion-item-v2 accordion-item-v4">
+								<div class="accordion-header" id="headingSeven">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+										<span class="accordion-item__number">
+											<span>07.</span>
+										</span>
+										<span class="accordion-item__title">Какие существуют варианты остекления модульного дома?</span>
+										<span class="accordion-item__arrow">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom"></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+								<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+									data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<p>В классических технологиях строительства используются конструкционные материалы, из которых
+											возводятся
+											стены, перекрытия, крыша здания. В модульном домостроении применяются крупногабаритные
+											сборочные
+											единицы, устанавливаемые по аналогии конструктора вплотную между собой и/или друг на друга.
+											В свою
+											очередь блок контейнеры так же собирают из отдельных конструкционных материалов.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</section>
+
+		<section class="clients m-130">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center">
+						<h2>Нам доверяют</h2>
+					</div>
+
+					<div class="col-12">
+						<div class="clients-slider clients-slider3">
+							<div class="slide">
+								<div class="clients-slider-item"><img src="img/client1.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="clients-slider-item"><img src="img/client2.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="clients-slider-item"><img src="img/client3.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="clients-slider-item"><img src="img/client4.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="clients-slider-item"><img src="img/client5.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="clients-slider-item"><img src="img/client6.png" alt=""></div>
+							</div>
+							<div class="slide">
+								<div class="clients-slider-item"><img src="img/client1.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="contacts-section contacts-section-v3">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="contacts-section-wrapper">
+							<div class="row align-items-center">
+								<div class="col-12 text-center">
+									<h2>Контактная информация</h2>
+								</div>
+
+								<div class="col-12 col-lg-6">
+									<div class="contacts-section-box">
+										<div class="contacts-section-box__head">
+											<div class="contacts-section-box__icon">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#location"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="contacts-section-box__body">
+											<div class="address">
+												<p>Санкт-Петербург, Московское шоссе 14, парадный (первый) подъезд
+													Института «Гинцветмет» со стороны улицы Аргуновской, второй этаж.</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="contacts-section-box">
+										<div class="contacts-section-box__head">
+											<div class="contacts-section-box__icon">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#time"></use>
+												</svg>
+											</div>
+
+										</div>
+										<div class="contacts-section-box__body">
+											<div class="contacts-section-box__title">График работы:</div>
+											<div class="schedule">
+												<p>пн-пт: с 9:00 - 18:00. сб, вс: выходной</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="contacts-section-box">
+										<div class="contacts-section-box__head">
+											<div class="contacts-section-box__icon">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#tel"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="contacts-section-box__body">
+											<div class="phone-box">
+												<a href="tel:+78122000000">8 (812) 200-00-00</a>
+												<span>офис продаж</span>
+											</div>
+											<div class="phone-box">
+												<a href="tel:+78122000000">8 (812) 200-00-00</a>
+												<span>клиентский отдел</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="contacts-section-box">
+										<div class="contacts-section-box__head">
+											<div class="contacts-section-box__icon">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#mail"></use>
+												</svg>
+											</div>
+										</div>
+										<div class="contacts-section-box__body">
+											<div class="mail-box">
+												<a href="mailto:directory@example.com">directory@example.com</a>
+												<span>офис продаж</span>
+											</div>
+										</div>
+									</div>
+
+									<ul class="list-social list-social-v3 my-ul">
+										<li><a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#telegram"></use>
+												</svg>
+											</a></li>
+										<li><a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#vk"></use>
+												</svg>
+											</a></li>
+										<li><a href="#">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#youtube"></use>
+												</svg>
+											</a></li>
+									</ul>
+								</div>
+
+
+								<div class="col-12 col-lg-6">
+									<div class="contacts-section__map">
+										<iframe
+											src="https://yandex.ru/map-widget/v1/?ll=30.334490%2C59.836753&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzQyMjQyNRJT0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JzQvtGB0LrQvtCy0YHQutC%2B0LUg0YjQvtGB0YHQtSwgMTTQujEiCg0KrfJBFdZYb0I%3D&z=16"
+											frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<footer class="footer-v3">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="subscribe-wrapper">
+								<div class="subscribe-wrapper-text">
+									<div class="subscribe-wrapper-text__icon"><img src="img/send.svg" alt=""></div>
+									<div class="subscribe-wrapper-text__title">Подпишись на новости от компании Смарт-модуль
+										и будь всегда первым в курсе всех событий!
+									</div>
+								</div>
+								<form method="post" class="form-subscribe">
+									<label>
+										<input type="text" placeholder="Ваш email" name="mail">
+									</label>
+									<button type="submit" class="btn btn-accent">Подписаться</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-6 col-lg-3">
+							<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
+						</div>
+						<div class="col-6 col-lg-2">
+							<div class="social-box">
+								<p>Мы в соцсетях:</p>
+								<ul class="list-social my-ul">
+									<li><a href="#">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#telegram"></use>
+											</svg>
+										</a></li>
+									<li><a href="#">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#vk"></use>
+											</svg>
+										</a></li>
+									<li><a href="#">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#youtube"></use>
+											</svg>
+										</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-7">
+							<div class="footer-wrapper">
+								<div class="footer-contacts">
+									<div class="footer-contacts__text">
+										<a href="tel:+78122004118" class="phone footer-phone">
+											<span class="phone-icon footer-contacts__icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#phone"></use>
+												</svg>
+											</span>
+											<span class="phone-text">8 (812) 200-41-18</span>
+										</a>
+									</div>
+									<a href="#" class="color-white link-callback" data-bs-toggle="modal"
+										data-bs-target="#callbackModal">Заказать
+										звонок</a>
+								</div>
+								<div class="footer-contacts">
+									<div class="footer-contacts__text">
+										<a href="mailto:spb10@smart-module.ru" class="mail">
+											<span class="mail-icon footer-contacts__icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#mail2"></use>
+												</svg>
+											</span>
+											<span class="mail-text">spb10@smart-module.ru</span>
+										</a>
+									</div>
+								</div>
+								<div class="copyright">© Smart Module, 2022 г. Все права защищены.</div>
+
+								<ul class="footer-menu my-ul">
+									<li><a href="catalog.html">Каталог</a></li>
+									<li><a href="services.html">Услуги</a></li>
+									<li><a href="objects.html">Объекты</a></li>
+									<li><a href="articles.html">Статьи</a></li>
+									<li><a href="about.html">о нас</a></li>
+									<li><a href="contacts.html">контакты</a></li>
+									<li><a href="politics.html">Политика конфиденциальности</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+
+		<!-- Modal -->
+		<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">Оставьте заявку и наш
+							менеджер свяжется с Вами!
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<form method="post" class="form-modal">
+							<label>
+								<input type="text" placeholder="Ваше имя" name="name">
+							</label>
+							<label>
+								<input type="text" placeholder="Ваш телефон" name="phone">
+							</label>
+							<button type="submit" class="btn btn-green w-100">Оставить заявку</button>
+							<label class="label-checkbox">
+								<input type="checkbox" class="inp-check" name="checkbox" checked>
+								<span class="checkbox-custom"></span>
+								<span class="checkbox-text">Даю согласие на обработку <a href="#"
+										class="d-inline color-accent">персональных
+										данных</a></span>
+							</label>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">Спасибо!
+						</div>
+						<div class="box-text">
+							<p>Ваша заявка уже обрабатывается.
+								Мы скоро свяжемся с вами.</p>
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<a href="#" class="btn btn-green w-100" data-bs-dismiss="modal">Ок, жду</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal modal-v2 fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">Выбор города
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<form method="post" class="form-search">
+							<label>
+								<input type="text" placeholder="Ваш город" name="search">
+								<button type="submit">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg>
+								</button>
+							</label>
+						</form>
+
+						<a href="#" class="link-autosearch color-accent">Автоопределение</a>
+
+						<ul class="list-cities my-ul scroll-vertical">
+							<li><a href="#">Москва</a></li>
+							<li><a href="#" class="checked">Санкт-Петербург</a></li>
+							<li><a href="#">Архангельск</a></li>
+							<li><a href="#">Владивосток</a></li>
+							<li><a href="#">Екатеренбург</a></li>
+							<li><a href="#">Волгоград</a></li>
+							<li><a href="#">Воронеж</a></li>
+							<li><a href="#">Екатеринбург</a></li>
+							<li><a href="#">Ижевск</a></li>
+							<li><a href="#">Иркутск</a></li>
+							<li><a href="#">Казань</a></li>
+							<li><a href="#">Кемерово</a></li>
+							<li><a href="#">Краснодар</a></li>
+							<li><a href="#">Красноярск</a></li>
+							<li><a href="#">Мурманск</a></li>
+							<li><a href="#">Набережные Челны</a></li>
+							<li><a href="#">Нижний Новгород</a></li>
+							<li><a href="#">Новосибирск</a></li>
+							<li><a href="#">Омск</a></li>
+							<li><a href="#">Пермь</a></li>
+							<li><a href="#">Ростов-на-Дону</a></li>
+							<li><a href="#">Саратов</a></li>
+							<li><a href="#">Самара</a></li>
+							<li><a href="#">Сочи</a></li>
+							<li><a href="#">Сургут</a></li>
+							<li><a href="#">Тверь</a></li>
+							<li><a href="#">Тольятти</a></li>
+							<li><a href="#">Тула</a></li>
+							<li><a href="#">Тюмень</a></li>
+							<li><a href="#">Ульяновск</a></li>
+							<li><a href="#">Уфа</a></li>
+							<li><a href="#">Хабаровск</a></li>
+							<li><a href="#">Челябинск</a></li>
+							<li><a href="#">Ярославль</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+		integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

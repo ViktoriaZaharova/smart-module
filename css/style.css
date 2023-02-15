@@ -314,12 +314,28 @@ h2 {
   margin-bottom: 40px;
 }
 
+.mb-60 {
+  margin-bottom: 60px;
+}
+
 .mt-40 {
   margin-top: 40px;
 }
 
 .mt-90 {
   margin-top: 90px;
+}
+
+.p-130 {
+  padding: 130px 0;
+}
+
+.p-100 {
+  padding: 100px 0;
+}
+
+.m-130 {
+  margin: 130px 0;
 }
 
 .link {
@@ -441,6 +457,15 @@ h2 {
 }
 .slider-nav .slick-dots {
   margin: 0 17px;
+}
+
+.slick-arrow-v2 {
+  width: 47px;
+  height: 24px;
+  fill: #000;
+}
+.slick-arrow-v2:hover {
+  fill: #6989ad;
 }
 
 .slick-dots {

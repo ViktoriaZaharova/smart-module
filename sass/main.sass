@@ -2237,6 +2237,35 @@
 		&__body
 			max-width: 160px
 
+.landing-home-v3
+	padding: 106px 0
+	.box-text
+		margin: 30px 0 59px
+		font-size: 24px
+		font-weight: 300
+		max-width: 835px
+	h1
+		margin: 0
+	.landing-home-advantages-item
+		max-width: 350px
+		width: 100%
+		border: solid 1px #fff
+		margin: 0 0 30px auto
+		padding: 30px
+		font-size: 26px
+		line-height: 1.2
+		strong
+			display: block
+		&__icon
+			border: none
+			border-radius: 0
+			width: 37px
+			min-width: 37px
+			height: 34px
+			padding: 0
+		&:last-child
+			margin: 0 0 0 auto
+
 .special-offer
 	width: 100%
 	margin: 10px 0 0
@@ -2255,6 +2284,27 @@
 		input
 			border: solid 1px #cecece
 			background: #fff
+
+.special-offer-form-v2
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	max-width: none
+	label
+		max-width: 400px
+	button
+		position: relative
+		margin: 0 0 0 17px
+	.label-checkbox
+		width: 100%
+		max-width: none
+
+.special-offer-form-v3
+	max-width: 600px
+	margin: 24px auto 0
+	.consent
+		text-align: center
+		font-size: 13px		
 
 .landing-home__image
 	min-width: 1354px
@@ -2766,6 +2816,55 @@
 		.advantages-company-box__icon
 			filter: none
 
+.advantages-company-v2
+	.advantages-company-box
+		line-height: 1.4
+		&__text
+			margin: 0
+			max-width: 320px
+			span
+				max-width: 260px
+
+.advantages-company-title
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 0 35px
+	&__number
+		width: 160px
+		height: 160px
+		@include d-flex
+		border: 6px solid $accent
+		border-radius: 2px
+		font-size: 120px
+		font-weight: bold
+		line-height: 1.1
+		span
+			display: inline-block
+			margin: 0 0 -10px
+
+	h2
+		margin: 0
+		text-align: left
+		width: calc(100% - 160px)
+		padding: 0 0 0 30px
+		max-width: 450px
+
+.advantages-company-description
+	max-width: 670px
+	width: 100%
+	background: #f5f5f5
+	padding: 30px 45px
+	font-size: 22px
+	font-weight: 300
+	margin: 0 0 46px
+	ul
+		li
+			margin: 0 0 10px
+			&:last-child
+				margin: 0
+
 .certificates-slider
 	margin: 40px 0 0
 	&__nav
@@ -2830,6 +2929,9 @@
 	min-width: 1350px
 	margin: 0
 
+.certificates-slider3
+	padding: 0 80px
+
 .certificates-slider-item-v2
 	width: 280px
 	&::before
@@ -2840,6 +2942,15 @@
 		border-radius: 50%
 		background: $green url('../img/zoom-in.svg') no-repeat center
 		background-size: 36px
+
+.certificates-slider-item-v3
+	max-width: 350px
+	margin: 0 auto
+	&::after
+		width: 45px
+		height: 45px
+		background: url('../img/search+.svg') no-repeat center
+		background-size: 100%
 
 .video-reviews
 	margin: 130px 0
@@ -2943,9 +3054,6 @@
 	opacity: 0.5
 	transition: .3s ease
 
-.employee
-	margin: 130px 0
-
 .employee-card
 	width: 100%
 	height: 100%
@@ -3010,6 +3118,28 @@
 		position: relative
 		margin: 24px 0 0
 
+.employee-card-v3
+	border-radius: 50%
+	height: 350px
+	max-width: 350px
+	width: 100%
+	margin: 0 auto
+	text-align: center
+	&:hover
+		.employee-card__body
+			bottom: 0
+	.employee-card__photo
+		border-radius: 50%
+	&::before
+		border-radius: 50%
+	.employee-card__body
+		padding: 20px 10px 40px
+		bottom: -100%
+		transition: .3s ease
+	.employee-card__position
+		max-width: 220px
+		margin: 4px auto 0
+
 .employee-slider
 	margin: 50px 0 0
 	.slick-slide
@@ -3020,6 +3150,9 @@
 	.slick-track
 		display: flex
 		align-items: stretch
+
+.employee-slider
+	padding: 0 50px
 
 .question
 	h2
@@ -3107,6 +3240,66 @@
 		font-size: 18px
 		font-weight: 300
 
+.accordion-item-v4
+	border-radius: 0
+	background: #fff
+	border: none
+	margin: 0 0 20px
+	&.open
+		background: #fff
+		box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21)
+		color: #000
+	&:first-of-type
+		border-radius: 0
+	&:last-of-type
+		.accordion-button.collapsed
+			border-radius: 0
+	&:last-child
+		border-radius: 0
+	.accordion-item__number
+		font-size: 22px
+		line-height: 1
+		min-width: auto
+		margin: 0 20px 0 0
+		span
+			font-size: 22px
+			line-height: 1
+			font-weight: bold
+	.accordion-button
+		padding: 23px 30px
+		width: 100%
+		color: #000
+		&.collapsed
+			.accordion-item__arrow
+				background: transparent
+		&:not(.collapsed)
+			color: #000
+			.accordion-item__title
+				max-width: none
+				padding: 0
+			.accordion-item__number
+				span
+					display: block
+	.accordion-item__arrow
+		padding: 0
+		border-radius: 0
+		background: transparent
+		fill: #000
+		width: 21px
+		min-width: 21px
+		height: 11px
+		position: relative
+		top: 0
+		right: 0
+		transform: none
+		margin: 0 0 0 auto
+	.accordion-collapse
+		color: #000
+		max-width: none
+		padding: 0
+	.accordion-body
+		padding: 0 109px 30px	74px
+
 .accordion-item-col
 	display: flex
 	align-items: center
@@ -3179,7 +3372,6 @@
 		padding: 20px 0 0 66px
 
 .clients
-	margin: 130px 0
 	h2
 		margin: 0 auto 60px
 
@@ -3191,6 +3383,9 @@
 	@include d-flex
 	transition: .3s ease
 	filter: grayscale(100%)
+	height: 65px
+	img
+		max-height: 100%
 	&:hover
 		filter: grayscale(0)
 
@@ -3205,6 +3400,9 @@
 		max-width: 310px
 	.slider-nav
 		margin: 39px 0 0
+
+.clients-slider3
+	padding: 0 50px
 
 .contacts-section
 	padding: 70px 0
@@ -3224,6 +3422,58 @@
 
 .contacts-section-v2
 	padding: 150px 0
+
+.contacts-section-v3
+	padding: 0
+	margin: 0 0 130px
+	h2
+		margin: 0 auto 55px
+	.contacts-section-wrapper
+		background: #fff
+		padding: 60px 40px
+		color: #000
+		box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21)
+		a
+			color: #000
+			font-weight: normal
+			&:hover
+				color: $accent
+		.contacts-section-box
+			display: flex
+			align-items: start
+			padding: 0
+			margin: 0 0 30px
+			font-size: 18px
+			.phone-box, .mail-box
+				font-size: 18px
+			span
+				font-weight: 300
+			&__head
+				margin: 0
+			&__title
+				font-weight: normal
+				padding: 0
+				font-size: 18px
+			&__icon
+				fill: $accent
+				position: relative
+				margin: 0 16px 0 0
+				width: 30px
+				height: 30px
+				min-width: 30px
+		.schedule
+			margin: 0
+			font-weight: 300
+		.address
+			font-size: 18px
+			max-width: 570px
+	.contacts-section__map
+		height: 460px
+		width: 100%
+		position: relative
+		border-radius: 12px
+		iframe
+			border-radius: 12px
 
 .contacts-section-wrapper
 	background: $accent
@@ -3253,6 +3503,24 @@
 	li
 		a
 			fill: #fff
+
+.list-social-v3
+	li
+		margin: 0 20px 0 0
+		&:last-child
+			margin: 0
+		a
+			width: 40px
+			height: 40px
+			min-width: 40px
+			border-radius: 50%
+			padding: 13px
+			fill: #999999
+			background: rgba(#cecece, .3)
+			box-shadow: 0 0 18px 0 rgba(41, 41, 41, 0.1)
+			&:hover
+				fill: #fff
+				background: $accent
 
 .contacts-section-wrapper-v2
 	background: #fff
@@ -3306,7 +3574,7 @@
 				padding: 13px
 				fill: #999999
 				background: #cecece
-				box-shadow: 0 0 18px 0 rgba(41, 41, 41, 0.1)	
+				box-shadow: 0 0 18px 0 rgba(41, 41, 41, 0.1)
 				&:hover
 					fill: #fff
 					background: $accent
@@ -3349,8 +3617,12 @@
 	.section-description
 		margin: 23px 0 0
 
-.reviews
-	margin: 140px 0
+.quick-calculation-v2
+	.quick-calculation-wrapper
+		background: $accent
+		padding: 65px 20px
+		text-align: center
+
 
 .reviews-slider
 	margin: 50px 0 0
@@ -3361,4 +3633,39 @@
 
 .reviews-card
 	margin: 0
+
+.reviews-slider2
+	padding: 0 80px
+
+.reviews-card-v2
+	width: 100%
+	max-width: 350px
+	margin: 0 auto
+	.video-reviews-slider-item
+		height: 164px
+		border-radius: 0
+		&::before
+			border-radius: 0
+		img
+			border-radius: 0
+	.manager-quote__body
+		background: #f5f5f5
+		padding: 30px
+		position: relative
+		margin: 0 0 68px
+		min-height: 380px
+		&::before
+			content: ''
+			position: absolute
+			border-right: 47px solid transparent
+			border-top: 46px solid #f5f5f5
+			bottom: -46px
+			left: 20px
+	.manager-quote-author
+		margin: 0
+	.manager-quote__title
+		margin: 0 0 20px
+		font-weight: bold
+		font-size: 18px
+
 // landing pages end	

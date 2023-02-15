@@ -175,6 +175,10 @@ a.color-black:hover {
   background: #e4f7e5;
 }
 
+.bg-grey {
+  background: #f5f5f5;
+}
+
 .accent-green .btn-accent {
   background: #29bd35;
 }
