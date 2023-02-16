@@ -47,6 +47,15 @@
 	.accordion-item-v2 .accordion-collapse
 		max-width: 800px
 
+	.calculate-box-v3
+		.calculate-box__footer
+			.btn
+				width: fit-content
+
+	.accordion-item-v4
+		.accordion-collapse
+			max-width: none
+
 @media only screen and (max-width: 1400px)
 	.catalog-card-v2
 		padding: 18px
@@ -93,10 +102,10 @@
 		padding: 0 10px
 
 	.clients h2
-		margin: 0 auto 30px		
+		margin: 0 auto 30px
 
 	.landing-home__image
-		min-width: 1100px	
+		min-width: 1100px
 
 @media only screen and (max-width: 1200px)
 	.advantages-v2
@@ -181,7 +190,7 @@
 			width: 100%
 		.accordion-item__arrow
 			position: relative
-			margin: 0 0 0 auto 
+			margin: 0 0 0 auto
 			top: 0
 			transform: none
 			right: 0
@@ -189,16 +198,67 @@
 			width: 100%
 		.accordion-body
 			padding: 0 0 20px
-		.accordion-button:not(.collapsed) 
-			.accordion-item__title		
+		.accordion-button:not(.collapsed)
+			.accordion-item__title
 				padding: 0
-				max-width: none		
+				max-width: none
 
 	.contacts-section-wrapper
-		padding: 30px	
+		padding: 30px
 
 	.landing-home__image
-		min-width: 1000px			
+		min-width: 1000px
+
+	.works-slider-col
+		width: 400px
+
+	.works-slider-gallery-item-v2
+		height: 500px
+		&.h-328
+			height: 300px
+
+	.quick-calculation-v3
+		.quick-calculation-wrapper
+			padding: 40px 60px
+
+	.advantages-company-v2
+		.advantages-company-box
+			line-height: 1.2
+			.advantages-company-box__text
+				br
+					display: none
+
+	.advantages-company-description
+		padding: 20px
+		font-size: 16px
+
+	.mb-60
+		margin-bottom: 30px
+
+	.advantages-company-title
+		&__number
+			font-size: 90px
+			width: 140px
+			height: 140px
+			min-width: 140px
+		h2
+			width: calc(100% - 140px)
+
+	.reviews-slider
+		.manager-quote__content
+			font-size: 16px
+		.slick-slide
+			padding: 0 10px
+		.slick-list
+			margin: 0 -10px
+
+	.employee-card-v3
+		width: 280px
+		height: 280px
+
+	.accordion-item-v4
+		.accordion-body
+			padding: 0 20px 30px 74px
 
 @media only screen and (max-width: 1100px)
 	.product-card
@@ -240,8 +300,6 @@
 	.callback-contacts-v3 .consent
 		width: 100%
 		max-width: none
-
-	
 
 @media only screen and (max-width: 992px)
 	.h1
@@ -421,11 +479,11 @@
 		padding: 30px 20px
 
 	.clients-slider__nav
-		margin: 30px auto 0	
+		margin: 30px auto 0
 
 	.contacts-section
 		padding: 0
-		&__map	
+		&__map
 			position: relative
 			height: 400px
 			margin: 20px auto 0
@@ -437,25 +495,25 @@
 	.landing-home-v2 .landing-home-advantages-item
 		margin: 0 0 25px
 		&__body
-			max-width: none		
+			max-width: none
 
 	.quick-calculation-wrapper
 		padding: 30px
 
 	.special-offer-form
-		margin: 30px 0 0		
+		margin: 30px 0 0
 
-	.works-slider2 
-		.works-slider-gallery-item		
-			height: 300px	
+	.works-slider2
+		.works-slider-gallery-item
+			height: 300px
 
 	.advantages-company-box-v2
 		padding: 0
 		.advantages-company-box__icon
-			margin: 0 0 20px	
+			margin: 0 0 20px
 
 	.certificates-v2
-		padding: 60px 0			
+		padding: 60px 0
 		.section-description
 			margin: 10px 0 30px
 			max-width: none
@@ -466,7 +524,7 @@
 	.certificates-slider2
 		min-width: auto
 		width: calc(100% + 20px)
-		margin: 30px 0 0	
+		margin: 30px 0 0
 
 	.question-icon
 		width: 120px
@@ -474,9 +532,9 @@
 		font-size: 80px
 		margin: 20px 0 40px
 
-	.question 
+	.question
 		h2
-			margin: 0 0 30px	
+			margin: 0 0 30px
 
 	.clients-v2
 		padding: 70px 0
@@ -485,13 +543,67 @@
 			max-width: none
 
 	.clients-slider2
-		margin: 30px 0 0	
+		margin: 30px 0 0
 
 	.contacts-section-wrapper-v2
 		border-radius: 0
 		max-width: none
 		&::before
-			display: none							
+			display: none
+
+	.landing-home-v3
+		.landing-home-advantages-item
+			margin: 0 auto 20px
+			&:last-child
+				margin: 0 auto
+		.box-text
+			margin: 20px 0 30px
+
+	.special-offer-v2
+		margin: 0 0 30px
+		label
+			max-width: 350px
+
+	.special-offer-form-v3
+		margin: 20px auto 0
+
+	.quick-calculation__image
+		margin: 30px auto 0
+
+	.calculate-box-v3
+		max-width: none
+		margin: 30px 0 0
+		.calculate-box-range
+			margin: 0 0 30px
+
+	.advantages-company-description
+		max-width: none
+
+	.slick-arrow-v2
+		width: 30px
+		height: 20px
+
+	.certificates-slider3, .reviews-slider2
+		padding: 0 40px
+
+	.p-100
+		padding: 50px 0
+
+	.certificates-slider-item-v3::after
+		width: 30px
+		height: 30px
+
+	.p-130
+		padding: 70px 0
+
+	.contacts-section-v3
+		margin: 0 0 60px
+		h2
+			margin: 0 auto 30px
+		.contacts-section-wrapper
+			padding: 30px
+			.address
+				max-width: none
 
 @media only screen and (max-width: 768px)
 	h2
@@ -626,13 +738,13 @@
 	.video-reviews-slider__nav, .certificates-slider__nav
 		margin: 20px auto 0
 
-	.accordion-item-v2 
-		.accordion-item__arrow	
+	.accordion-item-v2
+		.accordion-item__arrow
 			max-width: 50px
 			min-width: 50px
 			height: 50px
 			padding: 15px
-	
+
 		.accordion-item__number
 			margin: 0 20px 0 0
 			min-width: 67px
@@ -643,7 +755,7 @@
 				min-width: 60px
 				height: 50px
 		.accordion-item__title
-			font-size: 18px		
+			font-size: 18px
 
 	.landing-home-v2
 		padding: 150px 0 70px
@@ -652,13 +764,13 @@
 
 	.special-offer__title
 		font-size: 20px
-		line-height: 1.1		
+		line-height: 1.1
 
-	.reviews-slider 
+	.reviews-slider
 		margin: 34px 0 0
 		.slick-list
 			margin: 0 -15px
-		.slick-slide	
+		.slick-slide
 			padding: 0 15px
 
 	.video-reviews-slider
@@ -668,11 +780,48 @@
 		height: 300px
 		.icon-play
 			width: 50px
-			height: 50px	
+			height: 50px
 
-	.contacts-section-wrapper-v2 
-		.list-social				
+	.contacts-section-wrapper-v2
+		.list-social
 			justify-content: center
+
+	.quick-calculation-v2
+		.quick-calculation-wrapper
+			padding: 30px 20px
+
+	.works-slider-col
+		width: 300px
+
+	.works-slider-gallery-item-v2
+		height: 400px
+		&.h-328
+			height: 260px
+
+	.reviews-card-v2
+		max-width: none
+		.manager-quote__body
+			min-height: auto
+		.video-reviews-slider-item
+			height: 250px
+
+	.accordion-item-v4
+		.accordion-button
+			padding: 20px
+		.accordion-item__number
+			min-width: auto
+			span
+				font-size: 22px
+		.accordion-item__title
+			font-size: 16px
+		.accordion-body
+			padding: 0 20px 20px 70px
+			font-size: 16px
+		.accordion-item__arrow
+			padding: 0
+			width: 20px
+			height: 20px
+			min-width: 20px
 
 @media only screen and (max-width: 576px)
 	.h1
@@ -942,11 +1091,11 @@
 	.works-slider-gallery-item
 		height: 400px
 
-	.accordion-item-v2 
+	.accordion-item-v2
 		.accordion-item__number
 			min-width: 50px
 			span
-				
+
 				font-size: 40px
 			svg
 				width: 40px
@@ -958,7 +1107,7 @@
 			width: 30px
 			height: 30px
 			min-width: 30px
-			padding: 7px			
+			padding: 7px
 		.accordion-collapse
 			font-size: 16px
 
@@ -966,25 +1115,25 @@
 		margin: 0 0 30px
 		&:last-child
 			margin: 0 0 30px
-		&__title		
+		&__title
 			font-size: 18px
 		.address
 			font-size: 16px
 		.phone-box, .mail-box
 			margin: 0 0 20px
 			a
-				font-size: 17px	
+				font-size: 17px
 
 	.contacts-section-wrapper
-		padding: 30px 20px 0		
+		padding: 30px 20px 0
 
 	.landing-home-v2
 		padding: 100px 0 50px
 		.landing-home-advantages-item
-			font-size: 18px		
-			
-	.employee-card-v2 
-		.employee-card__photo		
+			font-size: 18px
+
+	.employee-card-v2
+		.employee-card__photo
 			height: auto
 
 	.accordion-item-v3
@@ -993,14 +1142,66 @@
 			font-size: 18px
 			padding-left: 50px
 		.accordion-body
-			padding-left: 50px	
+			padding-left: 50px
 
 	.contacts-section-wrapper-v2
 		padding: 30px
 		.contacts-section-box
-			margin: 0 0 20px	
+			margin: 0 0 20px
 			&:last-child
-				margin: 0 0 20px			
+				margin: 0 0 20px
+
+	.special-offer-v2
+		label
+			max-width: none
+		button
+			margin: 0 auto 10px
+
+	.quick-calculation-v3
+		.quick-calculation-wrapper
+			padding: 30px
+		.calculate-box-v3
+			.calculate-box__footer
+				.btn
+					margin: 10px auto 0
+					width: 100%
+
+	.advantages-company-title
+		&__number
+			width: 100px
+			min-width: 100px
+			height: 100px
+			font-size: 60px
+		h2
+			width: calc(100% - 100px)
+
+	.advantages-company-v2 .advantages-company-box__text
+		max-width: none
+		span
+			max-width: none
+
+	.accordion-item-v4
+		.accordion-button
+			padding: 20px
+		.accordion-item__number
+			margin: 0 10px 0 0
+			min-width: auto
+			span
+				font-size: 22px
+		.accordion-item__title
+			font-size: 16px
+		.accordion-body
+			padding: 0 20px 20px 60px
+			font-size: 16px
+		.accordion-item__arrow
+			padding: 0
+			width: 20px
+			height: 20px
+			min-width: 20px
+
+	.contacts-section-v3 
+		.contacts-section__map	
+			height: 300px	
 
 @media only screen and (max-width: 480px)
 	.h1
@@ -1046,18 +1247,44 @@
 	h2
 		font-size: 24px
 
-	.special-offer-form 
+	.special-offer-form
 		button
 			position: relative
 			margin: 20px auto 10px
 			width: 100%
-			transform: none	
+			transform: none
 
 	.certificates-slider-item-v2
-		width: 170px	
+		width: 170px
 
 	.clients-v2
-		padding: 40px 0		
+		padding: 40px 0
+
+	.special-offer-form-v2
+		button
+			margin: 0 auto 10px
+
+	.landing-home-v3
+		.landing-home-advantages-item
+			padding: 20px
+
+	.works-slider-gallery-item-v2
+		height: 300px
+		margin: 0 0 10px
+		&.h-328
+			height: 220px
+
+	.works-slider-col
+		width: 250px
+
+	.works-slider3 .slick-slide
+		padding: 0 10px
+
+	.reviews-card-v2
+		.manager-quote__body
+			padding: 20px
+		.video-reviews-slider-item
+			height: 200px
 
 @media only screen and (max-width: 420px)
 	.mb-30
@@ -1105,10 +1332,31 @@
 		height: 340px
 
 	.works-slider2 .works-slider-gallery-item
-		height: 250px	
+		height: 250px
 
 	.manager-quote__content
-		font-size: 16px	
+		font-size: 16px
+
+	.advantages-company-title
+		text-align: center
+		h2
+			padding: 0
+			width: 100%
+			margin: 10px 0 0
+		&__number
+			margin: 0 auto
+
+	.reviews-slider2, .employee-slider2
+		padding: 30px 0 0
+		.slick-arrow
+			top: 0
+			transform: none
+
+	.contacts-section-v3 .contacts-section__map
+		height: 280px
+
+	.contacts-section-v3 .contacts-section-wrapper
+		padding: 30px 20px	
 
 // @media only screen and (max-width: 370px)
 

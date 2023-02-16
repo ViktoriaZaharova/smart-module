@@ -211,8 +211,10 @@ header .logo {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 20px;
+  min-width: 20px;
   height: 14px;
   cursor: pointer;
+  position: relative;
 }
 .btn-burger span {
   display: block;
@@ -220,6 +222,23 @@ header .logo {
   height: 2px;
   border-radius: 2px;
   background: #000;
+}
+.btn-burger.open span {
+  position: absolute;
+  width: 20px;
+  top: 5px;
+  left: 2px;
+}
+.btn-burger.open span:nth-child(2) {
+  width: 0;
+}
+.btn-burger.open span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.btn-burger.open span:last-child {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .phone {
@@ -333,26 +352,27 @@ header .logo {
 
 .mobile-menu {
   display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  max-width: 280px;
+  position: absolute;
+  left: 50%;
+  top: 95px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  max-width: 1500px;
   width: 100%;
-  overflow-y: auto;
-  padding: 30px;
   background: #fff;
   z-index: 10;
-  -webkit-box-shadow: 0px 11px 10px 0 rgba(41, 41, 41, 0.43);
-          box-shadow: 0px 11px 10px 0 rgba(41, 41, 41, 0.43);
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21);
+          box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21);
+}
+.mobile-menu__head {
+  display: none;
 }
 .mobile-menu__close {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -385,20 +405,19 @@ header .logo {
   max-width: 160px;
   margin: 0 auto;
 }
-.mobile-menu__body {
-  padding: 20px 0;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-  margin: 20px 0;
+.mobile-menu__footer {
+  display: none;
 }
 .mobile-menu .location-city {
   margin: 0 auto 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: none;
 }
 .mobile-menu .form-search {
   margin: 10px 0 0;
+  display: none;
 }
 .mobile-menu .mail {
   margin: 10px 0;
@@ -416,26 +435,79 @@ header .logo {
   margin: 30px 0 0;
   width: 100%;
 }
+.mobile-menu .menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  font-size: 18px;
+}
+.mobile-menu .menu > li {
+  margin: 0;
+}
+.mobile-menu .menu > li:hover > a {
+  background: #f5f5f5;
+  color: #000;
+}
+.mobile-menu .menu > li:hover > .dropdown-menu {
+  display: block;
+}
+.mobile-menu .menu > li > a {
+  height: 100%;
+  width: 100%;
+  padding: 23px 2px;
+  text-align: center;
+}
+.mobile-menu .menu > li:first-child > a {
+  border-radius: 0 0 0 6px;
+}
+.mobile-menu .menu > li:last-child > a {
+  border-radius: 0 0 6px 0;
+}
 .mobile-menu .menu .dropdown-menu {
-  position: relative !important;
-  top: 0 !important;
+  display: none;
+  top: 100% !important;
   left: 0 !important;
   -webkit-transform: none !important;
           transform: none !important;
-  min-width: auto;
-  padding: 10px;
+  min-width: 314px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+.mobile-menu .menu .dropdown-menu .dropdown-menu {
+  left: 100% !important;
+  top: 0 !important;
 }
 .mobile-menu .menu .submenu {
-  margin: 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 18px;
 }
 .mobile-menu .menu .submenu li {
-  margin: 0 0 15px;
-}
-.mobile-menu .menu .submenu li:last-child {
   margin: 0;
+  width: 100%;
+}
+.mobile-menu .menu .submenu li:hover > a {
+  background: #6989ad;
+  color: #fff;
 }
 .mobile-menu .menu .submenu li a {
-  font-size: 14px;
+  text-align: left;
+  padding: 6px 10px 6px 26px;
+  border-radius: 0;
 }
 
 .menu {
@@ -445,13 +517,21 @@ header .logo {
   width: 100%;
   margin: 0 0 10px;
 }
-.menu a {
+.menu li a {
   color: #000;
 }
-.menu a:hover {
+.menu li a:hover {
   color: #6989ad;
 }
 
+@media only screen and (max-width: 1440px) {
+  .mobile-menu .menu {
+    font-size: 16px;
+  }
+  .mobile-menu .menu .submenu {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 1300px) {
   .logo {
     max-width: 180px;
@@ -474,6 +554,15 @@ header .logo {
   .search-header .dropdown-menu {
     top: 35px !important;
   }
+  .mobile-menu {
+    top: 85px;
+  }
+  .mobile-menu .menu {
+    font-size: 14px;
+  }
+  .mobile-menu .menu .submenu {
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 1100px) {
   .location-wrapper {
@@ -481,6 +570,67 @@ header .logo {
   }
   .btn-burger {
     margin: 0 40px 0 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .mobile-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    max-width: 280px;
+    border-radius: 0;
+    overflow-y: auto;
+    height: 100%;
+    -webkit-transform: none;
+            transform: none;
+    padding: 30px;
+  }
+  .mobile-menu .location-city {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mobile-menu__close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mobile-menu__head {
+    display: block;
+  }
+  .mobile-menu__body {
+    padding: 20px 0;
+    margin: 20px 0;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
+  .mobile-menu__footer, .mobile-menu .form-search {
+    display: block;
+  }
+  .mobile-menu .menu {
+    font-size: 16px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mobile-menu .menu li {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .mobile-menu .menu li a {
+    height: auto;
+    padding: 0;
+    text-align: left;
+  }
+  .mobile-menu .menu .dropdown-menu {
+    min-width: none;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 870px) {

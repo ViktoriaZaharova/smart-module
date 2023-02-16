@@ -2304,7 +2304,7 @@
 	margin: 24px auto 0
 	.consent
 		text-align: center
-		font-size: 13px		
+		font-size: 13px
 
 .landing-home__image
 	min-width: 1354px
@@ -2570,6 +2570,79 @@
 		height: 18px
 		min-width: 18px
 
+.quick-calculation-v3
+	.quick-calculation-wrapper
+		padding: 60px 100px
+
+.calculate-box-v3
+	background: transparent
+	padding: 0
+	border-radius: 0
+	max-width: 600px
+	margin: 44px 0 0
+	height: auto
+	.dropdown
+		margin: 0 0 43px
+		.dropdown-toggle-selected
+			color: #000
+			font-size: 16px
+			font-weight: normal
+			display: block
+	.calculate-box-range
+		margin: 0 0 43px
+		.ui-slider .ui-slider-handle, .ui-slider .ui-slider-range
+			background: $accent
+	.calculate-box-range__title
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin: 0 0 30px
+	.calculate-box__footer
+		justify-content: flex-start
+		.btn
+			margin: 0 0 0 28px
+	.calculate-box__total
+		display: flex
+		align-items: center
+		p
+			margin: 0 0 0 10px
+
+.dropdown-v3 
+	.dropdown-toggle
+		padding: 8px 15px
+		font-size: 13px
+		line-height: 1.1
+		min-height: 46px
+		&.show
+			position: relative
+			z-index: 1001
+			box-shadow: 0px 2px 16px 0 rgba(41, 41, 41, 0.21)	
+			.dropdown-toggle-selected
+				display: none
+	.dropdown-menu
+		padding: 16px 15px 				
+
+.calculate-box-range__val
+	font-size: 18px
+	font-weight: bold
+
+.slider-range-variable
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	color: #6b6b6b
+	font-size: 13px
+	font-weight: 300
+	margin: 15px 0 0	
+
+.quick-calculation__image
+	max-width: 527px
+	width: 100%
+	@include d-flex
+	img
+		width: 100%
+
 .callback-offer
 	margin: 110px 0
 	.box-text
@@ -2691,6 +2764,56 @@
 		height: 100%
 		object-fit: cover
 
+.works-slider3
+	.slick-slide
+		padding: 0 16.5px
+
+.works-slider-gallery-item-v2
+	color: #fff
+	position: relative
+	border-radius: 0
+	margin: 0 0 32px
+	height: 576px
+	&:last-child
+		margin: 0
+	img
+		border-radius: 0
+	&::before
+		content: ''
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: 100%
+		height: 100%
+		opacity: 0
+		transition: .3s ease
+		background: rgba(0, 0, 0, 0.6) url('../img/search+.svg') no-repeat center
+		background-size: 45px
+	&:hover
+		color: #fff
+		.works-slider-gallery-item__body
+			opacity: 1
+		&::before
+			opacity: 1
+	.works-slider-gallery-item__body
+		position: absolute
+		left: 0
+		bottom: 0
+		padding: 30px 20px
+		opacity: 0
+	.works-slider-gallery-item__title
+		font-size: 22px
+		font-weight: bold
+		display: block
+	.works-slider-gallery-item__text
+		font-size: 18px
+		font-weight: 300
+		max-width: 270px
+		display: block
+	&.h-328
+		height: 328px
+
 .works-slider-content
 	max-width: 500px
 	width: 100%
@@ -2710,6 +2833,11 @@
 		span
 			display: block
 			font-weight: bold
+
+.works-slider-col
+	display: flex
+	flex-direction: column
+	width: 468px
 
 .info-box-item__icon
 	@include d-flex
@@ -3254,6 +3382,8 @@
 	&:last-of-type
 		.accordion-button.collapsed
 			border-radius: 0
+	&:not(:first-of-type)
+		border: none		
 	&:last-child
 		border-radius: 0
 	.accordion-item__number
@@ -3622,7 +3752,6 @@
 		background: $accent
 		padding: 65px 20px
 		text-align: center
-
 
 .reviews-slider
 	margin: 50px 0 0
