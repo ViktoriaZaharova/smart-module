@@ -123,13 +123,50 @@ a.color-black
 	background: #e4f7e5
 
 .bg-grey
-	background: #f5f5f5	
+	background: #f5f5f5
 
 // colors theme
-.accent-green
+.variable-accent-green
 	.btn-accent
 		background: $green
 		&:hover
 			background: $accent
 
-			
+.variable-btn-radius
+	.btn, input, textarea, select, .filter-category-item .dropdown-toggle, .category-list__item, .additional-equipment-wrapper, .additional-equipment-list-item.additional-equipment-list-item-v2:last-child
+		border-radius: 30px
+	.pagination .page-link, .works-slider-gallery .slick-arrow
+		border-radius: 50%
+	.category-list__clear
+		top: -5px
+		right: 5px
+	.accordion-v3 .accordion-item, .accordion-v3 .accordion-item:last-of-type, .sidebar-callback, .sidebar-menu, .product-card, .product-card-v2 .product-card-wrapper, .accordion-v2 .accordion-body, .selected-filters-item, .catalog-card-v3, .label-radio-time .inp-radio, .catalog-card, .catalog-card__bg, .catalog-card::before, .contacts-box, .contacts-map, .contacts-map iframe, .callback-contacts-wrapper, .calculate-box, .works-slider-gallery-item, .works-slider-gallery-item img, .list-sorting li a, .employee-card, .employee-card__photo, .employee-card::before, .video-reviews-slider-item, .video-reviews-slider-item__preview, .works-slider2 .works-slider-gallery-item, .works-slider2 .works-slider-gallery-item img, .slider-nav-v3 .slick-arrow, .slider-nav-v2 .slick-arrow, .certificates-slider-item img, .product-gallery-preview .product-gallery-item, .nav-tabs-v2 .nav-link, .product-order-info
+		border-radius: 20px
+	.best-offers-v3
+		.product-card
+			border-radius: 0
+	.additional-equipment-list-item:first-child, .accordion-v3 .accordion-button, .accordion-v3 .accordion-item:first-of-type .accordion-button
+		border-radius: 20px 20px 0 0
+	.additional-equipment-list-item:last-child, .accordion-v3 .accordion-body
+		border-radius: 0 0 20px 20px	
+	.certificates-slider-item
+		border-radius: 20px
+		overflow: hidden
+	.employee-card-v2 .employee-card__photo
+		border-radius: 0
+		
+
+.variable-btn-cube
+	.btn, input, textarea, select, .filter-category-item .dropdown-toggle, .category-list__item, .catalog-card-v3, .additional-equipment-list-item-v2:last-child, .additional-equipment-list-item-v2:first-child, .advantages-box-v3, .menu .dropdown-menu, .sidebar-callback, .sidebar-menu, .product-card, .product-card-v2 .product-card-wrapper, .accordion-v2 .accordion-body, .selected-filters-item, .label-radio-time .inp-radio, .catalog-card, .catalog-card__bg, .catalog-card::before, .advantages-wrapper, .accordion-v3 .accordion-body, .accordion-item, .accordion-button, .accordion-item:last-of-type .accordion-button.collapsed, .accordion-item:last-of-type, .contacts-box, .contacts-map, .contacts-map iframe, .callback-contacts-wrapper, .contacts-advantage-card
+		border-radius: 0
+	.pagination .page-link
+		border-radius: 0
+	// .category-list__clear
+	// 	top: -5px
+	// 	right: 5px
+
+	
+
+// классы для новых вариаций добавляются к секции wrapper в начале каждой страницы
+// variable-btn-radius - для кнопок с закгруденными краями
+// variable-btn-cube - для кнопок без загруглений

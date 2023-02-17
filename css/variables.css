@@ -179,9 +179,46 @@ a.color-black:hover {
   background: #f5f5f5;
 }
 
-.accent-green .btn-accent {
+.variable-accent-green .btn-accent {
   background: #29bd35;
 }
-.accent-green .btn-accent:hover {
+.variable-accent-green .btn-accent:hover {
   background: #6989ad;
+}
+
+.variable-btn-radius .btn, .variable-btn-radius input, .variable-btn-radius textarea, .variable-btn-radius select, .variable-btn-radius .filter-category-item .dropdown-toggle, .variable-btn-radius .category-list__item, .variable-btn-radius .additional-equipment-wrapper, .variable-btn-radius .additional-equipment-list-item.additional-equipment-list-item-v2:last-child {
+  border-radius: 30px;
+}
+.variable-btn-radius .pagination .page-link, .variable-btn-radius .works-slider-gallery .slick-arrow {
+  border-radius: 50%;
+}
+.variable-btn-radius .category-list__clear {
+  top: -5px;
+  right: 5px;
+}
+.variable-btn-radius .accordion-v3 .accordion-item, .variable-btn-radius .accordion-v3 .accordion-item:last-of-type, .variable-btn-radius .sidebar-callback, .variable-btn-radius .sidebar-menu, .variable-btn-radius .product-card, .variable-btn-radius .product-card-v2 .product-card-wrapper, .variable-btn-radius .accordion-v2 .accordion-body, .variable-btn-radius .selected-filters-item, .variable-btn-radius .catalog-card-v3, .variable-btn-radius .label-radio-time .inp-radio, .variable-btn-radius .catalog-card, .variable-btn-radius .catalog-card__bg, .variable-btn-radius .catalog-card::before, .variable-btn-radius .contacts-box, .variable-btn-radius .contacts-map, .variable-btn-radius .contacts-map iframe, .variable-btn-radius .callback-contacts-wrapper, .variable-btn-radius .calculate-box, .variable-btn-radius .works-slider-gallery-item, .variable-btn-radius .works-slider-gallery-item img, .variable-btn-radius .list-sorting li a, .variable-btn-radius .employee-card, .variable-btn-radius .employee-card__photo, .variable-btn-radius .employee-card::before, .variable-btn-radius .video-reviews-slider-item, .variable-btn-radius .video-reviews-slider-item__preview, .variable-btn-radius .works-slider2 .works-slider-gallery-item, .variable-btn-radius .works-slider2 .works-slider-gallery-item img, .variable-btn-radius .slider-nav-v3 .slick-arrow, .variable-btn-radius .slider-nav-v2 .slick-arrow, .variable-btn-radius .certificates-slider-item img, .variable-btn-radius .product-gallery-preview .product-gallery-item, .variable-btn-radius .nav-tabs-v2 .nav-link, .variable-btn-radius .product-order-info {
+  border-radius: 20px;
+}
+.variable-btn-radius .best-offers-v3 .product-card {
+  border-radius: 0;
+}
+.variable-btn-radius .additional-equipment-list-item:first-child, .variable-btn-radius .accordion-v3 .accordion-button, .variable-btn-radius .accordion-v3 .accordion-item:first-of-type .accordion-button {
+  border-radius: 20px 20px 0 0;
+}
+.variable-btn-radius .additional-equipment-list-item:last-child, .variable-btn-radius .accordion-v3 .accordion-body {
+  border-radius: 0 0 20px 20px;
+}
+.variable-btn-radius .certificates-slider-item {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.variable-btn-radius .employee-card-v2 .employee-card__photo {
+  border-radius: 0;
+}
+
+.variable-btn-cube .btn, .variable-btn-cube input, .variable-btn-cube textarea, .variable-btn-cube select, .variable-btn-cube .filter-category-item .dropdown-toggle, .variable-btn-cube .category-list__item, .variable-btn-cube .catalog-card-v3, .variable-btn-cube .additional-equipment-list-item-v2:last-child, .variable-btn-cube .additional-equipment-list-item-v2:first-child, .variable-btn-cube .advantages-box-v3, .variable-btn-cube .menu .dropdown-menu, .variable-btn-cube .sidebar-callback, .variable-btn-cube .sidebar-menu, .variable-btn-cube .product-card, .variable-btn-cube .product-card-v2 .product-card-wrapper, .variable-btn-cube .accordion-v2 .accordion-body, .variable-btn-cube .selected-filters-item, .variable-btn-cube .label-radio-time .inp-radio, .variable-btn-cube .catalog-card, .variable-btn-cube .catalog-card__bg, .variable-btn-cube .catalog-card::before, .variable-btn-cube .advantages-wrapper, .variable-btn-cube .accordion-v3 .accordion-body, .variable-btn-cube .accordion-item, .variable-btn-cube .accordion-button, .variable-btn-cube .accordion-item:last-of-type .accordion-button.collapsed, .variable-btn-cube .accordion-item:last-of-type, .variable-btn-cube .contacts-box, .variable-btn-cube .contacts-map, .variable-btn-cube .contacts-map iframe, .variable-btn-cube .callback-contacts-wrapper, .variable-btn-cube .contacts-advantage-card {
+  border-radius: 0;
+}
+.variable-btn-cube .pagination .page-link {
+  border-radius: 0;
 }
