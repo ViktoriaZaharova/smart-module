@@ -234,6 +234,12 @@ a.color-black:hover {
   background: #f5f5f5;
 }
 
+/* классы для новых вариаций добавляются к секции wrapper в начале каждой страницы */
+/* variable-btn-radius - для кнопок с закгруденными краями */
+/* variable-btn-cube - для кнопок без загруглений */
+/* variable-accent-green - для кнопок зеленого цвета */
+/* variable-accent-red - для кнопок красного цвета */
+
 .variable-accent-green .btn-accent {
   background: #68BD29;
 }
@@ -488,6 +494,14 @@ a.color-black:hover {
 }
 .font-Roboto button, .font-Roboto btn, .font-Roboto input, .font-Roboto textarea, .font-Roboto select {
   font-family: "Roboto", sans-serif;
+}
+
+.font-OpenSans {
+  font-family: "OpenSans", sans-serif;
+  line-height: normal;
+}
+.font-OpenSans button, .font-OpenSans btn, .font-OpenSans input, .font-OpenSans textarea, .font-OpenSans select {
+  font-family: "OpenSans", sans-serif;
 }
 
 .variable-btn-radius .btn, .variable-btn-radius input, .variable-btn-radius textarea, .variable-btn-radius select, .variable-btn-radius .filter-category-item .dropdown-toggle, .variable-btn-radius .category-list__item, .variable-btn-radius .additional-equipment-wrapper, .variable-btn-radius .additional-equipment-list-item.additional-equipment-list-item-v2:last-child {
