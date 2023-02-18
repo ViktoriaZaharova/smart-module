@@ -5,14 +5,7 @@
 	width: 100%
 	height: 100%
 
-// fonts variable	
-.font-Circe
-	font-family: $font1
-	line-height: 1.3
-	button, btn, input, textarea, select
-		font-family: $font1
-
-// colors variable
+// colors
 .btn-sm
 	height: 36px
 	font-size: 15px
@@ -125,13 +118,97 @@ a.color-black
 .bg-grey
 	background: #f5f5f5
 
-// colors theme
+// классы для новых вариаций добавляются к секции wrapper в начале каждой страницы
+// variable-btn-radius - для кнопок с закгруденными краями
+// variable-btn-cube - для кнопок без загруглений
+// variable-accent-green - для кнопок зеленого цвета
+// variable-accent-red - для кнопок красного цвета
+
+// variable colors theme
 .variable-accent-green
 	.btn-accent
 		background: $green
 		&:hover
 			background: $accent
+	.menu
+		li
+			a
+				&:hover
+					color: $green
+	.calculate-box
+		background: #282828
+		.btn-black
+			background: $green				
+	.location-wrapper .dropdown-toggle::before, .product-card-v3:hover .btn, .slick-dots li.slick-active, .btn-grey:hover, .mobile-menu__close:before, .mobile-menu__close::after, .mobile-menu .menu .submenu li:hover > a, .product-card-v2:hover .btn, .additional-equipment-list-item-v3 .additional-equipment-list-item__icon, .radio-checked, .quick-calculation-v2 .quick-calculation-wrapper, .calculate-box-v3 .calculate-box-range .ui-slider .ui-slider-handle, .calculate-box-v3 .calculate-box-range .ui-slider .ui-slider-range, .landing-home-v2 .landing-home-advantages-item__icon, .calculate-box-v2 .ui-slider .ui-slider-range, .advantages-company-box:hover, .selected-filters-item
+		background: $green
+	.color-accent, .list-cities li a.checked, .product-card:hover .product-card__title, .footer-menu li a:hover, .footer-contacts a:hover, .location-city:hover, .header-box .link-callback:hover, a.color-grey:hover, .breadcrumbs li span
+		color: $green
+	.list-cities li a.checked
+		&:hover
+			color: $green
+	.home-v2 .home-slider__nav .slick-arrow:hover, .slick-arrow:hover, .list-social li a:hover, .footer-contacts__icon, .mobile-menu .location-city__icon, .mobile-menu .schedule-box__icon, .mobile-menu .mail-icon, .mobile-menu .phone-icon, .phone-icon, .link-catalog__icon, .location-city__icon, .mail-icon, .footer-contacts a:hover .footer-contacts__icon, .header-v2 .schedule-box__icon, .info-box__icon, .advantages-company-box__icon, .contacts-section-v3 .contacts-section-wrapper .contacts-section-box__icon, .calculate-box-v2 .information-box__icon, .info-box-item__icon, .works-slider-gallery .slick-arrow:hover, .accordion-item-v2 .accordion-item__arrow, .contacts-box-v2 .contacts-box__icon, .contacts-box-v3 .contacts-box__icon
+		fill: $green
+	.catalog-card-v3:hover, .catalog-card-v2:hover
+		color: $green
+		border: solid 2px $green
+	.list-sorting-v2 li a:hover, .list-sorting-v2 li a.active, .types-cabins-card-v3:hover, .advantages-box-v3, .link-catalog__icon, .product-gallery-preview .slick-current .product-gallery-item
+		border-color: $green
+	.advantages-box-v3 .advantages-box__icon::before
+		background: $green-light
+	.header-box .link-callback, .nav-tabs-product-v2
+		border-bottom-color: $green
+	.btn-border-white:hover, .btn-border-black:hover
+		border-color: $green
+		background: $green
+	.list-cities li a::after
+		background: url('../img/checked-green.svg') no-repeat center
+	.list-sorting li a.active
+		color: $green
+		background: #EDF9E3
+	.footer-v1 .footer-contacts__icon
+		fill: #fff
+	.list-sorting-v2 li a.active, .list-sorting-v3 li a.active
+		background: transparent
+	.product-order-info .btn-accent, .heder-v3 .menu .dropdown-menu, .accordion-item-v2.open, .contacts-section-wrapper
+		background: #282828
+	.nav-tabs-v2 .nav-link.active
+		color: $green
+		background: #EDF9E3
+		border-color: $green
+	.slider-nav-v2 .slick-arrow:hover, .tab-content-product-v2, .info-box, .description-box, .page-title-wrapper-v3, .list-social-v3 li a:hover, .works-slider-gallery .slick-arrow:hover, .advantages-company-box, .contacts-box-v2, .sidebar-menu, .category-list__item.active, .accordion-v2 .accordion-body, .accordion-v3 .accordion-body, .accordion-v3 .accordion-button:not(.collapsed)
+		background: #EDF9E3
+	.label-radio-product-v2 input:checked ~ .radio-text .radio-checked, .category-list__clear
+		border-color: $green
+		background: $green
+	.label-radio-product-v3 .radio-image::before, .tab-content-product-v2
+		border-color: $green
+	.nav-tabs-v2 .nav-link.active
+		border-bottom-color: transparent
+	.description-box
+		border-left-color: $green	
+	.advantages-company-title__number, .calculate-box-v2 .ui-slider .ui-slider-handle, .calculate-box-v2, .question-icon, .category-list__item.active
+		border-color: $green
+	.slider-nav-v3 .slick-arrow:hover
+		background: $green
+		fill: #fff
+	.label-radio-product input:checked ~ .radio-text, .accordion-v3 .accordion-button:not(.collapsed) .contacts-section-wrapper a:hover, .contacts-advantage-card__title:hover, a.color-white:hover, .filter-category-item .dropdown-menu .inp-check:checked ~ .checkbox-text, .accordion-button:not(.collapsed), .label-checkbox-v2 .inp-check:checked ~ .checkbox-text, .sidebar-submenu-list li a:hover, .accordion-v3 .accordion-button:not(.collapsed)
+		color: $green
+	.label-checkbox-v2 .inp-check:checked ~ .checkbox-custom, .btn-border-grey:hover
+		background-color: $green
+		border-color: $green
+	.accordion-button:not(.collapsed)::after
+		background: url("../img/dropdown-icon-green.svg") no-repeat center		
+	.accordion-v3 .accordion-button:not(.collapsed)::after	
+		background: url("../img/accordion-icon-green.svg") no-repeat center	
 
+// variable fonts	
+.font-Circe
+	font-family: $font1
+	line-height: 1.3
+	button, btn, input, textarea, select
+		font-family: $font1
+
+// variable buttons
 .variable-btn-radius
 	.btn, input, textarea, select, .filter-category-item .dropdown-toggle, .category-list__item, .additional-equipment-wrapper, .additional-equipment-list-item.additional-equipment-list-item-v2:last-child
 		border-radius: 30px
@@ -148,25 +225,17 @@ a.color-black
 	.additional-equipment-list-item:first-child, .accordion-v3 .accordion-button, .accordion-v3 .accordion-item:first-of-type .accordion-button
 		border-radius: 20px 20px 0 0
 	.additional-equipment-list-item:last-child, .accordion-v3 .accordion-body
-		border-radius: 0 0 20px 20px	
+		border-radius: 0 0 20px 20px
 	.certificates-slider-item
 		border-radius: 20px
 		overflow: hidden
 	.employee-card-v2 .employee-card__photo
 		border-radius: 0
-		
 
 .variable-btn-cube
-	.btn, input, textarea, select, .filter-category-item .dropdown-toggle, .category-list__item, .catalog-card-v3, .additional-equipment-list-item-v2:last-child, .additional-equipment-list-item-v2:first-child, .advantages-box-v3, .menu .dropdown-menu, .sidebar-callback, .sidebar-menu, .product-card, .product-card-v2 .product-card-wrapper, .accordion-v2 .accordion-body, .selected-filters-item, .label-radio-time .inp-radio, .catalog-card, .catalog-card__bg, .catalog-card::before, .advantages-wrapper, .accordion-v3 .accordion-body, .accordion-item, .accordion-button, .accordion-item:last-of-type .accordion-button.collapsed, .accordion-item:last-of-type, .contacts-box, .contacts-map, .contacts-map iframe, .callback-contacts-wrapper, .contacts-advantage-card, .catalog-card-v2 .catalog-card__bg, .catalog-card-v2 .catalog-card__bg img, .list-sorting li a, .additional-equipment-wrapper, .home-slider-item, .home-slider-item::before, .home-slider-item__bg, .additional-equipment-list-item:first-child, .additional-equipment-list-item:last-child, .calculate-box, .callback-offer-wrapper, .works-slider-gallery-item, .works-slider-gallery-item img, .works-slider-gallery .slick-arrow, .advantages-company-box, .certificates-slider-item, .certificates-slider-item::before, .video-reviews-slider-item, .video-reviews-slider-item:before, .employee-card, .employee-card::before, .contacts-section-wrapper, .quick-calculation-wrapper, .slider-nav-v3 .slick-arrow, .slider-nav-v2 .slick-arrow, .video-reviews-slider-item__preview, .works-slider2 .works-slider-gallery-item img, .employee-card__photo
+	.btn, input, textarea, select, .filter-category-item .dropdown-toggle, .category-list__item, .catalog-card-v3, .additional-equipment-list-item-v2:last-child, .additional-equipment-list-item-v2:first-child, .advantages-box-v3, .menu .dropdown-menu, .sidebar-callback, .sidebar-menu, .product-card, .product-card-v2 .product-card-wrapper, .accordion-v2 .accordion-body, .selected-filters-item, .label-radio-time .inp-radio, .catalog-card, .catalog-card__bg, .catalog-card::before, .advantages-wrapper, .accordion-v3 .accordion-body, .accordion-item, .accordion-button, .accordion-item:last-of-type .accordion-button.collapsed, .accordion-item:last-of-type, .contacts-box, .contacts-map, .contacts-map iframe, .callback-contacts-wrapper, .contacts-advantage-card, .catalog-card-v2 .catalog-card__bg, .catalog-card-v2 .catalog-card__bg img, .list-sorting li a, .additional-equipment-wrapper, .home-slider-item, .home-slider-item::before, .home-slider-item__bg, .additional-equipment-list-item:first-child, .additional-equipment-list-item:last-child, .calculate-box, .callback-offer-wrapper, .works-slider-gallery-item, .works-slider-gallery-item img, .works-slider-gallery .slick-arrow, .advantages-company-box, .certificates-slider-item, .certificates-slider-item::before, .video-reviews-slider-item, .video-reviews-slider-item:before, .employee-card, .employee-card::before, .contacts-section-wrapper, .quick-calculation-wrapper, .slider-nav-v3 .slick-arrow, .slider-nav-v2 .slick-arrow, .video-reviews-slider-item__preview, .works-slider2 .works-slider-gallery-item img, .employee-card__photo, .employee-card__photo img, .dropdown-v1 .dropdown-toggle, .dropdown-v1 .dropdown-menu, .employee-card-v3 .employee-card__photo, .contacts-section-v3 .contacts-section__map, .contacts-section-v3 .contacts-section__map iframe, .page-title-wrapper-v2, .info-box, .meta-box, .product-gallery-preview .product-gallery-item, .product-order-info, .nav-tabs-v2 .nav-link
 		border-radius: 0
 	.pagination .page-link
 		border-radius: 0
-	// .category-list__clear
-	// 	top: -5px
-	// 	right: 5px
-
-	
-
-// классы для новых вариаций добавляются к секции wrapper в начале каждой страницы
-// variable-btn-radius - для кнопок с закгруденными краями
-// variable-btn-cube - для кнопок без загруглений
+	.tab-content-product-v2
+		border-radius: 0	

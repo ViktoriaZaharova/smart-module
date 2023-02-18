@@ -24,14 +24,6 @@
   height: 100%;
 }
 
-.font-Circe {
-  font-family: "Circe", sans-serif;
-  line-height: 1.3;
-}
-.font-Circe button, .font-Circe btn, .font-Circe input, .font-Circe textarea, .font-Circe select {
-  font-family: "Circe", sans-serif;
-}
-
 .btn-sm {
   height: 36px;
   font-size: 15px;
@@ -48,12 +40,12 @@
   color: #fff;
 }
 .btn-accent:hover {
-  background: #29bd35;
+  background: #68BD29;
   color: #fff;
 }
 
 .btn-green {
-  background: #29bd35;
+  background: #68BD29;
   color: #fff;
 }
 .btn-green:hover {
@@ -132,10 +124,10 @@ a.color-accent .link-icon {
   fill: #6989ad;
 }
 a.color-accent:hover {
-  color: #29bd35;
+  color: #68BD29;
 }
 a.color-accent:hover .link-icon {
-  fill: #29bd35;
+  fill: #68BD29;
 }
 
 .color-grey {
@@ -180,10 +172,113 @@ a.color-black:hover {
 }
 
 .variable-accent-green .btn-accent {
-  background: #29bd35;
+  background: #68BD29;
 }
 .variable-accent-green .btn-accent:hover {
   background: #6989ad;
+}
+.variable-accent-green .menu li a:hover {
+  color: #68BD29;
+}
+.variable-accent-green .calculate-box {
+  background: #282828;
+}
+.variable-accent-green .calculate-box .btn-black {
+  background: #68BD29;
+}
+.variable-accent-green .location-wrapper .dropdown-toggle::before, .variable-accent-green .product-card-v3:hover .btn, .variable-accent-green .slick-dots li.slick-active, .variable-accent-green .btn-grey:hover, .variable-accent-green .mobile-menu__close:before, .variable-accent-green .mobile-menu__close::after, .variable-accent-green .mobile-menu .menu .submenu li:hover > a, .variable-accent-green .product-card-v2:hover .btn, .variable-accent-green .additional-equipment-list-item-v3 .additional-equipment-list-item__icon, .variable-accent-green .radio-checked, .variable-accent-green .quick-calculation-v2 .quick-calculation-wrapper, .variable-accent-green .calculate-box-v3 .calculate-box-range .ui-slider .ui-slider-handle, .variable-accent-green .calculate-box-v3 .calculate-box-range .ui-slider .ui-slider-range, .variable-accent-green .landing-home-v2 .landing-home-advantages-item__icon, .variable-accent-green .calculate-box-v2 .ui-slider .ui-slider-range, .variable-accent-green .advantages-company-box:hover, .variable-accent-green .selected-filters-item {
+  background: #68BD29;
+}
+.variable-accent-green .color-accent, .variable-accent-green .list-cities li a.checked, .variable-accent-green .product-card:hover .product-card__title, .variable-accent-green .footer-menu li a:hover, .variable-accent-green .footer-contacts a:hover, .variable-accent-green .location-city:hover, .variable-accent-green .header-box .link-callback:hover, .variable-accent-green a.color-grey:hover, .variable-accent-green .breadcrumbs li span {
+  color: #68BD29;
+}
+.variable-accent-green .list-cities li a.checked:hover {
+  color: #68BD29;
+}
+.variable-accent-green .home-v2 .home-slider__nav .slick-arrow:hover, .variable-accent-green .slick-arrow:hover, .variable-accent-green .list-social li a:hover, .variable-accent-green .footer-contacts__icon, .variable-accent-green .mobile-menu .location-city__icon, .variable-accent-green .mobile-menu .schedule-box__icon, .variable-accent-green .mobile-menu .mail-icon, .variable-accent-green .mobile-menu .phone-icon, .variable-accent-green .phone-icon, .variable-accent-green .link-catalog__icon, .variable-accent-green .location-city__icon, .variable-accent-green .mail-icon, .variable-accent-green .footer-contacts a:hover .footer-contacts__icon, .variable-accent-green .header-v2 .schedule-box__icon, .variable-accent-green .info-box__icon, .variable-accent-green .advantages-company-box__icon, .variable-accent-green .contacts-section-v3 .contacts-section-wrapper .contacts-section-box__icon, .variable-accent-green .calculate-box-v2 .information-box__icon, .variable-accent-green .info-box-item__icon, .variable-accent-green .works-slider-gallery .slick-arrow:hover, .variable-accent-green .accordion-item-v2 .accordion-item__arrow, .variable-accent-green .contacts-box-v2 .contacts-box__icon, .variable-accent-green .contacts-box-v3 .contacts-box__icon {
+  fill: #68BD29;
+}
+.variable-accent-green .catalog-card-v3:hover, .variable-accent-green .catalog-card-v2:hover {
+  color: #68BD29;
+  border: solid 2px #68BD29;
+}
+.variable-accent-green .list-sorting-v2 li a:hover, .variable-accent-green .list-sorting-v2 li a.active, .variable-accent-green .types-cabins-card-v3:hover, .variable-accent-green .advantages-box-v3, .variable-accent-green .link-catalog__icon, .variable-accent-green .product-gallery-preview .slick-current .product-gallery-item {
+  border-color: #68BD29;
+}
+.variable-accent-green .advantages-box-v3 .advantages-box__icon::before {
+  background: #A2DA79;
+}
+.variable-accent-green .header-box .link-callback, .variable-accent-green .nav-tabs-product-v2 {
+  border-bottom-color: #68BD29;
+}
+.variable-accent-green .btn-border-white:hover, .variable-accent-green .btn-border-black:hover {
+  border-color: #68BD29;
+  background: #68BD29;
+}
+.variable-accent-green .list-cities li a::after {
+  background: url("../img/checked-green.svg") no-repeat center;
+}
+.variable-accent-green .list-sorting li a.active {
+  color: #68BD29;
+  background: #EDF9E3;
+}
+.variable-accent-green .footer-v1 .footer-contacts__icon {
+  fill: #fff;
+}
+.variable-accent-green .list-sorting-v2 li a.active, .variable-accent-green .list-sorting-v3 li a.active {
+  background: transparent;
+}
+.variable-accent-green .product-order-info .btn-accent, .variable-accent-green .heder-v3 .menu .dropdown-menu, .variable-accent-green .accordion-item-v2.open, .variable-accent-green .contacts-section-wrapper {
+  background: #282828;
+}
+.variable-accent-green .nav-tabs-v2 .nav-link.active {
+  color: #68BD29;
+  background: #EDF9E3;
+  border-color: #68BD29;
+}
+.variable-accent-green .slider-nav-v2 .slick-arrow:hover, .variable-accent-green .tab-content-product-v2, .variable-accent-green .info-box, .variable-accent-green .description-box, .variable-accent-green .page-title-wrapper-v3, .variable-accent-green .list-social-v3 li a:hover, .variable-accent-green .works-slider-gallery .slick-arrow:hover, .variable-accent-green .advantages-company-box, .variable-accent-green .contacts-box-v2, .variable-accent-green .sidebar-menu, .variable-accent-green .category-list__item.active, .variable-accent-green .accordion-v2 .accordion-body, .variable-accent-green .accordion-v3 .accordion-body, .variable-accent-green .accordion-v3 .accordion-button:not(.collapsed) {
+  background: #EDF9E3;
+}
+.variable-accent-green .label-radio-product-v2 input:checked ~ .radio-text .radio-checked, .variable-accent-green .category-list__clear {
+  border-color: #68BD29;
+  background: #68BD29;
+}
+.variable-accent-green .label-radio-product-v3 .radio-image::before, .variable-accent-green .tab-content-product-v2 {
+  border-color: #68BD29;
+}
+.variable-accent-green .nav-tabs-v2 .nav-link.active {
+  border-bottom-color: transparent;
+}
+.variable-accent-green .description-box {
+  border-left-color: #68BD29;
+}
+.variable-accent-green .advantages-company-title__number, .variable-accent-green .calculate-box-v2 .ui-slider .ui-slider-handle, .variable-accent-green .calculate-box-v2, .variable-accent-green .question-icon, .variable-accent-green .category-list__item.active {
+  border-color: #68BD29;
+}
+.variable-accent-green .slider-nav-v3 .slick-arrow:hover {
+  background: #68BD29;
+  fill: #fff;
+}
+.variable-accent-green .label-radio-product input:checked ~ .radio-text, .variable-accent-green .accordion-v3 .accordion-button:not(.collapsed) .contacts-section-wrapper a:hover, .variable-accent-green .contacts-advantage-card__title:hover, .variable-accent-green a.color-white:hover, .variable-accent-green .filter-category-item .dropdown-menu .inp-check:checked ~ .checkbox-text, .variable-accent-green .accordion-button:not(.collapsed), .variable-accent-green .label-checkbox-v2 .inp-check:checked ~ .checkbox-text, .variable-accent-green .sidebar-submenu-list li a:hover, .variable-accent-green .accordion-v3 .accordion-button:not(.collapsed) {
+  color: #68BD29;
+}
+.variable-accent-green .label-checkbox-v2 .inp-check:checked ~ .checkbox-custom, .variable-accent-green .btn-border-grey:hover {
+  background-color: #68BD29;
+  border-color: #68BD29;
+}
+.variable-accent-green .accordion-button:not(.collapsed)::after {
+  background: url("../img/dropdown-icon-green.svg") no-repeat center;
+}
+.variable-accent-green .accordion-v3 .accordion-button:not(.collapsed)::after {
+  background: url("../img/accordion-icon-green.svg") no-repeat center;
+}
+
+.font-Circe {
+  font-family: "Circe", sans-serif;
+  line-height: 1.3;
+}
+.font-Circe button, .font-Circe btn, .font-Circe input, .font-Circe textarea, .font-Circe select {
+  font-family: "Circe", sans-serif;
 }
 
 .variable-btn-radius .btn, .variable-btn-radius input, .variable-btn-radius textarea, .variable-btn-radius select, .variable-btn-radius .filter-category-item .dropdown-toggle, .variable-btn-radius .category-list__item, .variable-btn-radius .additional-equipment-wrapper, .variable-btn-radius .additional-equipment-list-item.additional-equipment-list-item-v2:last-child {
@@ -216,9 +311,12 @@ a.color-black:hover {
   border-radius: 0;
 }
 
-.variable-btn-cube .btn, .variable-btn-cube input, .variable-btn-cube textarea, .variable-btn-cube select, .variable-btn-cube .filter-category-item .dropdown-toggle, .variable-btn-cube .category-list__item, .variable-btn-cube .catalog-card-v3, .variable-btn-cube .additional-equipment-list-item-v2:last-child, .variable-btn-cube .additional-equipment-list-item-v2:first-child, .variable-btn-cube .advantages-box-v3, .variable-btn-cube .menu .dropdown-menu, .variable-btn-cube .sidebar-callback, .variable-btn-cube .sidebar-menu, .variable-btn-cube .product-card, .variable-btn-cube .product-card-v2 .product-card-wrapper, .variable-btn-cube .accordion-v2 .accordion-body, .variable-btn-cube .selected-filters-item, .variable-btn-cube .label-radio-time .inp-radio, .variable-btn-cube .catalog-card, .variable-btn-cube .catalog-card__bg, .variable-btn-cube .catalog-card::before, .variable-btn-cube .advantages-wrapper, .variable-btn-cube .accordion-v3 .accordion-body, .variable-btn-cube .accordion-item, .variable-btn-cube .accordion-button, .variable-btn-cube .accordion-item:last-of-type .accordion-button.collapsed, .variable-btn-cube .accordion-item:last-of-type, .variable-btn-cube .contacts-box, .variable-btn-cube .contacts-map, .variable-btn-cube .contacts-map iframe, .variable-btn-cube .callback-contacts-wrapper, .variable-btn-cube .contacts-advantage-card, .variable-btn-cube .catalog-card-v2 .catalog-card__bg, .variable-btn-cube .catalog-card-v2 .catalog-card__bg img, .variable-btn-cube .list-sorting li a, .variable-btn-cube .additional-equipment-wrapper, .variable-btn-cube .home-slider-item, .variable-btn-cube .home-slider-item::before, .variable-btn-cube .home-slider-item__bg, .variable-btn-cube .additional-equipment-list-item:first-child, .variable-btn-cube .additional-equipment-list-item:last-child, .variable-btn-cube .calculate-box, .variable-btn-cube .callback-offer-wrapper, .variable-btn-cube .works-slider-gallery-item, .variable-btn-cube .works-slider-gallery-item img, .variable-btn-cube .works-slider-gallery .slick-arrow, .variable-btn-cube .advantages-company-box, .variable-btn-cube .certificates-slider-item, .variable-btn-cube .certificates-slider-item::before, .variable-btn-cube .video-reviews-slider-item, .variable-btn-cube .video-reviews-slider-item:before, .variable-btn-cube .employee-card, .variable-btn-cube .employee-card::before, .variable-btn-cube .contacts-section-wrapper, .variable-btn-cube .quick-calculation-wrapper, .variable-btn-cube .slider-nav-v3 .slick-arrow, .variable-btn-cube .slider-nav-v2 .slick-arrow, .variable-btn-cube .video-reviews-slider-item__preview, .variable-btn-cube .works-slider2 .works-slider-gallery-item img, .variable-btn-cube .employee-card__photo {
+.variable-btn-cube .btn, .variable-btn-cube input, .variable-btn-cube textarea, .variable-btn-cube select, .variable-btn-cube .filter-category-item .dropdown-toggle, .variable-btn-cube .category-list__item, .variable-btn-cube .catalog-card-v3, .variable-btn-cube .additional-equipment-list-item-v2:last-child, .variable-btn-cube .additional-equipment-list-item-v2:first-child, .variable-btn-cube .advantages-box-v3, .variable-btn-cube .menu .dropdown-menu, .variable-btn-cube .sidebar-callback, .variable-btn-cube .sidebar-menu, .variable-btn-cube .product-card, .variable-btn-cube .product-card-v2 .product-card-wrapper, .variable-btn-cube .accordion-v2 .accordion-body, .variable-btn-cube .selected-filters-item, .variable-btn-cube .label-radio-time .inp-radio, .variable-btn-cube .catalog-card, .variable-btn-cube .catalog-card__bg, .variable-btn-cube .catalog-card::before, .variable-btn-cube .advantages-wrapper, .variable-btn-cube .accordion-v3 .accordion-body, .variable-btn-cube .accordion-item, .variable-btn-cube .accordion-button, .variable-btn-cube .accordion-item:last-of-type .accordion-button.collapsed, .variable-btn-cube .accordion-item:last-of-type, .variable-btn-cube .contacts-box, .variable-btn-cube .contacts-map, .variable-btn-cube .contacts-map iframe, .variable-btn-cube .callback-contacts-wrapper, .variable-btn-cube .contacts-advantage-card, .variable-btn-cube .catalog-card-v2 .catalog-card__bg, .variable-btn-cube .catalog-card-v2 .catalog-card__bg img, .variable-btn-cube .list-sorting li a, .variable-btn-cube .additional-equipment-wrapper, .variable-btn-cube .home-slider-item, .variable-btn-cube .home-slider-item::before, .variable-btn-cube .home-slider-item__bg, .variable-btn-cube .additional-equipment-list-item:first-child, .variable-btn-cube .additional-equipment-list-item:last-child, .variable-btn-cube .calculate-box, .variable-btn-cube .callback-offer-wrapper, .variable-btn-cube .works-slider-gallery-item, .variable-btn-cube .works-slider-gallery-item img, .variable-btn-cube .works-slider-gallery .slick-arrow, .variable-btn-cube .advantages-company-box, .variable-btn-cube .certificates-slider-item, .variable-btn-cube .certificates-slider-item::before, .variable-btn-cube .video-reviews-slider-item, .variable-btn-cube .video-reviews-slider-item:before, .variable-btn-cube .employee-card, .variable-btn-cube .employee-card::before, .variable-btn-cube .contacts-section-wrapper, .variable-btn-cube .quick-calculation-wrapper, .variable-btn-cube .slider-nav-v3 .slick-arrow, .variable-btn-cube .slider-nav-v2 .slick-arrow, .variable-btn-cube .video-reviews-slider-item__preview, .variable-btn-cube .works-slider2 .works-slider-gallery-item img, .variable-btn-cube .employee-card__photo, .variable-btn-cube .employee-card__photo img, .variable-btn-cube .dropdown-v1 .dropdown-toggle, .variable-btn-cube .dropdown-v1 .dropdown-menu, .variable-btn-cube .employee-card-v3 .employee-card__photo, .variable-btn-cube .contacts-section-v3 .contacts-section__map, .variable-btn-cube .contacts-section-v3 .contacts-section__map iframe, .variable-btn-cube .page-title-wrapper-v2, .variable-btn-cube .info-box, .variable-btn-cube .meta-box, .variable-btn-cube .product-gallery-preview .product-gallery-item, .variable-btn-cube .product-order-info, .variable-btn-cube .nav-tabs-v2 .nav-link {
   border-radius: 0;
 }
 .variable-btn-cube .pagination .page-link {
+  border-radius: 0;
+}
+.variable-btn-cube .tab-content-product-v2 {
   border-radius: 0;
 }

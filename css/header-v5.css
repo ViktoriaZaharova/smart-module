@@ -221,6 +221,9 @@ header .list-social a:hover {
   font-size: 16px;
   position: relative;
 }
+.location-city:hover {
+  color: #6989ad;
+}
 .location-city__icon {
   display: -webkit-box;
   display: -ms-flexbox;
