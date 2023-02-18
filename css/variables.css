@@ -183,13 +183,13 @@ a.color-black:hover {
 .variable-accent-green .calculate-box {
   background: #282828;
 }
-.variable-accent-green .calculate-box .btn-black {
+.variable-accent-green .calculate-box .btn {
   background: #68BD29;
 }
-.variable-accent-green .location-wrapper .dropdown-toggle::before, .variable-accent-green .product-card-v3:hover .btn, .variable-accent-green .slick-dots li.slick-active, .variable-accent-green .btn-grey:hover, .variable-accent-green .mobile-menu__close:before, .variable-accent-green .mobile-menu__close::after, .variable-accent-green .mobile-menu .menu .submenu li:hover > a, .variable-accent-green .product-card-v2:hover .btn, .variable-accent-green .additional-equipment-list-item-v3 .additional-equipment-list-item__icon, .variable-accent-green .radio-checked, .variable-accent-green .quick-calculation-v2 .quick-calculation-wrapper, .variable-accent-green .calculate-box-v3 .calculate-box-range .ui-slider .ui-slider-handle, .variable-accent-green .calculate-box-v3 .calculate-box-range .ui-slider .ui-slider-range, .variable-accent-green .landing-home-v2 .landing-home-advantages-item__icon, .variable-accent-green .calculate-box-v2 .ui-slider .ui-slider-range, .variable-accent-green .advantages-company-box:hover, .variable-accent-green .selected-filters-item {
+.variable-accent-green .contacts-section-wrapper-v2 .list-social li a:hover, .variable-accent-green .video-reviews-slider-item-v2:hover .icon-play, .variable-accent-green .pagination .page-link:hover, .variable-accent-green .location-wrapper .dropdown-toggle::before, .variable-accent-green .product-card-v3:hover .btn, .variable-accent-green .slick-dots li.slick-active, .variable-accent-green .btn-grey:hover, .variable-accent-green .mobile-menu__close:before, .variable-accent-green .mobile-menu__close::after, .variable-accent-green .mobile-menu .menu .submenu li:hover > a, .variable-accent-green .product-card-v2:hover .btn, .variable-accent-green .additional-equipment-list-item-v3 .additional-equipment-list-item__icon, .variable-accent-green .radio-checked, .variable-accent-green .quick-calculation-v2 .quick-calculation-wrapper, .variable-accent-green .calculate-box-v3 .calculate-box-range .ui-slider .ui-slider-handle, .variable-accent-green .calculate-box-v3 .calculate-box-range .ui-slider .ui-slider-range, .variable-accent-green .landing-home-v2 .landing-home-advantages-item__icon, .variable-accent-green .calculate-box-v2 .ui-slider .ui-slider-range, .variable-accent-green .advantages-company-box:hover, .variable-accent-green .selected-filters-item, .variable-accent-green .menu-catalog li a::before {
   background: #68BD29;
 }
-.variable-accent-green .color-accent, .variable-accent-green .list-cities li a.checked, .variable-accent-green .product-card:hover .product-card__title, .variable-accent-green .footer-menu li a:hover, .variable-accent-green .footer-contacts a:hover, .variable-accent-green .location-city:hover, .variable-accent-green .header-box .link-callback:hover, .variable-accent-green a.color-grey:hover, .variable-accent-green .breadcrumbs li span {
+.variable-accent-green a.color-black:hover, .variable-accent-green .label-radio-time .inp-radio:checked ~ .radio-text, .variable-accent-green .color-accent, .variable-accent-green .list-cities li a.checked, .variable-accent-green .product-card:hover .product-card__title, .variable-accent-green .footer-menu li a:hover, .variable-accent-green .footer-contacts a:hover, .variable-accent-green .location-city:hover, .variable-accent-green .header-box .link-callback:hover, .variable-accent-green a.color-grey:hover, .variable-accent-green .breadcrumbs li span {
   color: #68BD29;
 }
 .variable-accent-green .list-cities li a.checked:hover {
@@ -202,13 +202,13 @@ a.color-black:hover {
   color: #68BD29;
   border: solid 2px #68BD29;
 }
-.variable-accent-green .list-sorting-v2 li a:hover, .variable-accent-green .list-sorting-v2 li a.active, .variable-accent-green .types-cabins-card-v3:hover, .variable-accent-green .advantages-box-v3, .variable-accent-green .link-catalog__icon, .variable-accent-green .product-gallery-preview .slick-current .product-gallery-item {
+.variable-accent-green .label-radio-product-v2 input:checked ~ .radio-image, .variable-accent-green .list-sorting-v3 li a.active, .variable-accent-green .sidebar-menu-list li.active, .variable-accent-green .list-sorting-v2 li a:hover, .variable-accent-green .list-sorting-v2 li a.active, .variable-accent-green .types-cabins-card-v3:hover, .variable-accent-green .advantages-box-v3, .variable-accent-green .link-catalog__icon, .variable-accent-green .product-gallery-preview .slick-current .product-gallery-item {
   border-color: #68BD29;
 }
 .variable-accent-green .advantages-box-v3 .advantages-box__icon::before {
   background: #A2DA79;
 }
-.variable-accent-green .header-box .link-callback, .variable-accent-green .nav-tabs-product-v2 {
+.variable-accent-green .header-box .link-callback, .variable-accent-green .nav-tabs-product-v2, .variable-accent-green .link-details {
   border-bottom-color: #68BD29;
 }
 .variable-accent-green .btn-border-white:hover, .variable-accent-green .btn-border-black:hover {
@@ -231,28 +231,28 @@ a.color-black:hover {
 .variable-accent-green .product-order-info .btn-accent, .variable-accent-green .heder-v3 .menu .dropdown-menu, .variable-accent-green .accordion-item-v2.open, .variable-accent-green .contacts-section-wrapper {
   background: #282828;
 }
-.variable-accent-green .nav-tabs-v2 .nav-link.active {
+.variable-accent-green .nav-tabs-v2 .nav-link.active, .variable-accent-green .label-radio-time .inp-radio:checked {
   color: #68BD29;
   background: #EDF9E3;
   border-color: #68BD29;
 }
-.variable-accent-green .slider-nav-v2 .slick-arrow:hover, .variable-accent-green .tab-content-product-v2, .variable-accent-green .info-box, .variable-accent-green .description-box, .variable-accent-green .page-title-wrapper-v3, .variable-accent-green .list-social-v3 li a:hover, .variable-accent-green .works-slider-gallery .slick-arrow:hover, .variable-accent-green .advantages-company-box, .variable-accent-green .contacts-box-v2, .variable-accent-green .sidebar-menu, .variable-accent-green .category-list__item.active, .variable-accent-green .accordion-v2 .accordion-body, .variable-accent-green .accordion-v3 .accordion-body, .variable-accent-green .accordion-v3 .accordion-button:not(.collapsed) {
+.variable-accent-green .slider-nav-v2 .slick-arrow:hover, .variable-accent-green .tab-content-product-v2, .variable-accent-green .info-box, .variable-accent-green .description-box, .variable-accent-green .page-title-wrapper-v3, .variable-accent-green .list-social-v3 li a:hover, .variable-accent-green .works-slider-gallery .slick-arrow:hover, .variable-accent-green .advantages-company-box, .variable-accent-green .contacts-box-v2, .variable-accent-green .sidebar-menu, .variable-accent-green .category-list__item.active, .variable-accent-green .accordion-v2 .accordion-body, .variable-accent-green .accordion-v3 .accordion-body, .variable-accent-green .accordion-v3 .accordion-button:not(.collapsed), .variable-accent-green .additional-equipment-list-item:nth-child(even) {
   background: #EDF9E3;
 }
-.variable-accent-green .label-radio-product-v2 input:checked ~ .radio-text .radio-checked, .variable-accent-green .category-list__clear {
+.variable-accent-green .accordion-item-v3 .accordion-button:not(.collapsed) .accordion-item__icon, .variable-accent-green .label-radio-product-v2 input:checked ~ .radio-text .radio-checked, .variable-accent-green .category-list__clear {
   border-color: #68BD29;
   background: #68BD29;
 }
 .variable-accent-green .label-radio-product-v3 .radio-image::before, .variable-accent-green .tab-content-product-v2 {
   border-color: #68BD29;
 }
-.variable-accent-green .nav-tabs-v2 .nav-link.active {
+.variable-accent-green .nav-tabs-product-v3 .nav-link.active {
   border-bottom-color: transparent;
 }
 .variable-accent-green .description-box {
   border-left-color: #68BD29;
 }
-.variable-accent-green .advantages-company-title__number, .variable-accent-green .calculate-box-v2 .ui-slider .ui-slider-handle, .variable-accent-green .calculate-box-v2, .variable-accent-green .question-icon, .variable-accent-green .category-list__item.active {
+.variable-accent-green .advantages-company-title__number, .variable-accent-green .calculate-box-v2 .ui-slider .ui-slider-handle, .variable-accent-green .calculate-box-v2, .variable-accent-green .question-icon, .variable-accent-green .category-list__item.active, .variable-accent-green .additional-equipment-list-item {
   border-color: #68BD29;
 }
 .variable-accent-green .slider-nav-v3 .slick-arrow:hover {
@@ -271,6 +271,136 @@ a.color-black:hover {
 }
 .variable-accent-green .accordion-v3 .accordion-button:not(.collapsed)::after {
   background: url("../img/accordion-icon-green.svg") no-repeat center;
+}
+.variable-accent-green .additional-equipment-list .additional-equipment-list-item-v3, .variable-accent-green .advantages-company-box-v2 {
+  background: transparent;
+}
+.variable-accent-green .advantages-company-box-v2:hover {
+  background: transparent;
+}
+.variable-accent-green .pagination .page-item-arrow .page-link:hover {
+  background: transparent;
+  fill: #68BD29;
+}
+.variable-accent-green .types-cabins-card-v3:hover .btn {
+  background: rgba(40, 40, 40, 0.6);
+}
+.variable-accent-green .works-slider2 .works-slider-gallery-item::before, .variable-accent-green .certificates-slider-item-v2:after {
+  background-color: #68BD29;
+}
+
+.variable-accent-red .btn-accent {
+  background: #DC2F2F;
+}
+.variable-accent-red .btn-accent:hover {
+  background: #6989ad;
+}
+.variable-accent-red .menu li a:hover {
+  color: #DC2F2F;
+}
+.variable-accent-red .calculate-box .btn {
+  background: #DC2F2F;
+}
+.variable-accent-red .contacts-section-wrapper-v2 .list-social li a:hover, .variable-accent-red .video-reviews-slider-item-v2:hover .icon-play, .variable-accent-red .pagination .page-link:hover, .variable-accent-red .location-wrapper .dropdown-toggle::before, .variable-accent-red .product-card-v3:hover .btn, .variable-accent-red .slick-dots li.slick-active, .variable-accent-red .btn-grey:hover, .variable-accent-red .mobile-menu__close:before, .variable-accent-red .mobile-menu__close::after, .variable-accent-red .mobile-menu .menu .submenu li:hover > a, .variable-accent-red .product-card-v2:hover .btn, .variable-accent-red .additional-equipment-list-item-v3 .additional-equipment-list-item__icon, .variable-accent-red .radio-checked, .variable-accent-red .quick-calculation-v2 .quick-calculation-wrapper, .variable-accent-red .calculate-box-v3 .calculate-box-range .ui-slider .ui-slider-handle, .variable-accent-red .calculate-box-v3 .calculate-box-range .ui-slider .ui-slider-range, .variable-accent-red .calculate-box-range .ui-slider .ui-slider-range, .variable-accent-red .calculate-box-range .ui-slider .ui-slider-handle, .variable-accent-red .landing-home-v2 .landing-home-advantages-item__icon, .variable-accent-red .calculate-box-v2 .ui-slider .ui-slider-range, .variable-accent-red .advantages-company-box:hover, .variable-accent-red .selected-filters-item, .variable-accent-red .product-card:hover .btn, .variable-accent-red .menu-catalog li a::before, .variable-accent-red .special-offer-form .btn-green {
+  background: #DC2F2F;
+}
+.variable-accent-red a.color-black:hover, .variable-accent-red .label-radio-time .inp-radio:checked ~ .radio-text, .variable-accent-red .color-accent, .variable-accent-red .list-cities li a.checked, .variable-accent-red .product-card:hover .product-card__title, .variable-accent-red .footer-menu li a:hover, .variable-accent-red .footer-contacts a:hover, .variable-accent-red .location-city:hover, .variable-accent-red .header-box .link-callback:hover, .variable-accent-red a.color-grey:hover, .variable-accent-red .breadcrumbs li span {
+  color: #DC2F2F;
+}
+.variable-accent-red .list-cities li a.checked:hover {
+  color: #DC2F2F;
+}
+.variable-accent-red .home-v2 .home-slider__nav .slick-arrow:hover, .variable-accent-red .slick-arrow:hover, .variable-accent-red .list-social li a:hover, .variable-accent-red .footer-contacts__icon, .variable-accent-red .mobile-menu .location-city__icon, .variable-accent-red .mobile-menu .schedule-box__icon, .variable-accent-red .mobile-menu .mail-icon, .variable-accent-red .mobile-menu .phone-icon, .variable-accent-red .phone-icon, .variable-accent-red .link-catalog__icon, .variable-accent-red .location-city__icon, .variable-accent-red .mail-icon, .variable-accent-red .footer-contacts a:hover .footer-contacts__icon, .variable-accent-red .header-v2 .schedule-box__icon, .variable-accent-red .info-box__icon, .variable-accent-red .advantages-company-box__icon, .variable-accent-red .contacts-section-v3 .contacts-section-wrapper .contacts-section-box__icon, .variable-accent-red .calculate-box-v2 .information-box__icon, .variable-accent-red .info-box-item__icon, .variable-accent-red .works-slider-gallery .slick-arrow:hover, .variable-accent-red .accordion-item-v2 .accordion-item__arrow, .variable-accent-red .contacts-box-v2 .contacts-box__icon, .variable-accent-red .contacts-box-v3 .contacts-box__icon {
+  fill: #DC2F2F;
+}
+.variable-accent-red .catalog-card-v3:hover, .variable-accent-red .catalog-card-v2:hover {
+  color: #DC2F2F;
+  border: solid 2px #DC2F2F;
+}
+.variable-accent-red .label-radio-product-v2 input:checked ~ .radio-image, .variable-accent-red .meta-box, .variable-accent-red .list-sorting-v3 li a.active, .variable-accent-red .sidebar-menu-list li.active, .variable-accent-red .list-sorting-v2 li a:hover, .variable-accent-red .list-sorting-v2 li a.active, .variable-accent-red .types-cabins-card-v3:hover, .variable-accent-red .advantages-box-v3, .variable-accent-red .link-catalog__icon, .variable-accent-red .product-gallery-preview .slick-current .product-gallery-item {
+  border-color: #DC2F2F;
+}
+.variable-accent-red .advantages-box-v3 .advantages-box__icon::before {
+  background: #F1ACAC;
+}
+.variable-accent-red .header-box .link-callback, .variable-accent-red .nav-tabs-product-v2, .variable-accent-red .link-details {
+  border-bottom-color: #DC2F2F;
+}
+.variable-accent-red .list-cities li a::after {
+  background: url("../img/checked-red.svg") no-repeat center;
+}
+.variable-accent-red .list-sorting li a.active {
+  color: #DC2F2F;
+  background: #FAF2F2;
+}
+.variable-accent-red .footer-v1 .footer-contacts__icon {
+  fill: #fff;
+}
+.variable-accent-red .list-sorting-v2 li a.active, .variable-accent-red .list-sorting-v3 li a.active {
+  background: transparent;
+}
+.variable-accent-red .product-order-info .btn-accent, .variable-accent-red .header-v3 .menu .dropdown-menu {
+  background: #282828;
+}
+.variable-accent-red .nav-tabs-v2 .nav-link.active, .variable-accent-red .label-radio-time .inp-radio:checked {
+  color: #DC2F2F;
+  background: #FAF2F2;
+  border-color: #DC2F2F;
+}
+.variable-accent-red .slider-nav-v2 .slick-arrow:hover, .variable-accent-red .tab-content-product-v2, .variable-accent-red .info-box, .variable-accent-red .description-box, .variable-accent-red .page-title-wrapper-v3, .variable-accent-red .list-social-v3 li a:hover, .variable-accent-red .works-slider-gallery .slick-arrow:hover, .variable-accent-red .advantages-company-box, .variable-accent-red .contacts-box-v2, .variable-accent-red .sidebar-menu, .variable-accent-red .category-list__item.active, .variable-accent-red .accordion-v2 .accordion-body, .variable-accent-red .accordion-v3 .accordion-body, .variable-accent-red .accordion-v3 .accordion-button:not(.collapsed), .variable-accent-red .additional-equipment-list-item:nth-child(even) {
+  background: #FAF2F2;
+}
+.variable-accent-red .accordion-item-v3 .accordion-button:not(.collapsed) .accordion-item__icon, .variable-accent-red .btn-border-white:hover, .variable-accent-red .btn-border-black:hover, .variable-accent-red .label-radio-product-v2 input:checked ~ .radio-text .radio-checked, .variable-accent-red .category-list__clear {
+  border-color: #DC2F2F;
+  background: #DC2F2F;
+}
+.variable-accent-red .label-radio-product-v3 .radio-image::before, .variable-accent-red .tab-content-product-v2 {
+  border-color: #DC2F2F;
+}
+.variable-accent-red .nav-tabs-product-v3 .nav-link.active {
+  border-bottom-color: transparent;
+}
+.variable-accent-red .description-box {
+  border-left-color: #DC2F2F;
+}
+.variable-accent-red .advantages-company-title__number, .variable-accent-red .calculate-box-v2 .ui-slider .ui-slider-handle, .variable-accent-red .calculate-box-v2, .variable-accent-red .question-icon, .variable-accent-red .category-list__item.active, .variable-accent-red .additional-equipment-list-item {
+  border-color: #DC2F2F;
+}
+.variable-accent-red .slider-nav-v3 .slick-arrow:hover {
+  background: #DC2F2F;
+  fill: #fff;
+}
+.variable-accent-red .label-radio-product input:checked ~ .radio-text, .variable-accent-red .accordion-v3 .accordion-button:not(.collapsed) .contacts-section-wrapper a:hover, .variable-accent-red .contacts-advantage-card__title:hover, .variable-accent-red a.color-white:hover, .variable-accent-red .filter-category-item .dropdown-menu .inp-check:checked ~ .checkbox-text, .variable-accent-red .accordion-button:not(.collapsed), .variable-accent-red .label-checkbox-v2 .inp-check:checked ~ .checkbox-text, .variable-accent-red .sidebar-submenu-list li a:hover, .variable-accent-red .accordion-v3 .accordion-button:not(.collapsed) {
+  color: #DC2F2F;
+}
+.variable-accent-red .label-checkbox-v2 .inp-check:checked ~ .checkbox-custom, .variable-accent-red .btn-border-grey:hover {
+  background-color: #DC2F2F;
+  border-color: #DC2F2F;
+}
+.variable-accent-red .accordion-button:not(.collapsed)::after {
+  background: url("../img/dropdown-icon-red.svg") no-repeat center;
+}
+.variable-accent-red .accordion-v3 .accordion-button:not(.collapsed)::after {
+  background: url("../img/accordion-icon-red.svg") no-repeat center;
+}
+.variable-accent-red .additional-equipment-list .additional-equipment-list-item-v3, .variable-accent-red .advantages-company-box-v2 {
+  background: transparent;
+}
+.variable-accent-red .advantages-company-box-v2:hover {
+  background: transparent;
+}
+.variable-accent-red .pagination .page-item-arrow .page-link:hover {
+  background: transparent;
+  fill: #DC2F2F;
+}
+.variable-accent-red .types-cabins-card-v3:hover .btn {
+  background: rgba(40, 40, 40, 0.6);
+}
+.variable-accent-red .works-slider2 .works-slider-gallery-item::before, .variable-accent-red .certificates-slider-item-v2:after {
+  background-color: #DC2F2F;
+}
+.variable-accent-red .special-offer-form-v3 .consent {
+  color: #fff;
 }
 
 .font-Circe {
