@@ -7,6 +7,9 @@
   .product-card-wrapper {
     padding: 30px 25px;
   }
+  .product-card-v3 {
+    padding: 0;
+  }
   .product-card-v3 .product-card__img {
     height: 140px;
   }
@@ -1316,6 +1319,9 @@
   }
   .contacts-section-v3 .contacts-section__map {
     height: 300px;
+  }
+  .additional-equipment-list-item-v3 {
+    padding: 0 0 0 65px;
   }
 }
 @media only screen and (max-width: 480px) {

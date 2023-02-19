@@ -234,12 +234,6 @@ a.color-black:hover {
   background: #f5f5f5;
 }
 
-/* классы для новых вариаций добавляются к секции wrapper в начале каждой страницы */
-/* variable-btn-radius - для кнопок с закгруденными краями */
-/* variable-btn-cube - для кнопок без загруглений */
-/* variable-accent-green - для кнопок зеленого цвета */
-/* variable-accent-red - для кнопок красного цвета */
-
 .variable-accent-green .btn-accent {
   background: #68BD29;
 }
@@ -357,6 +351,10 @@ a.color-black:hover {
 .variable-accent-green .works-slider2 .works-slider-gallery-item::before, .variable-accent-green .certificates-slider-item-v2:after {
   background-color: #68BD29;
 }
+.variable-accent-green .sidebar-menu-list li a:hover {
+  border-color: #68BD29;
+  color: #68BD29;
+}
 
 .variable-accent-red .btn-accent {
   background: #DC2F2F;
@@ -471,6 +469,10 @@ a.color-black:hover {
 .variable-accent-red .special-offer-form-v3 .consent {
   color: #fff;
 }
+.variable-accent-red .sidebar-menu-list li a:hover {
+  border-color: #DC2F2F;
+  color: #DC2F2F;
+}
 
 .font-Circe {
   font-family: "Circe", sans-serif;
@@ -487,6 +489,121 @@ a.color-black:hover {
 .font-Montserrat button, .font-Montserrat btn, .font-Montserrat input, .font-Montserrat textarea, .font-Montserrat select {
   font-family: "Montserrat", sans-serif;
 }
+.font-Montserrat .menu, .font-Montserrat .mobile-menu .menu {
+  font-size: 15px;
+}
+.font-Montserrat .header-v4 .menu, .font-Montserrat .header-v7 .menu {
+  font-size: 15px;
+}
+.font-Montserrat .header-v7 .btn {
+  padding: 10px 18px;
+}
+.font-Montserrat .header-v7 .header-contacts {
+  margin: 0 20px;
+}
+.font-Montserrat .catalog-card-v3 .catalog-card__title {
+  font-size: 12px;
+}
+.font-Montserrat .list-sorting-v2 li {
+  margin: 0 20px 0 0;
+}
+.font-Montserrat .product-card-v3 {
+  font-size: 14px;
+}
+.font-Montserrat .product-card__title {
+  font-size: 16px;
+}
+.font-Montserrat .product-card-wrapper {
+  padding: 25px 20px;
+}
+.font-Montserrat .additional-equipment-list-item-v2 .additional-equipment-list-item__name {
+  font-size: 16px;
+}
+.font-Montserrat .h3 {
+  font-size: 18px;
+}
+.font-Montserrat .subscribe-wrapper-text__title {
+  font-size: 16px;
+}
+.font-Montserrat .footer-wrapper {
+  font-size: 14px;
+}
+.font-Montserrat .header-v5 .header-box {
+  margin: 0 20px 0 auto;
+}
+.font-Montserrat .header-v1 .search-header {
+  margin: 0 20px;
+}
+.font-Montserrat .footer-v1 {
+  font-size: 15px;
+}
+.font-Montserrat .footer-v1 .subscribe-wrapper-text__title {
+  font-size: 14px;
+  max-width: 195px;
+}
+.font-Montserrat .home-v5 .h1 {
+  font-size: 60px;
+}
+.font-Montserrat .advantages-v2 .advantages-box .h3 {
+  white-space: normal;
+}
+.font-Montserrat .accordion-v3 .accordion-button, .font-Montserrat .menu-catalog, .font-Montserrat .category-list__item, .font-Montserrat .contacts-box-v3, .font-Montserrat .contacts-box .address {
+  font-size: 16px;
+}
+.font-Montserrat .sidebar-callback__title {
+  font-size: 19px;
+}
+.font-Montserrat .sidebar-menu-list, .font-Montserrat .contacts-box-v2, .font-Montserrat .contacts-box__title, .font-Montserrat .phone-box a, .font-Montserrat .contacts-advantage-card__title, .font-Montserrat .calculate-box__title, .font-Montserrat .advantages-company-box, .font-Montserrat .nav-tabs-v2 {
+  font-size: 18px;
+}
+.font-Montserrat .contacts-box {
+  line-height: normal;
+}
+.font-Montserrat .contacts-advantage-card__title {
+  max-width: 290px;
+}
+.font-Montserrat .header-v2 .schedule-box {
+  margin: 0 20px 0 0;
+}
+.font-Montserrat .header-v2 .header-box {
+  margin: 0 auto;
+}
+.font-Montserrat .header-v2 .btn {
+  padding: 10px 18px;
+}
+.font-Montserrat .logo-description {
+  font-size: 14px;
+}
+.font-Montserrat .catalog-card-v2 .catalog-card__title, .font-Montserrat .additional-equipment-list-item-v3 {
+  font-size: 16px;
+}
+.font-Montserrat .landing-home h1 {
+  font-size: 55px;
+}
+.font-Montserrat .information-box {
+  font-size: 12px;
+}
+.font-Montserrat .callback-offer h2, .font-Montserrat .advantages-company-box, .font-Montserrat .contacts-section-box {
+  line-height: normal;
+}
+.font-Montserrat .form-callback-offer .consent {
+  font-size: 12px;
+}
+.font-Montserrat .landing-home-v3 .landing-home-advantages-item {
+  font-size: 22px;
+}
+.font-Montserrat .advantages-company-title h2 {
+  max-width: none;
+}
+.font-Montserrat .description-product-box {
+  font-size: 14px;
+}
+.font-Montserrat h1 {
+  font-size: 30px;
+}
+.font-Montserrat .nav-tabs-v2 {
+  margin: 10px 0 0;
+}
 
 .font-Roboto {
   font-family: "Roboto", sans-serif;
@@ -494,6 +611,102 @@ a.color-black:hover {
 }
 .font-Roboto button, .font-Roboto btn, .font-Roboto input, .font-Roboto textarea, .font-Roboto select {
   font-family: "Roboto", sans-serif;
+}
+.font-Roboto .logo-description {
+  font-size: 14px;
+}
+.font-Roboto .menu {
+  font-size: 15px;
+}
+.font-Roboto .header-v4 .menu, .font-Roboto .header-v7 .menu {
+  font-size: 14px;
+}
+.font-Roboto .header-v7 .btn {
+  padding: 10px 18px;
+}
+.font-Roboto .header-v7 .header-contacts {
+  margin: 0 20px;
+}
+.font-Roboto .catalog-card-v3 .catalog-card__title {
+  font-size: 13px;
+}
+.font-Roboto .product-card-wrapper {
+  padding: 25px 20px;
+}
+.font-Roboto .additional-equipment-list-item-v2 .additional-equipment-list-item__name {
+  font-size: 16px;
+}
+.font-Roboto .advantages-box-v3 .box-text {
+  max-width: none;
+}
+.font-Roboto .footer-wrapper {
+  font-size: 15px;
+}
+.font-Roboto .h3 {
+  font-size: 18px;
+}
+.font-Roboto .footer-v1 .subscribe-wrapper-text__title {
+  font-size: 14px;
+}
+.font-Roboto .home-v5 .h1 {
+  font-size: 60px;
+}
+.font-Roboto .advantages-v2 .advantages-box .h3 {
+  white-space: normal;
+}
+.font-Roboto .accordion-v3 .accordion-button, .font-Roboto .menu-catalog, .font-Roboto .category-list__item, .font-Roboto .contacts-box-v3, .font-Roboto .contacts-box .address {
+  font-size: 16px;
+}
+.font-Roboto .sidebar-callback__title {
+  font-size: 19px;
+}
+.font-Roboto .sidebar-menu-list, .font-Roboto .contacts-box-v2, .font-Roboto .contacts-box__title, .font-Roboto .phone-box a, .font-Roboto .contacts-advantage-card__title, .font-Roboto .calculate-box__title, .font-Roboto .advantages-company-box, .font-Roboto .nav-tabs-v2 {
+  font-size: 18px;
+}
+.font-Roboto .contacts-box {
+  line-height: normal;
+}
+.font-Roboto .contacts-advantage-card__title {
+  max-width: 290px;
+}
+.font-Roboto .header-v2 .schedule-box {
+  margin: 0 20px 0 0;
+}
+.font-Roboto .header-v2 .header-box {
+  margin: 0 auto;
+}
+.font-Roboto .header-v2 .btn {
+  padding: 10px 18px;
+}
+.font-Roboto .catalog-card-v2 .catalog-card__title, .font-Roboto .additional-equipment-list-item-v3 {
+  font-size: 16px;
+}
+.font-Roboto .landing-home h1 {
+  font-size: 55px;
+}
+.font-Roboto .information-box {
+  font-size: 12px;
+}
+.font-Roboto .callback-offer h2, .font-Roboto .advantages-company-box, .font-Roboto .contacts-section-box {
+  line-height: normal;
+}
+.font-Roboto .form-callback-offer .consent {
+  font-size: 12px;
+}
+.font-Roboto .landing-home-v3 .landing-home-advantages-item {
+  font-size: 22px;
+}
+.font-Roboto .advantages-company-title h2 {
+  max-width: none;
+}
+.font-Roboto .description-product-box {
+  font-size: 14px;
+}
+.font-Roboto h1 {
+  font-size: 30px;
+}
+.font-Roboto .nav-tabs-v2 {
+  margin: 10px 0 0;
 }
 
 .font-OpenSans {
@@ -503,7 +716,190 @@ a.color-black:hover {
 .font-OpenSans button, .font-OpenSans btn, .font-OpenSans input, .font-OpenSans textarea, .font-OpenSans select {
   font-family: "OpenSans", sans-serif;
 }
+.font-OpenSans .logo-description {
+  font-size: 14px;
+}
+.font-OpenSans .menu {
+  font-size: 15px;
+}
+.font-OpenSans .header-v4 .menu, .font-OpenSans .header-v7 .menu {
+  font-size: 14px;
+}
+.font-OpenSans .header-v7 .btn {
+  padding: 10px 18px;
+}
+.font-OpenSans .header-v7 .header-contacts {
+  margin: 0 20px;
+}
+.font-OpenSans .catalog-card-v3 .catalog-card__title {
+  font-size: 13px;
+}
+.font-OpenSans .product-card__title {
+  font-size: 17px;
+}
+.font-OpenSans .product-card-wrapper {
+  padding: 25px 20px;
+}
+.font-OpenSans .additional-equipment-list-item-v2 .additional-equipment-list-item__name {
+  font-size: 16px;
+}
+.font-OpenSans .advantages-box-v3 .box-text {
+  max-width: none;
+}
+.font-OpenSans .footer-wrapper {
+  font-size: 15px;
+}
+.font-OpenSans .h3 {
+  font-size: 18px;
+}
+.font-OpenSans .footer-v1 {
+  font-size: 15px;
+}
+.font-OpenSans .footer-v1 .subscribe-wrapper-text__title {
+  font-size: 14px;
+}
+.font-OpenSans .home-v5 .h1 {
+  font-size: 60px;
+}
+.font-OpenSans .advantages-v2 .advantages-box .h3 {
+  white-space: normal;
+}
+.font-OpenSans .accordion-v3 .accordion-button, .font-OpenSans .menu-catalog, .font-OpenSans .category-list__item, .font-OpenSans .contacts-box-v3, .font-OpenSans .contacts-box .address {
+  font-size: 16px;
+}
+.font-OpenSans .sidebar-callback__title {
+  font-size: 19px;
+}
+.font-OpenSans .sidebar-menu-list, .font-OpenSans .contacts-box-v2, .font-OpenSans .contacts-box__title, .font-OpenSans .phone-box a, .font-OpenSans .contacts-advantage-card__title, .font-OpenSans .calculate-box__title, .font-OpenSans .advantages-company-box, .font-OpenSans .nav-tabs-v2 {
+  font-size: 18px;
+}
+.font-OpenSans .contacts-box {
+  line-height: normal;
+}
+.font-OpenSans .contacts-advantage-card__title {
+  max-width: 290px;
+}
+.font-OpenSans .header-v2 .schedule-box {
+  margin: 0 20px 0 0;
+}
+.font-OpenSans .header-v2 .header-box {
+  margin: 0 auto;
+}
+.font-OpenSans .header-v2 .btn {
+  padding: 10px 18px;
+}
+.font-OpenSans .catalog-card-v2 .catalog-card__title, .font-OpenSans .additional-equipment-list-item-v3 {
+  font-size: 16px;
+}
+.font-OpenSans .landing-home h1 {
+  font-size: 55px;
+}
+.font-OpenSans .information-box {
+  font-size: 12px;
+}
+.font-OpenSans .callback-offer h2, .font-OpenSans .advantages-company-box, .font-OpenSans .contacts-section-box {
+  line-height: normal;
+}
+.font-OpenSans .form-callback-offer .consent {
+  font-size: 12px;
+}
+.font-OpenSans .landing-home-v3 .landing-home-advantages-item {
+  font-size: 22px;
+}
+.font-OpenSans .advantages-company-title h2 {
+  max-width: none;
+}
+.font-OpenSans .description-product-box {
+  font-size: 14px;
+}
+.font-OpenSans h1 {
+  font-size: 30px;
+}
+.font-OpenSans .nav-tabs-v2 {
+  margin: 10px 0 0;
+}
 
+@media only screen and (max-width: 1400px) {
+  .font-Roboto .product-card__price, .font-OpenSans .product-card__price, .font-Montserrat .product-card__price {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .font-Roboto .landing-home h1, .font-OpenSans .landing-home h1, .font-Montserrat .landing-home h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .font-OpenSans .header-v7 .menu li, .font-Roboto .header-v7 .menu li, .font-Montserrat .header-v7 .menu li {
+    margin: 0 10px 0 0;
+  }
+  .font-Montserrat .header-v7 .header-contacts {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  .font-OpenSans .header-v7 .header-contacts, .font-Roboto .header-v7 .header-contacts, .font-Montserrat .header-v7 .header-contacts {
+    margin: 0 auto 0 30px;
+  }
+  .font-OpenSans .header-v2, .font-Roboto .header-v2, .font-Montserrat .header-v2 {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1110px) {
+  .font-Montserrat .header-v1 .location-wrapper {
+    margin: 0 10px;
+  }
+  .font-Montserrat .header-v1 .btn {
+    padding: 10px 18px;
+  }
+  .font-OpenSans .header-v2 .header-box, .font-Roboto .header-v2 .header-box, .font-Montserrat .header-v2 .header-box {
+    margin: 0 10px;
+  }
+  .font-OpenSans .header-v2 .schedule-box, .font-Roboto .header-v2 .schedule-box, .font-Montserrat .header-v2 .schedule-box {
+    margin: 0 20px 0 auto;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .font-Montserrat .header-v5 .header-box {
+    margin: 0 20px 0 auto;
+  }
+  .font-Montserrat .catalog-card-v3 .catalog-card__title {
+    font-size: 16px;
+  }
+  .font-Montserrat .header-v1 {
+    font-size: 15px;
+  }
+  .font-Montserrat .home-v5 .h1 {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .font-Montserrat .header-v5 .header-box {
+    margin: 0;
+  }
+  .font-OpenSans .header-v7 .header-contacts, .font-Roboto .header-v7 .header-contacts, .font-Montserrat .header-v7 .header-contacts {
+    margin: 0 20px 0 auto;
+  }
+  .font-OpenSans .home-v5 .h1, .font-Roboto .home-v5 .h1, .font-Montserrat .home-v5 .h1 {
+    font-size: 40px;
+  }
+  .font-OpenSans .landing-home h1, .font-Roboto .landing-home h1, .font-Montserrat .landing-home h1 {
+    font-size: 30px;
+  }
+  .font-OpenSans .landing-home-v3 .landing-home-advantages-item, .font-Roboto .landing-home-v3 .landing-home-advantages-item, .font-Montserrat .landing-home-v3 .landing-home-advantages-item {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .font-OpenSans .home-v5 .h1, .font-Roboto .home-v5 .h1, .font-Montserrat .home-v5 .h1 {
+    font-size: 28px;
+  }
+  .font-OpenSans .landing-home h1, .font-Roboto .landing-home h1, .font-Montserrat .landing-home h1 {
+    font-size: 28px;
+  }
+  .font-OpenSans h1, .font-Roboto h1, .font-Montserrat h1 {
+    font-size: 22px;
+  }
+}
 .variable-btn-radius .btn, .variable-btn-radius input, .variable-btn-radius textarea, .variable-btn-radius select, .variable-btn-radius .filter-category-item .dropdown-toggle, .variable-btn-radius .category-list__item, .variable-btn-radius .additional-equipment-wrapper, .variable-btn-radius .additional-equipment-list-item.additional-equipment-list-item-v2:last-child {
   border-radius: 30px;
 }

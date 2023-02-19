@@ -1750,6 +1750,7 @@
 }
 .sidebar-menu-list li a:hover {
   border-color: #6989ad;
+  color: #6989ad;
 }
 .sidebar-menu-list li.active {
   border-color: #6989ad;
@@ -1888,7 +1889,7 @@
   border-radius: 0 0 6px 6px;
 }
 .accordion-v3 .accordion-button {
-  padding: 15px 25px;
+  padding: 15px 25px 15px 20px;
   font-size: 20px;
   font-weight: normal;
 }
@@ -2717,7 +2718,7 @@
   margin: 0;
 }
 .description-product-box .list-radio li {
-  margin: 0 14px 5px 0;
+  margin: 0 14px 8px 0;
 }
 .description-product-box .list-radio li:last-child {
   margin: 0 0 5px;
@@ -3330,6 +3331,7 @@
 .special-offer-form-v3 .consent {
   text-align: center;
   font-size: 13px;
+  color: #fff;
 }
 
 .landing-home__image {
