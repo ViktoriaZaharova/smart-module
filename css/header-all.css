@@ -508,6 +508,9 @@ header .logo {
 .mobile-menu .phone-text {
   display: block !important;
 }
+.mobile-menu .phone-icon {
+  margin: 0 9px 0 0;
+}
 .mobile-menu .header-box {
   margin: 0;
 }
