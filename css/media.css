@@ -109,6 +109,9 @@
   .landing-home__image {
     min-width: 1100px;
   }
+  .keep-menu-v2.hidden {
+    max-height: 130px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .advantages-v2 {
@@ -266,6 +269,12 @@
   }
   .accordion-item-v4 .accordion-body {
     padding: 0 20px 30px 74px;
+  }
+  .blog-card-row .blog-card__img {
+    width: 320px;
+  }
+  .blog-card-row .blog-card__body {
+    width: calc(100% - 320px);
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -646,6 +655,22 @@
   .contacts-section-v3 .contacts-section-wrapper .address {
     max-width: none;
   }
+  .blog-card-column .box-text {
+    height: auto;
+    overflow: visible;
+  }
+  .blog-card-column .box-text::before {
+    display: none;
+  }
+  .page-blog {
+    margin: 0 0 50px;
+  }
+  .sidebar-blog-box-latest, .subscribe-blog {
+    display: none;
+  }
+  .recommended-articles {
+    margin: 0 0 50px;
+  }
 }
 @media only screen and (max-width: 768px) {
   h2 {
@@ -907,6 +932,10 @@
     width: 20px;
     height: 20px;
     min-width: 20px;
+  }
+  .article-home {
+    min-height: 350px;
+    padding: 30px 30px 20px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1322,6 +1351,67 @@
   }
   .additional-equipment-list-item-v3 {
     padding: 0 0 0 65px;
+  }
+  .blog-card-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .blog-card-row .blog-card__img {
+    width: 100%;
+    height: 250px;
+  }
+  .blog-card-row .blog-card__body {
+    width: 100%;
+    padding: 20px;
+  }
+  .article-box {
+    margin: 40px 0 0;
+  }
+  .article-box .h4 {
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
+  .page-article .box-text > p {
+    margin: 0 0 20px;
+  }
+  .article-quote {
+    padding: 20px;
+    font-size: 18px;
+  }
+  .article-image {
+    margin: 0 0 30px;
+  }
+  .offers-offers-item {
+    padding: 25px;
+    height: auto;
+  }
+  .keep-menu > li {
+    margin: 0 0 10px;
+  }
+  .recommended-articles .h3 {
+    font-size: 24px;
+  }
+  .status-new {
+    margin-bottom: 15px;
+  }
+  .category-blogs-list li {
+    margin: 0 0 12px;
+  }
+  .info-article-item {
+    margin-right: 20px;
+  }
+  .attention-info {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .keep-menu-v2.hidden {
+    max-height: 115px;
   }
 }
 @media only screen and (max-width: 480px) {

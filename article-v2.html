@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Smart-Module</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header-all.css">
+	<link rel="stylesheet" href="css/footer-all.css">
+	<link rel="stylesheet" href="css/modal-all.css">
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<div class="wrapper font-Circe">
+
+		<header class="header-v1">
+			<div class="mobile-menu">
+				<div class="mobile-menu__close"></div>
+				<div class="mobile-menu__head">
+					<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
+				</div>
+				<div class="mobile-menu__body">
+					<a href="#" class="location-city" data-bs-toggle="modal" data-bs-target="#locationModal">
+						<span class="location-city__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#location"></use>
+							</svg></span>
+						<span class="location-city__text">Санкт-Петербург</span>
+					</a>
+			
+					<ul class="menu my-ul">
+						<li><a href="index.html">Главная</a></li>
+						<li class="dropdown"><a href="catalog.html">Каталог</a>
+							<div class="dropdown-menu">
+								<ul class="submenu menu my-ul">
+									<li><a href="#">Вахтовые поселки</a></li>
+									<li><a href="#">Модульные здания</a></li>
+									<li class="dropdown"><a href="#">Блок-контейнеры</a>
+										<div class="dropdown-menu">
+											<ul class="submenu menu my-ul">
+												<li><a href="#">Посты охраны</a></li>
+												<li><a href="#">Блок контейнеры север</a></li>
+												<li><a href="#">Блок контейнер сэндвич</a></li>
+												<li><a href="#">Сантехнические</a></li>
+												<li><a href="#">Сборно-разборные</a></li>
+												<li><a href="#">Под оборудование</a></li>
+												<li><a href="#">На шасси</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="#">Переоборудование контейнеров</a></li>
+									<li><a href="#">Деревянные дома</a></li>
+									<li><a href="#">Пост охраны</a></li>
+									<li><a href="#">Павильоны</a></li>
+									<li><a href="#">Спец. контейнеры</a></li>
+									<li><a href="#">Деревянные бытовки</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="sales.html">Акци и скидки</a></li>
+						<li><a href="projects.html">Проекты</a></li>
+						<li><a href="services.html">Услуги</a></li>
+						<li><a href="technology.html">Технология</a></li>
+						<li><a href="industries.html">Отрасли</a></li>
+						<li><a href="blog.html">Блог</a></li>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="about.html">О компании</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<form method="post" class="form-search">
+						<label>
+							<input type="text" placeholder="Поиск" name="search">
+							<button type="submit">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+							</button>
+						</label>
+					</form>
+				</div>
+				<div class="mobile-menu__footer">
+			
+					<a href="mailto:spb10@smart-module.ru" class="mail">
+						<span class="mail-icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#mail2"></use>
+							</svg>
+						</span>
+						<span class="mail-text">spb10@smart-module.ru</span>
+					</a>
+			
+					<div class="header-box">
+						<a href="tel:+78122004118" class="phone">
+							<span class="phone-icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#phone"></use>
+								</svg>
+							</span>
+							<span class="phone-text">8 (812) 200-41-18</span>
+						</a>
+					</div>
+			
+					<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать
+						заявку</a>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 d-flex flex-wrap align-items-center">
+						<div class="btn-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+
+						<div class="location-wrapper dropdown">
+							<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown">
+								<span class="location-city__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#location"></use>
+									</svg></span>
+								<span class="location-city__text">Санкт-Петербург</span>
+							</a>
+							<div class="dropdown-menu">
+								<form method="post" class="form-search">
+									<label>
+										<input type="text" placeholder="Ваш город" name="search">
+										<button type="submit">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#search"></use>
+											</svg>
+										</button>
+									</label>
+								</form>
+
+								<a href="#" class="link-autosearch color-accent">Автоопределение</a>
+
+								<ul class="list-cities my-ul scroll-vertical">
+									<li><a href="#">Москва</a></li>
+									<li><a href="#" class="checked">Санкт-Петербург</a></li>
+									<li><a href="#">Казань</a></li>
+									<li><a href="#">Нижний Новгород</a></li>
+									<li><a href="#">Екатеренбург</a></li>
+									<li><a href="#">Самара</a></li>
+									<li><a href="#">Ростов-на-Дону</a></li>
+									<li><a href="#">Уфа</a></li>
+									<li><a href="#">Челябинск</a></li>
+									<li><a href="#">Саратов</a></li>
+									<li><a href="#">Самара</a></li>
+									<li><a href="#">Аксай</a></li>
+									<li><a href="#">Александров</a></li>
+									<li><a href="#">Александров Гай</a></li>
+									<li><a href="#">Александровск</a></li>
+									<li><a href="#">Алексеевка
+											(Самарская область)</a></li>
+									<li><a href="#">Баксан</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<a href="mailto:spb10@smart-module.ru" class="mail">
+							<span class="mail-icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#mail2"></use>
+								</svg>
+							</span>
+							<span class="mail-text">spb10@smart-module.ru</span>
+						</a>
+
+						<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
+
+						<div class="header-box">
+							<a href="tel:+78122004118" class="phone">
+								<span class="phone-icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#phone"></use>
+									</svg>
+								</span>
+								<span class="phone-text">8 (812) 200-41-18</span>
+							</a>
+
+							<a href="#" class="link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать
+								звонок</a>
+						</div>
+
+						<div class="search-header dropdown">
+							<a href="#" class="btn-search" data-bs-toggle="dropdown">
+								<svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+							</a>
+
+							<div class="dropdown-menu">
+								<form method="post" class="form-search">
+									<label>
+										<input type="text" placeholder="Поиск" name="search">
+										<button type="submit">
+											<svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#search"></use>
+											</svg>
+										</button>
+									</label>
+								</form>
+							</div>
+						</div>
+
+						<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать заявку</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="page page-catalog page-blog page-article">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="page-title-wrapper">
+							<ul class="breadcrumbs my-ul">
+								<li><a href="index.html">Главная</a></li>
+								<li><span>Вся правда о подвесных каминах. Плюсы и минусы</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-lg-3 order-lg-1">
+						<div class="sidebar-blog">
+							<div class="keep-wrapper">
+								<div class="keep-title">Содержание</div>
+					
+								<ol class="keep-menu keep-menu-v2 list-number-my my-ul hidden">
+									<li><a href="#">Необходимые условия для установки</a></li>
+									<li><a href="#">Наши предложения</a></li>
+									<li><a href="#">Плюсы и минусы дровяного подвесного камина</a></li>
+									<li><a href="#">Классификация по способу крепления</a>
+										<ul class="list-dots-my my-ul">
+											<li><a href="#">С центральным расположением</a></li>
+											<li><a href="#">Настенный</a></li>
+											<li><a href="#">Угловой</a></li>
+											<li><a href="#">Вращающийся</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Классификация по типам топки</a></li>
+									<li><a href="#">Интерьеры для подвесного дровяного камина</a></li>
+									<li><a href="#">Конструкция подвесных
+											каминов</a></li>
+									<li><a href="#">Заключение</a></li>
+								</ol>
+					
+								<a href="#" class="links-toggle-menu">развернуть</a>
+							</div>
+					
+							<div class="banner-faq subscribe-blog">
+								<div class="h4"><span class="font-italic">Подпишитесь на
+									</span>
+									полезные статьи
+								</div>
+					
+								<div class="callback-box__body">
+									<form method="post" class="form">
+										<label>
+											<input type="text" placeholder="Ваш email" name="mail">
+										</label>
+					
+										<button type="submit" class="btn btn-accent btn-sm">подписаться</button>
+										<div class="consent">Нажимая на кнопку, Вы даете
+											согласие на обработку своих
+											персональных данных и
+											соглашаетесь с Пользовательским
+											соглашением
+										</div>
+									</form>
+								</div>
+							</div>
+					
+							<div class="sidebar-blog-box sidebar-blog-box-latest">
+								<div class="sidebar-blog-box__title">Последние записи</div>
+					
+								<div class="latest-articles slider-my">
+									<div class="slide">
+										<a href="article.html" class="last-notes-box last-notes-box-column">
+											<span class="last-notes-box__img"><img src="img/banner1.jpg" alt=""></span>
+											<span class="last-notes-box__body">
+												<span class="last-notes-box__date">12 марта</span>
+												<span class="last-notes-box__title">Что делать, если
+													дымит камин?
+													Устраняем причины</span>
+											</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="article.html" class="last-notes-box last-notes-box-column">
+											<span class="last-notes-box__img"><img src="img/banner1.jpg" alt=""></span>
+											<span class="last-notes-box__body">
+												<span class="last-notes-box__date">12 марта</span>
+												<span class="last-notes-box__title">Что делать, если
+													дымит камин?
+													Устраняем причины</span>
+											</span>
+										</a>
+									</div>
+									<div class="slide">
+										<a href="article.html" class="last-notes-box last-notes-box-column">
+											<span class="last-notes-box__img"><img src="img/banner1.jpg" alt=""></span>
+											<span class="last-notes-box__body">
+												<span class="last-notes-box__date">12 марта</span>
+												<span class="last-notes-box__title">Что делать, если
+													дымит камин?
+													Устраняем причины</span>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-lg-9">
+						
+						<div class="article-home">
+							<h1>Вся правда о подвесных каминах. Плюсы и минусы</h1>
+							<img src="img/banner1.jpg" alt="" class="article-home__bg">
+							<div class="info-article my-ul">
+								<div class="info-article-item">
+									<span class="info-article-item__icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#calendar"></use>
+										</svg></span>
+									<span class="info-article-item__text">11 марта</span>
+								</div>
+								<div class="info-article-item">
+									<span class="info-article-item__icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#view"></use>
+										</svg></span>
+									<span class="info-article-item__text">194</span>
+								</div>
+								<a href="#comment" class="info-article-item go_to">
+									<span class="info-article-item__icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#messenger"></use>
+										</svg></span>
+									<span class="info-article-item__text">Обсудить</span>
+								</a>
+							</div>
+						
+						</div>
+					
+						<div class="box-text">
+							<p>Сегодня для загородных домов и дач чаще всего выбирают именно печи-камины. Такие изделия являются
+								одновременно и
+								камином, и печью. Они имеют цельную конструкцию с прозрачной дверцей (используется жаростойкое стекло),
+								у них
+								эргономичные габариты и красивый внешний вид. Печи-камины для дачи или коттеджа являются достаточно
+								универсальными
+								устройствами, так как они создают уют, наполняют помещение удивительной атмосферой, отапливают
+								помещение, а некоторые
+								модели, имеющие варочную панель, даже позволяют готовить. Кроме того, печи-камины характеризуются
+								уникальными
+								теплотехническими параметрами, у них есть и другие достоинства, это:</p>
+							<ul class="my-ul list-dots-my">
+								<li>Экологически чистое и экономичное горение. Они обогреваются при помощи экологически чистого и
+									возобновляемого вида топлива - дровах. Дровяной тип печи-камина поглощает все виды дерева.</li>
+								<li>Поэтому любая сухая веточка может быть использованной для отопления дачи.</li>
+								<li>Не нуждаются в источниках дополнительного тепла. Кроме этого, их можно устанавливать в подвале,
+									чтобы горячий воздух поднимался на верхние этажи.</li>
+								<li>Печи-камины изготавливаются из жаростойких и высокопрочных материалов, что значительно повышает
+									их срок службы.</li>
+								<li>Некоторые модели позволяют подключать водяной контур.</li>
+								<li>У владельца есть возможность разводить горячий воздух по соседним помещениям.</li>
+								<li>Можно найти модели различной мощности.</li>
+								<li>У таких печей очень высокий коэффициент полезного действия.</li>
+								<li>Печи-камины легко монтировать.</li>
+								<li>У таких печей высокие эстетические показатели и хорошая эргономика.</li>
+								<li>Большинство моделей оснащено всеми известными технологичными системами и решениями.</li>
+							</ul>
+						</div>
+					
+						<div class="article-box">
+							<div class="h4">Необходимые условия для установки</div>
+					
+							<div class="box-text">
+								<p>Давайте определим подойдет ли технически ваш интерьер под данную конструкцию. Обратите внимание, что:
+								</p>
+					
+								<ul class="list-decimal-my my-ul">
+									<li>
+										<p>Для установки дровяного подвесного камина необходим загородный дом. Для квартиры годятся
+											подвесные электрические
+											устройства или техника, работающая на биотопливе.</p>
+									</li>
+									<li>
+										<p>Комната, где предположительно будет установлен агрегат, должна обладать системой вентиляции.
+											Установите ее перед
+											монтажем очага.</p>
+									</li>
+									<li>
+										<p>В комнате, где будет установлена конструкция, не должно быть постоянных сквозняков, дабы избежать
+											раздувания искр или,
+											напротив, задувания пламени.</p>
+									</li>
+									<li>
+										<p>Потолки в будущей “каминной” должны быть высокими. Минимум 2,5-2,7 метра.</p>
+									</li>
+									<li>
+										<p>Комната по площади должна быть больше 20-25-ти квадратных метров.</p>
+									</li>
+									<li>
+										<p>Легковоспламеняемые предметы должны находиться на расстоянии 1,5 метров от очага, если агрегат
+											центрального
+											расположения. Если расположение настенное, то не менее 2-х метров.</p>
+									</li>
+									<li>
+										<p>Не стоит располагать топочное окно системы напротив окна, так будет теряться значительная часть
+											тепла. Обратите лицевую
+											часть очага в центр комнаты.</p>
+									</li>
+									<li>
+										<p>Если модель камина - пристенная, стены должны быть из негорючих материалов.</p>
+									</li>
+									<li>
+										<p>Не стоит монтировать такой агрегат в узком прямоугольном помещении, поскольку обогреваться оно
+											будет неравномерно.</p>
+									</li>
+									<li>
+										<p>В комнате должен отсутствовать прямой выход на улицу. Иначе помещение не будет успевать
+											прогреваться.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					
+						<div class="article-box">
+							<div class="h4">Наши предложения подвесных каминов</div>
+					
+							<div class="article-offers slider-my">
+								<div class="slide">
+									<div class="offers-offers-item">
+										<a href="product.html" class="offers-offers-item__img"><img src="img/catalog1.jpg" alt=""></a>
+										<div class="offers-offers-item__body">
+											<a href="product.html" class="offers-offers-item__title">Камин LORENA CENTRAL,
+												чёрный (Traforart)</a>
+											<div class="price">1 474 700 ₽</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="offers-offers-item">
+										<a href="product.html" class="offers-offers-item__img"><img src="img/catalog2.jpg" alt=""></a>
+										<div class="offers-offers-item__body">
+											<a href="product.html" class="offers-offers-item__title">Камин ARLET CENTRAL,
+												подвесной, низкое стекло,
+												чёрный (Traforart)</a>
+											<div class="price">615 500 ₽</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="offers-offers-item">
+										<a href="product.html" class="offers-offers-item__img"><img src="img/catalog3.jpg" alt=""></a>
+										<div class="offers-offers-item__body">
+											<a href="product.html" class="offers-offers-item__title">Камин VULCANO CENTRAL,
+												со стеклом, полка-керамика,
+												чёрный (Traforart)</a>
+											<div class="price">767 200 ₽</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="offers-offers-item">
+										<a href="product.html" class="offers-offers-item__img"><img src="img/catalog1.jpg" alt=""></a>
+										<div class="offers-offers-item__body">
+											<a href="product.html" class="offers-offers-item__title">Камин LORENA CENTRAL,
+												чёрный (Traforart)</a>
+											<div class="price">1 474 700 ₽</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					
+						<div class="article-box">
+							<div class="h4">Плюсы и минусы дровяного подвесного камина</div>
+					
+							<div class="box-text">
+								<p>Сегодня для загородных домов и дач чаще всего выбирают именно печи-камины. Такие изделия являются
+									одновременно и
+									камином, и печью. Они имеют цельную конструкцию с прозрачной дверцей (используется жаростойкое
+									стекло), у них
+									эргономичные габариты и красивый внешний вид. Печи-камины для дачи или коттеджа являются достаточно
+									универсальными
+									устройствами, так как они создают уют, наполняют помещение удивительной атмосферой, отапливают
+									помещение, а некоторые
+									модели, имеющие варочную панель, даже позволяют готовить. Кроме того, печи-камины характеризуются
+									уникальными
+									теплотехническими параметрами, у них есть и другие достоинства, это:</p>
+					
+								<div class="article-quote">
+									<p>Его нестандартная конструкция всегда трансформирует жилую среду, внося
+										в нее ноту неординарности и иррациональности</p>
+								</div>
+					
+								<div class="article-image"><img src="img/banner1.jpg" alt=""></div>
+					
+								<div class="box-text">
+									<p>Сегодня для загородных домов и дач чаще всего выбирают именно печи-камины. Такие изделия являются
+										одновременно и
+										камином, и печью. Они имеют цельную конструкцию с прозрачной дверцей (используется жаростойкое
+										стекло), у них
+										эргономичные габариты и красивый внешний вид.</p>
+					
+									<p>Печи-камины для дачи или коттеджа являются достаточно универсальными устройствами, так как они
+										создают уют, наполняют
+										помещение удивительной атмосферой, отапливают помещение, а некоторые модели, имеющие варочную
+										панель, даже позволяют
+										готовить.</p>
+					
+									<p>Кроме того, печи-камины характеризуются уникальными теплотехническими параметрами, у них есть и
+										другие достоинства.</p>
+					
+					
+									<div class="attention-info">
+										<img src="img/attention.png" alt="">
+										<p>Его нестандартная конструкция всегда трансформирует жилую
+											среду, внося в нее ноту неординарности и иррациональности</p>
+									</div>
+					
+									<div class="h5">Какой-то подзаголовок</div>
+					
+									<p>Давайте определим подойдет ли технически ваш интерьер под данную конструкцию. Обратите внимание,
+										что:</p>
+					
+									<ul class="list-decimal-my my-ul">
+										<li>
+											<p>Для установки дровяного подвесного камина необходим загородный дом. Для квартиры годятся
+												подвесные электрические
+												устройства или техника, работающая на биотопливе.</p>
+										</li>
+										<li>
+											<p>Комната, где предположительно будет установлен агрегат, должна обладать системой вентиляции.
+												Установите ее перед
+												монтажем очага.</p>
+										</li>
+										<li>
+											<p>В комнате, где будет установлена конструкция, не должно быть постоянных сквозняков, дабы
+												избежать раздувания искр или,
+												напротив, задувания пламени.</p>
+										</li>
+									</ul>
+					
+									<p>Сегодня для загородных домов и дач чаще всего выбирают именно печи-камины. Такие изделия являются
+										одновременно и
+										камином, и печью. Они имеют цельную конструкцию с прозрачной дверцей (используется жаростойкое
+										стекло), у них
+										эргономичные габариты и красивый внешний вид.</p>
+					
+									<p>Печи-камины для дачи или коттеджа являются достаточно универсальными устройствами, так как они
+										создают уют, наполняют
+										помещение удивительной атмосферой, отапливают помещение, а некоторые модели, имеющие варочную
+										панель, даже позволяют
+										готовить.</p>
+								</div>
+					
+					
+							</div>
+					
+							<div class="social-share">
+								<p>Поделиться:</p>
+								<ul class="social-share-list my-ul">
+									<li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/telegram2.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/google.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/twitter.svg" alt=""></a></li>
+									<li><a href="#"><img src="img/pinterest.svg" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+					
+						<div class="article-box" id="comment">
+							<div class="h4">Комментарии</div>
+					
+							<div class="comment-wrapper">
+								<label>
+									<textarea name="message" placeholder="Комментарии"></textarea>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="recommended-articles">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="h3">Статьи по теме</div>
+					</div>
+		
+					<div class="col-12">
+						<div class="recommended-articles-slider slider-my">
+							<div class="slide">
+								<div class="blog-card blog-card-column">
+									<div class="blog-card__date">
+										<p>6</p>
+										<span>Сентябрь</span>
+									</div>
+									<a href="article.html" class="blog-card__img"><img src="img/banner1.jpg" alt=""></a>
+									<div class="blog-card__body">
+										<a href="article.html" class="blog-card__title">Вся правда о подвесных каминах.
+											Плюсы и минусы</a>
+										<div class="box-text">
+											<p>В данной статье мы раскроем все тайны
+												о подвесных каминах. Наши эксперты
+												подготовили для вас эксклюзивные материалы,
+												чтобы у вас не осталось вопросов.</p>
+										</div>
+		
+										<a href="article.html" class="color-accent link">
+											<span class="link-text">читать полностью</span>
+											<span class="link-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#right"></use>
+												</svg></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="blog-card blog-card-column">
+									<div class="blog-card__date">
+										<p>15</p>
+										<span>Январь</span>
+									</div>
+									<a href="article.html" class="blog-card__img"><img src="img/banner1.jpg" alt=""></a>
+									<div class="blog-card__body">
+										<a href="article.html" class="blog-card__title">Что делать, если дымит камин?
+											Устраняем причины</a>
+										<div class="box-text">
+											<p>В данной статье мы раскроем все тайны
+												о подвесных каминах. Наши эксперты
+												подготовили для вас эксклюзивные материалы,
+												чтобы у вас не осталось вопросов.</p>
+										</div>
+		
+										<a href="article.html" class="color-accent link">
+											<span class="link-text">читать полностью</span>
+											<span class="link-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#right"></use>
+												</svg></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="blog-card blog-card-column">
+									<div class="blog-card__date">
+										<p>3</p>
+										<span>Март</span>
+									</div>
+									<a href="article.html" class="blog-card__img"><img src="img/banner1.jpg" alt=""></a>
+									<div class="blog-card__body">
+										<a href="article.html" class="blog-card__title">Виды облицовки</a>
+										<div class="box-text">
+											<p>В данной статье мы раскроем все тайны
+												о подвесных каминах. Наши эксперты
+												подготовили для вас эксклюзивные материалы,
+												чтобы у вас не осталось вопросов.</p>
+										</div>
+		
+										<a href="article.html" class="color-accent link">
+											<span class="link-text">читать полностью</span>
+											<span class="link-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#right"></use>
+												</svg></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="blog-card blog-card-column">
+									<div class="blog-card__date">
+										<p>6</p>
+										<span>Сентябрь</span>
+									</div>
+									<a href="article.html" class="blog-card__img"><img src="img/banner1.jpg" alt=""></a>
+									<div class="blog-card__body">
+										<a href="article.html" class="blog-card__title">Вся правда о подвесных каминах.
+											Плюсы и минусы</a>
+										<div class="box-text">
+											<p>В данной статье мы раскроем все тайны
+												о подвесных каминах. Наши эксперты
+												подготовили для вас эксклюзивные материалы,
+												чтобы у вас не осталось вопросов.</p>
+										</div>
+		
+										<a href="article.html" class="color-accent link">
+											<span class="link-text">читать полностью</span>
+											<span class="link-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#right"></use>
+												</svg></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="advantages-v2">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="advantages-wrapper">
+							<div class="row">
+								<div class="col-12 col-sm-6 col-lg-3 mb-20">
+									<div class="advantages-box">
+										<div class="advantages-box__icon">
+											<img src="img/advantages-icon1.svg" alt="">
+										</div>
+										<div class="advantages-box__text">
+											<div class="h3">Собственное производство</div>
+											<div class="box-text">
+												<p>У нас продукция собственого
+													производства, что экономит вам
+													время и средства при заказе</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-3 mb-20">
+									<div class="advantages-box">
+										<div class="advantages-box__icon">
+											<img src="img/advantages-icon2.svg" alt="">
+										</div>
+										<div class="advantages-box__text">
+											<div class="h3">Сертифицированные материалы</div>
+											<div class="box-text">
+												<p>У нас продукция собственого
+													производства, что экономит вам
+													время и средства при заказе</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-3 mb-20">
+									<div class="advantages-box">
+										<div class="advantages-box__icon">
+											<img src="img/advantages-icon3.svg" alt="">
+										</div>
+										<div class="advantages-box__text">
+											<div class="h3">Гарантия и сервис</div>
+											<div class="box-text">
+												<p>У нас продукция собственого
+													производства, что экономит вам
+													время и средства при заказе</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-3 mb-20">
+									<div class="advantages-box">
+										<div class="advantages-box__icon">
+											<img src="img/advantages-icon4.svg" alt="">
+										</div>
+										<div class="advantages-box__text">
+											<div class="h3">Индвидуальный подход</div>
+											<div class="box-text">
+												<p>У нас продукция собственого
+													производства, что экономит вам
+													время и средства при заказе</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<footer class="footer-v1">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer-top">
+							<div class="row align-items-center">
+								<div class="col-12 col-lg-3">
+									<a href="index.html" class="logo"><img src="img/footer-logo.png" alt=""></a>
+								</div>
+								<div class="col-12 col-lg-9">
+									<div class="subscribe-wrapper">
+										<div class="subscribe-wrapper-text">
+											<div class="subscribe-wrapper-text__icon"><img src="img/send.svg" alt=""></div>
+											<div class="subscribe-wrapper-text__title">Подпишись на новости от
+												компании Смарт-модуль
+											</div>
+										</div>
+										<form method="post" class="form-subscribe">
+											<label>
+												<input type="text" placeholder="Ваш email" name="mail">
+											</label>
+											<button type="submit" class="btn btn-accent">Подписаться</button>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12 col-lg-3">
+									<div class="description-company">
+										<p>Компания смарт-модуль была основана
+											в 2016 году и на сегодняшний день
+											предлагает своим клиентам
+											разнообразные интеллектуальные
+											решения под ключ.</p>
+
+										<a href="about.html" class="color-accent link text-uppercase">
+											<span class="link-text">больше о компании</span>
+											<span class="link-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#next"></use>
+												</svg></span>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-12 col-lg-4 col-xl-5">
+									<div class="footer-box">
+										<a href="catalog.html" class="footer-box__title color-white">Каталог</a>
+
+										<div class="row">
+											<div class="col-12 col-sm-6">
+												<ul class="footer-menu my-ul">
+													<li><a href="#">Металлические бытовки</a></li>
+													<li><a href="#">Металлические контейнеры</a></li>
+													<li><a href="#">Ангары</a></li>
+													<li><a href="#">Модульные здания</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-sm-6">
+												<ul class="footer-menu my-ul">
+													<li><a href="#">Переоборудование контейнеров</a></li>
+													<li><a href="#">Модульные станции</a></li>
+													<li><a href="#">Торговые павильоны</a></li>
+													<li><a href="#">Быстровозводимые здания</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12 col-sm-6 col-lg-2">
+									<div class="footer-box">
+										<a href="services.html" class="footer-box__title color-white">Услуги</a>
+										<ul class="footer-menu my-ul">
+											<li><a href="delivery.html">Доставка</a></li>
+											<li><a href="rent.html">Аренда</a></li>
+										</ul>
+										<ul class="footer-menu my-ul">
+											<li><a href="objects.html" class="footer-box__title color-white">Объекты</a></li>
+											<li><a href="articles.html" class="footer-box__title color-white">Статьи</a></li>
+											<li><a href="team.html" class="footer-box__title color-white">Команда</a></li>
+										</ul>
+
+									</div>
+								</div>
+								<div class="col-12 col-sm-6 col-lg-3 col-xl-2">
+									<div class="footer-box">
+										<a href="contacts.html" class="footer-box__title color-white">Контакты</a>
+
+										<div class="footer-contacts">
+
+											<div class="footer-contacts__text">
+												<a href="tel:+78122004118" class="phone footer-phone">
+													<span class="phone-icon footer-contacts__icon"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#phone"></use>
+														</svg>
+													</span>
+													<span class="phone-text">8 (812) 200-41-18</span>
+												</a>
+
+												<a href="#" class="color-white link-callback" data-bs-toggle="modal"
+													data-bs-target="#callbackModal">Заказать звонок</a>
+											</div>
+										</div>
+
+										<div class="footer-contacts">
+											<div class="footer-contacts__text">
+												<a href="mailto:spb10@smart-module.ru" class="mail">
+													<span class="mail-icon footer-contacts__icon"><svg class="svg-icon">
+															<use xlink:href="img/sprite.svg#mail2"></use>
+														</svg>
+													</span>
+													<span class="mail-text">spb10@smart-module.ru</span>
+												</a>
+											</div>
+										</div>
+
+										<ul class="list-social my-ul">
+											<li><a href="#">
+													<svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#telegram"></use>
+													</svg>
+												</a></li>
+											<li><a href="#">
+													<svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#vk"></use>
+													</svg>
+												</a></li>
+											<li><a href="#">
+													<svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#youtube"></use>
+													</svg>
+												</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer-bottom">
+							<div class="row">
+								<div class="col-12 col-sm-6">
+									<div class="copyright">© Smart Module, 2022 г. Все права защищены.</div>
+								</div>
+								<div class="col-12 col-sm-6"><a href="politics.html" class="color-grey link link-politics">Политика
+										конфиденциальности</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<ul class="fixed-social fixed-social-scroll my-ul">
+			<li><a href="#">
+					<svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#telegram"></use>
+					</svg>
+				</a></li>
+			<li><a href="#">
+					<svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#vk"></use>
+					</svg>
+				</a></li>
+			<li><a href="#">
+					<svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#youtube"></use>
+					</svg>
+				</a></li>
+		</ul>
+
+		<!-- Modal -->
+		<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">Оставьте заявку и наш
+							менеджер свяжется с Вами!
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<form method="post" class="form-modal">
+							<label>
+								<input type="text" placeholder="Ваше имя" name="name">
+							</label>
+							<label>
+								<input type="text" placeholder="Ваш телефон" name="phone">
+							</label>
+							<button type="submit" class="btn btn-green w-100">Оставить заявку</button>
+							<label class="label-checkbox">
+								<input type="checkbox" class="inp-check" name="checkbox" checked>
+								<span class="checkbox-custom"></span>
+								<span class="checkbox-text">Даю согласие на обработку <a href="#"
+										class="d-inline color-accent">персональных
+										данных</a></span>
+							</label>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">Спасибо!
+						</div>
+						<div class="box-text">
+							<p>Ваша заявка уже обрабатывается.
+								Мы скоро свяжемся с вами.</p>
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<a href="#" class="btn btn-green w-100" data-bs-dismiss="modal">Ок, жду</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal modal-v2 fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">Выбор города
+						</div>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<form method="post" class="form-search">
+							<label>
+								<input type="text" placeholder="Ваш город" name="search">
+								<button type="submit">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg>
+								</button>
+							</label>
+						</form>
+
+						<a href="#" class="link-autosearch color-accent">Автоопределение</a>
+
+						<ul class="list-cities my-ul scroll-vertical">
+							<li><a href="#">Москва</a></li>
+							<li><a href="#" class="checked">Санкт-Петербург</a></li>
+							<li><a href="#">Архангельск</a></li>
+							<li><a href="#">Владивосток</a></li>
+							<li><a href="#">Екатеренбург</a></li>
+							<li><a href="#">Волгоград</a></li>
+							<li><a href="#">Воронеж</a></li>
+							<li><a href="#">Екатеринбург</a></li>
+							<li><a href="#">Ижевск</a></li>
+							<li><a href="#">Иркутск</a></li>
+							<li><a href="#">Казань</a></li>
+							<li><a href="#">Кемерово</a></li>
+							<li><a href="#">Краснодар</a></li>
+							<li><a href="#">Красноярск</a></li>
+							<li><a href="#">Мурманск</a></li>
+							<li><a href="#">Набережные Челны</a></li>
+							<li><a href="#">Нижний Новгород</a></li>
+							<li><a href="#">Новосибирск</a></li>
+							<li><a href="#">Омск</a></li>
+							<li><a href="#">Пермь</a></li>
+							<li><a href="#">Ростов-на-Дону</a></li>
+							<li><a href="#">Саратов</a></li>
+							<li><a href="#">Самара</a></li>
+							<li><a href="#">Сочи</a></li>
+							<li><a href="#">Сургут</a></li>
+							<li><a href="#">Тверь</a></li>
+							<li><a href="#">Тольятти</a></li>
+							<li><a href="#">Тула</a></li>
+							<li><a href="#">Тюмень</a></li>
+							<li><a href="#">Ульяновск</a></li>
+							<li><a href="#">Уфа</a></li>
+							<li><a href="#">Хабаровск</a></li>
+							<li><a href="#">Челябинск</a></li>
+							<li><a href="#">Ярославль</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+		integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

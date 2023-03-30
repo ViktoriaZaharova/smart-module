@@ -314,6 +314,66 @@ ul, ol {
   position: absolute;
 }
 
+.list-dots-my li {
+  position: relative;
+  padding: 0 0 0 18px;
+  margin: 0 0 20px;
+}
+.list-dots-my li:last-child {
+  margin: 0;
+}
+.list-dots-my li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #6989ad;
+  left: 0;
+  top: 8px;
+  position: absolute;
+}
+
+.list-number-my {
+  list-style-type: decimal-leading-zero;
+  padding: 0 0 0 30px;
+}
+
+.list-decimal-my {
+  counter-reset: item;
+}
+.list-decimal-my li {
+  position: relative;
+  min-height: 26px;
+  padding: 0 0 0 40px;
+}
+.list-decimal-my li::before {
+  content: counters(item, ".");
+  counter-increment: item;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background: #f9f2e3;
+  color: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.list-decimal-my li:hover::before {
+  background: #6989ad;
+  color: #fff;
+}
+
 .container {
   max-width: 1533px;
   padding: 0 16.5px;
@@ -739,6 +799,9 @@ h2 {
   background: #6989ad;
   color: #fff;
 }
+.pagination .page-link:hover .svg-icon {
+  fill: #fff;
+}
 .pagination .page-item-arrow .page-link {
   width: 10px;
   min-width: 10px;
@@ -747,6 +810,10 @@ h2 {
 }
 .pagination .page-item-arrow .page-link:hover {
   fill: #6989ad;
+}
+.pagination .svg-icon {
+  width: 11px;
+  height: 16px;
 }
 
 .select-my {

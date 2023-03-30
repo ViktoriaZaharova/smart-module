@@ -355,6 +355,15 @@ a.color-black:hover {
   border-color: #68BD29;
   color: #68BD29;
 }
+.variable-accent-green .nav-tabs-v2 .nav-link svg, .variable-accent-green .blog-card .link .svg-icon, .variable-accent-green .status-box svg, .variable-accent-green .status-new .svg-icon, .variable-accent-green .info-article-item__icon {
+  fill: #68BD29;
+}
+.variable-accent-green .status-box {
+  border-color: #68BD29;
+}
+.variable-accent-green .blog-card__date, .variable-accent-green .category-blogs-list li::before {
+  background: #68BD29;
+}
 
 .variable-accent-red .btn-accent {
   background: #DC2F2F;
@@ -472,6 +481,15 @@ a.color-black:hover {
 .variable-accent-red .sidebar-menu-list li a:hover {
   border-color: #DC2F2F;
   color: #DC2F2F;
+}
+.variable-accent-red .nav-tabs-v2 .nav-link svg, .variable-accent-red .blog-card .link .svg-icon, .variable-accent-red .status-box svg, .variable-accent-red .status-new .svg-icon, .variable-accent-red .info-article-item__icon {
+  fill: #DC2F2F;
+}
+.variable-accent-red .status-box {
+  border-color: #DC2F2F;
+}
+.variable-accent-red .blog-card__date, .variable-accent-red .category-blogs-list li::before {
+  background: #DC2F2F;
 }
 
 .font-Circe {
