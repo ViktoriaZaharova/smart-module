@@ -112,6 +112,21 @@
   .keep-menu-v2.hidden {
     max-height: 130px;
   }
+  .wrapper-header-v2 {
+    padding-top: 152px;
+  }
+  .wrapper-header-v3 {
+    padding-top: 158px;
+  }
+  .wrapper-header-v4 {
+    padding-top: 155px;
+  }
+  .wrapper-header-v5 {
+    padding-top: 143px;
+  }
+  .wrapper-header-v6 {
+    padding-top: 120px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .advantages-v2 {
@@ -275,6 +290,18 @@
   }
   .blog-card-row .blog-card__body {
     width: calc(100% - 320px);
+  }
+  .wrapper-header-v2 {
+    padding-top: 80px;
+  }
+  .wrapper-header-v3 {
+    padding-top: 149px;
+  }
+  .wrapper-header-v4 {
+    padding-top: 146px;
+  }
+  .wrapper-header-v5 {
+    padding-top: 133px;
   }
 }
 @media only screen and (max-width: 1100px) {
@@ -671,6 +698,12 @@
   .recommended-articles {
     margin: 0 0 50px;
   }
+  .wrapper-header-v5 {
+    padding-top: 113px;
+  }
+  .wrapper-header-v6 {
+    padding-top: 95px;
+  }
 }
 @media only screen and (max-width: 768px) {
   h2 {
@@ -936,6 +969,12 @@
   .article-home {
     min-height: 350px;
     padding: 30px 30px 20px;
+  }
+  .wrapper-header-v3 {
+    padding-top: 86px;
+  }
+  .wrapper-header-v4 {
+    padding-top: 83px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1502,6 +1541,21 @@
   }
   .reviews-card-v2 .video-reviews-slider-item {
     height: 200px;
+  }
+  .wrapper-header-v2 {
+    padding-top: 64px;
+  }
+  .wrapper-header-v3 {
+    padding-top: 71px;
+  }
+  .wrapper-header-v4 {
+    padding-top: 67px;
+  }
+  .wrapper-header-v5 {
+    padding-top: 97px;
+  }
+  .wrapper-header-v6 {
+    padding-top: 80px;
   }
 }
 @media only screen and (max-width: 420px) {

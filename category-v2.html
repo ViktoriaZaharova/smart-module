@@ -19,7 +19,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/variables.css">
-	<link rel="stylesheet" href="css/header-v1.css">
+	<link rel="stylesheet" href="css/header-all.css">
 	<link rel="stylesheet" href="css/footer-v1.css">
 	<link rel="stylesheet" href="css/modal-v1.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -28,196 +28,293 @@
 
 <body>
 
-	<div class="wrapper font-Circe">
+	<div class="wrapper font-Circe wrapper-header-v4 variable-accent-red">
 
-		<div class="mobile-menu">
-			<div class="mobile-menu__close"></div>
-			<div class="mobile-menu__head">
-				<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
-			</div>
-			<div class="mobile-menu__body">
-				<a href="#" class="location-city" data-bs-toggle="modal" data-bs-target="#locationModal">
-					<span class="location-city__icon"><svg class="svg-icon">
-							<use xlink:href="img/sprite.svg#location"></use>
-						</svg></span>
-					<span class="location-city__text">Санкт-Петербург</span>
-				</a>
-
-				<ul class="menu my-ul">
-					<li><a href="index.html">Главная</a></li>
-					<li class="dropdown"><a href="catalog.html">Каталог</a>
-						<div class="dropdown-menu">
-							<ul class="submenu menu my-ul">
-								<li><a href="#">Вахтовые поселки</a></li>
-								<li><a href="#">Модульные здания</a></li>
-								<li class="dropdown"><a href="#">Блок-контейнеры</a>
-									<div class="dropdown-menu">
-										<ul class="submenu menu my-ul">
-											<li><a href="#">Посты охраны</a></li>
-											<li><a href="#">Блок контейнеры север</a></li>
-											<li><a href="#">Блок контейнер сэндвич</a></li>
-											<li><a href="#">Сантехнические</a></li>
-											<li><a href="#">Сборно-разборные</a></li>
-											<li><a href="#">Под оборудование</a></li>
-											<li><a href="#">На шасси</a></li>
-										</ul>
-									</div>
-								</li>
-								<li><a href="#">Переоборудование контейнеров</a></li>
-								<li><a href="#">Деревянные дома</a></li>
-								<li><a href="#">Пост охраны</a></li>
-								<li><a href="#">Павильоны</a></li>
-								<li><a href="#">Спец. контейнеры</a></li>
-								<li><a href="#">Деревянные бытовки</a></li>
-							</ul>
-						</div>
-					</li>
-					<li><a href="sales.html">Акци и скидки</a></li>
-					<li><a href="projects.html">Проекты</a></li>
-					<li><a href="services.html">Услуги</a></li>
-					<li><a href="technology.html">Технология</a></li>
-					<li><a href="industries.html">Отрасли</a></li>
-					<li><a href="blog.html">Блог</a></li>
-					<li><a href="news.html">Новости</a></li>
-					<li><a href="about.html">О компании</a></li>
-					<li><a href="reviews.html">Отзывы</a></li>
-					<li><a href="contacts.html">Контакты</a></li>
-				</ul>
-				<form method="post" class="form-search">
-					<label>
-						<input type="text" placeholder="Поиск" name="search">
-						<button type="submit">
-							<svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#search"></use>
-							</svg>
-						</button>
-					</label>
-				</form>
-			</div>
-			<div class="mobile-menu__footer">
-
-				<a href="mailto:spb10@smart-module.ru" class="mail">
-					<span class="mail-icon"><svg class="svg-icon">
-							<use xlink:href="img/sprite.svg#mail2"></use>
-						</svg>
-					</span>
-					<span class="mail-text">spb10@smart-module.ru</span>
-				</a>
-
-				<div class="header-box">
-					<a href="tel:+78122004118" class="phone">
-						<span class="phone-icon"><svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#phone"></use>
-							</svg>
-						</span>
-						<span class="phone-text">8 (812) 200-41-18</span>
-					</a>
+		<header class="header-v4">
+			<div class="mobile-menu">
+				<div class="mobile-menu__close"></div>
+				<div class="mobile-menu__head">
+					<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
 				</div>
+				<div class="mobile-menu__body">
+					<a href="#" class="location-city" data-bs-toggle="modal" data-bs-target="#locationModal">
+						<span class="location-city__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#location"></use>
+							</svg></span>
+						<span class="location-city__text">Санкт-Петербург</span>
+					</a>
 
-				<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать
-					заявку</a>
-			</div>
-		</div>
-
-		<header class="header-v1">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 d-flex flex-wrap align-items-center">
-						<div class="btn-burger">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-
-						<div class="location-wrapper dropdown">
-							<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown">
-								<span class="location-city__icon"><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#location"></use>
-									</svg></span>
-								<span class="location-city__text">Санкт-Петербург</span>
-							</a>
+					<ul class="menu my-ul">
+						<li><a href="catalog.html">Каталог</a></li>
+						<li><a href="sales.html">Акции</a></li>
+						<li><a href="projects.html">Проекты</a></li>
+						<li class="dropdown"><a href="services.html" class="dropdown-toggle" data-bs-toggle="dropdown">Услуги</a>
 							<div class="dropdown-menu">
-								<form method="post" class="form-search">
-									<label>
-										<input type="text" placeholder="Ваш город" name="search">
-										<button type="submit">
-											<svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#search"></use>
-											</svg>
-										</button>
-									</label>
-								</form>
-
-								<a href="#" class="link-autosearch color-accent">Автоопределение</a>
-
-								<ul class="list-cities my-ul scroll-vertical">
-									<li><a href="#">Москва</a></li>
-									<li><a href="#" class="checked">Санкт-Петербург</a></li>
-									<li><a href="#">Казань</a></li>
-									<li><a href="#">Нижний Новгород</a></li>
-									<li><a href="#">Екатеренбург</a></li>
-									<li><a href="#">Самара</a></li>
-									<li><a href="#">Ростов-на-Дону</a></li>
-									<li><a href="#">Уфа</a></li>
-									<li><a href="#">Челябинск</a></li>
-									<li><a href="#">Саратов</a></li>
-									<li><a href="#">Самара</a></li>
-									<li><a href="#">Аксай</a></li>
-									<li><a href="#">Александров</a></li>
-									<li><a href="#">Александров Гай</a></li>
-									<li><a href="#">Александровск</a></li>
-									<li><a href="#">Алексеевка
-											(Самарская область)</a></li>
-									<li><a href="#">Баксан</a></li>
+								<ul class="submenu menu my-ul">
+									<li><a href="#">Вахтовые поселки</a></li>
+									<li><a href="#">Модульные здания</a></li>
+									<li><a href="#">Блок-контейнеры</a></li>
+									<li><a href="#">Переоборудование контейнеров</a></li>
+									<li><a href="#">Деревянные дома</a></li>
+									<li><a href="#">Пост охраны</a></li>
+									<li><a href="#">Павильоны</a></li>
+									<li><a href="#">Спец. контейнеры</a></li>
+									<li><a href="#">Деревянные бытовки</a></li>
 								</ul>
 							</div>
-						</div>
-
-						<a href="mailto:spb10@smart-module.ru" class="mail">
-							<span class="mail-icon"><svg class="svg-icon">
-									<use xlink:href="img/sprite.svg#mail2"></use>
-								</svg>
-							</span>
-							<span class="mail-text">spb10@smart-module.ru</span>
-						</a>
-
-						<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
-
-						<div class="header-box">
-							<a href="tel:+78122004118" class="phone">
-								<span class="phone-icon"><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#phone"></use>
-									</svg>
-								</span>
-								<span class="phone-text">8 (812) 200-41-18</span>
-							</a>
-
-							<a href="#" class="link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать
-								звонок</a>
-						</div>
-
-						<div class="search-header dropdown">
-							<a href="#" class="btn-search" data-bs-toggle="dropdown">
+						</li>
+						<li><a href="technology.html">Технология</a></li>
+						<li><a href="industries.html">Отрасли</a></li>
+						<li><a href="blog.html">Блог</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="prices.html">Цены</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+					<form method="post" class="form-search">
+						<label>
+							<input type="text" placeholder="Поиск" name="search">
+							<button type="submit">
 								<svg class="svg-icon">
 									<use xlink:href="img/sprite.svg#search"></use>
 								</svg>
+							</button>
+						</label>
+					</form>
+				</div>
+				<div class="mobile-menu__footer">
+					<div class="schedule-box">
+						<div class="schedule-box__icon">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#clock"></use>
+							</svg>
+						</div>
+						<div class="schedule-box__text">пн.-сб. 9:00 - 21:00</div>
+					</div>
+
+					<a href="mailto:spb10@smart-module.ru" class="mail">
+						<span class="mail-icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#mail2"></use>
+							</svg>
+						</span>
+						<span class="mail-text">spb10@smart-module.ru</span>
+					</a>
+
+					<div class="header-box">
+						<a href="tel:+78122004118" class="phone">
+							<span class="phone-icon"><svg class="svg-icon">
+									<use xlink:href="img/sprite.svg#phone"></use>
+								</svg>
+							</span>
+							<span class="phone-text">8 (812) 200-41-18</span>
+						</a>
+					</div>
+
+					<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать
+						заявку</a>
+				</div>
+			</div>
+			<div class="header-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-flex flex-wrap align-items-center">
+							<div class="location-wrapper dropdown">
+								<a href="#" class="dropdown-toggle location-city" data-bs-toggle="dropdown"
+									data-bs-auto-close="outside">
+									<span class="location-city__icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#location"></use>
+										</svg></span>
+									<span class="location-city__text">Санкт-Петербург</span>
+								</a>
+
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-visible">
+										<div class="dropdown-menu-head">
+											<div class="dropdown-menu-title">
+												<div class="h3">Информация будет отображаться
+													для региона:
+													<strong class="color-accent name-city">Санкт-Петербург</strong>
+												</div>
+											</div>
+										</div>
+
+										<div class="btn-group">
+											<a href="#" class="btn btn-sm btn-black btn-close-dropdown">Да, все верно</a>
+											<a href="#" class="btn btn-sm btn-grey btn-edit-location">Нет, изменить</a>
+										</div>
+									</div>
+
+									<div class="dropdown-menu-hidden">
+										<div class="dropdown-menu-head">
+											<div class="dropdown-menu-title">
+												<div class="h3 strong">Выбор города
+												</div>
+											</div>
+										</div>
+										<div class="dropdown-menu-body">
+											<ul class="list-cities my-ul scroll-vertical">
+												<li><a href="#">Москва</a></li>
+												<li><a href="#" class="checked">Санкт-Петербург</a></li>
+												<li><a href="#">Казань</a></li>
+												<li><a href="#">Нижний Новгород</a></li>
+												<li><a href="#">Екатеренбург</a></li>
+												<li><a href="#">Самара</a></li>
+												<li><a href="#">Ростов-на-Дону</a></li>
+												<li><a href="#">Уфа</a></li>
+												<li><a href="#">Челябинск</a></li>
+												<li><a href="#">Саратов</a></li>
+												<li><a href="#">Самара</a></li>
+												<li><a href="#">Аксай</a></li>
+												<li><a href="#">Александров</a></li>
+												<li><a href="#">Александров Гай</a></li>
+												<li><a href="#">Александровск</a></li>
+												<li><a href="#">Алексеевка
+														(Самарская область)</a></li>
+												<li><a href="#">Баксан</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<a href="mailto:spb10@smart-module.ru" class="mail">
+								<span class="mail-icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#mail2"></use>
+									</svg>
+								</span>
+								<span class="mail-text">spb10@smart-module.ru</span>
 							</a>
 
-							<div class="dropdown-menu">
-								<form method="post" class="form-search">
-									<label>
-										<input type="text" placeholder="Поиск" name="search">
-										<button type="submit">
-											<svg class="svg-icon">
-												<use xlink:href="img/sprite.svg#search"></use>
+							<div class="header-box">
+								<a href="tel:+78122004118" class="phone">
+									<span class="phone-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#phone"></use>
+										</svg>
+									</span>
+									<span class="phone-text">8 (812) 200-41-18</span>
+								</a>
+
+								<a href="#" class="link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать
+									звонок</a>
+							</div>
+
+							<ul class="list-social my-ul">
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#telegram"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#vk"></use>
+										</svg>
+									</a></li>
+								<li><a href="#">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#youtube"></use>
+										</svg>
+									</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="header-bottom-wrapper">
+								<div class="btn-burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+
+								<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
+
+								<div class="logo-description">Строительство зданий и
+									быстровозводимых сооружений
+								</div>
+
+								<nav class="nav-menu">
+									<ul class="menu my-ul">
+										<li><a href="index.html">Главная</a></li>
+										<li><a href="catalog.html">Каталог</a></li>
+										<li><a href="projects.html">Проекты</a></li>
+										<li class="dropdown"><a href="services.html" class="dropdown-toggle"
+												data-bs-toggle="dropdown">Услуги</a>
+											<div class="dropdown-menu">
+												<ul class="submenu menu my-ul">
+													<li><a href="#">Вахтовые поселки</a></li>
+													<li><a href="#">Модульные здания</a></li>
+													<li><a href="#">Блок-контейнеры</a></li>
+													<li><a href="#">Переоборудование контейнеров</a></li>
+													<li><a href="#">Деревянные дома</a></li>
+													<li><a href="#">Пост охраны</a></li>
+													<li><a href="#">Павильоны</a></li>
+													<li><a href="#">Спец. контейнеры</a></li>
+													<li><a href="#">Деревянные бытовки</a></li>
+												</ul>
+											</div>
+										</li>
+										<li><a href="industries.html">Отрасли</a></li>
+										<li><a href="blog.html">Блог</a></li>
+										<li class="dropdopwn">
+											<a href="#" class="dropdown-toggle dropdown-toggle-dots" data-bs-toggle="dropdown"><img
+													src="img/menu-dots.svg" alt=""></a>
+											<div class="dropdown-menu">
+												<ul class="submenu menu my-ul">
+													<li><a href="about.html">О нас</a></li>
+													<li><a href="prices.html">Цены</a></li>
+													<li><a href="contacts.html">Контакты</a></li>
+												</ul>
+											</div>
+										</li>
+
+									</ul>
+								</nav>
+
+								<div class="search-header dropdown">
+									<a href="#" class="btn-search" data-bs-toggle="dropdown">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#search"></use>
+										</svg>
+									</a>
+
+									<div class="dropdown-menu">
+										<form method="post" class="form-search">
+											<label>
+												<input type="text" placeholder="Поиск" name="search">
+												<button type="submit">
+													<svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#search"></use>
+													</svg>
+												</button>
+											</label>
+										</form>
+									</div>
+								</div>
+
+								<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать
+									заявку</a>
+
+								<a href="mailto:spb10@smart-module.ru" class="mail">
+									<span class="mail-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#mail2"></use>
+										</svg>
+									</span>
+								</a>
+
+								<div class="header-box">
+									<a href="tel:+78122004118" class="phone">
+										<span class="phone-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#phone"></use>
 											</svg>
-										</button>
-									</label>
-								</form>
+										</span>
+									</a>
+								</div>
 							</div>
 						</div>
-
-						<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#callbackModal">Подать заявку</a>
 					</div>
 				</div>
 			</div>
