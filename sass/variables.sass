@@ -232,6 +232,13 @@ a.color-black
 		color: $green
 		background: #EDF9E3
 		border-color: $green
+	.nav-tabs-v3 .nav-link.active, .nav-tabs-v5 .nav-link.active	
+		background: $green
+		color: #fff	
+	.nav-tabs-v5
+		border-bottom-color: $green	
+	.nav-tabs-v4 .nav-link.active
+		border-color: $green	
 	.slider-nav-v2 .slick-arrow:hover, .tab-content-product-v2, .info-box, .description-box, .page-title-wrapper-v3, .list-social-v3 li a:hover, .works-slider-gallery .slick-arrow:hover, .advantages-company-box, .contacts-box-v2, .sidebar-menu, .category-list__item.active, .accordion-v2 .accordion-body, .accordion-v3 .accordion-body, .accordion-v3 .accordion-button:not(.collapsed), .additional-equipment-list-item:nth-child(even)
 		background: #EDF9E3
 	.accordion-item-v3 .accordion-button:not(.collapsed) .accordion-item__icon,.label-radio-product-v2 input:checked ~ .radio-text .radio-checked, .category-list__clear
@@ -271,8 +278,9 @@ a.color-black
 	.sidebar-menu-list li a:hover
 		border-color: $green
 		color: $green
-	.nav-tabs-v2 .nav-link svg, .blog-card .link .svg-icon, .status-box svg, .status-new .svg-icon, .info-article-item__icon
+	.nav-tabs-v2 .nav-link svg, .nav-tabs-v4 .nav-link svg, .nav-tabs-v5 .nav-link svg, .blog-card .link .svg-icon, .status-box svg, .status-new .svg-icon, .info-article-item__icon, .nav-tabs-v3 .nav-link svg
 		fill: $green
+		
 	.status-box		
 		border-color: $green
 	.blog-card__date, .category-blogs-list li::before
@@ -342,6 +350,13 @@ a.color-black
 		color: $red
 		background: #FAF2F2
 		border-color: $red
+	.nav-tabs-v3 .nav-link.active, .nav-tabs-v5 .nav-link.active	
+		color: #fff
+		background: $red	
+	.nav-tabs-v5
+		border-bottom-color: $red	
+	.nav-tabs-v4 .nav-link.active
+		border-color: $red
 	.slider-nav-v2 .slick-arrow:hover, .tab-content-product-v2, .info-box, .description-box, .page-title-wrapper-v3, .list-social-v3 li a:hover, .works-slider-gallery .slick-arrow:hover, .advantages-company-box, .contacts-box-v2, .sidebar-menu, .category-list__item.active, .accordion-v2 .accordion-body, .accordion-v3 .accordion-body, .accordion-v3 .accordion-button:not(.collapsed), .additional-equipment-list-item:nth-child(even)
 		background: #FAF2F2
 	.accordion-item-v3 .accordion-button:not(.collapsed) .accordion-item__icon, .btn-border-white:hover, .btn-border-black:hover, .label-radio-product-v2 input:checked ~ .radio-text .radio-checked, .category-list__clear
@@ -383,7 +398,7 @@ a.color-black
 	.sidebar-menu-list li a:hover
 		border-color: $red
 		color: $red
-	.nav-tabs-v2 .nav-link svg, .blog-card .link .svg-icon, .status-box	svg, .status-new .svg-icon, .info-article-item__icon
+	.nav-tabs-v2 .nav-link svg, .nav-tabs-v4 .nav-link svg, .nav-tabs-v5 .nav-link svg, .blog-card .link .svg-icon, .status-box	svg, .status-new .svg-icon, .info-article-item__icon, .nav-tabs-v3 .nav-link svg
 		fill: $red	
 	.status-box		
 		border-color: $red
@@ -737,7 +752,7 @@ a.color-black
 	.category-list__clear
 		top: -5px
 		right: 5px
-	.accordion-v3 .accordion-item, .accordion-v3 .accordion-item:last-of-type, .sidebar-callback, .sidebar-menu, .product-card, .product-card-v2 .product-card-wrapper, .accordion-v2 .accordion-body, .selected-filters-item, .catalog-card-v3, .label-radio-time .inp-radio, .catalog-card, .catalog-card__bg, .catalog-card::before, .contacts-box, .contacts-map, .contacts-map iframe, .callback-contacts-wrapper, .calculate-box, .works-slider-gallery-item, .works-slider-gallery-item img, .list-sorting li a, .employee-card, .employee-card__photo, .employee-card::before, .video-reviews-slider-item, .video-reviews-slider-item__preview, .works-slider2 .works-slider-gallery-item, .works-slider2 .works-slider-gallery-item img, .slider-nav-v3 .slick-arrow, .slider-nav-v2 .slick-arrow, .certificates-slider-item img, .product-gallery-preview .product-gallery-item, .nav-tabs-v2 .nav-link, .product-order-info
+	.accordion-v3 .accordion-item, .accordion-v3 .accordion-item:last-of-type, .sidebar-callback, .sidebar-menu, .product-card, .product-card-v2 .product-card-wrapper, .accordion-v2 .accordion-body, .selected-filters-item, .catalog-card-v3, .label-radio-time .inp-radio, .catalog-card, .catalog-card__bg, .catalog-card::before, .contacts-box, .contacts-map, .contacts-map iframe, .callback-contacts-wrapper, .calculate-box, .works-slider-gallery-item, .works-slider-gallery-item img, .list-sorting li a, .employee-card, .employee-card__photo, .employee-card::before, .video-reviews-slider-item, .video-reviews-slider-item__preview, .works-slider2 .works-slider-gallery-item, .works-slider2 .works-slider-gallery-item img, .slider-nav-v3 .slick-arrow, .slider-nav-v2 .slick-arrow, .certificates-slider-item img, .product-gallery-preview .product-gallery-item, .nav-tabs-v2 .nav-link, .nav-tabs-v3 .nav-link, .nav-tabs-v4 .nav-link, .nav-tabs-v5 .nav-link, .product-order-info
 		border-radius: 20px
 	.best-offers-v3
 		.product-card
@@ -753,7 +768,7 @@ a.color-black
 		border-radius: 0
 
 .variable-btn-cube
-	.btn, input, textarea, select, .filter-category-item .dropdown-toggle, .category-list__item, .catalog-card-v3, .additional-equipment-list-item-v2:last-child, .additional-equipment-list-item-v2:first-child, .advantages-box-v3, .menu .dropdown-menu, .sidebar-callback, .sidebar-menu, .product-card, .product-card-v2 .product-card-wrapper, .accordion-v2 .accordion-body, .selected-filters-item, .label-radio-time .inp-radio, .catalog-card, .catalog-card__bg, .catalog-card::before, .advantages-wrapper, .accordion-v3 .accordion-body, .accordion-item, .accordion-button, .accordion-item:last-of-type .accordion-button.collapsed, .accordion-item:last-of-type, .contacts-box, .contacts-map, .contacts-map iframe, .callback-contacts-wrapper, .contacts-advantage-card, .catalog-card-v2 .catalog-card__bg, .catalog-card-v2 .catalog-card__bg img, .list-sorting li a, .additional-equipment-wrapper, .home-slider-item, .home-slider-item::before, .home-slider-item__bg, .additional-equipment-list-item:first-child, .additional-equipment-list-item:last-child, .calculate-box, .callback-offer-wrapper, .works-slider-gallery-item, .works-slider-gallery-item img, .works-slider-gallery .slick-arrow, .advantages-company-box, .certificates-slider-item, .certificates-slider-item::before, .video-reviews-slider-item, .video-reviews-slider-item:before, .employee-card, .employee-card::before, .contacts-section-wrapper, .quick-calculation-wrapper, .slider-nav-v3 .slick-arrow, .slider-nav-v2 .slick-arrow, .video-reviews-slider-item__preview, .works-slider2 .works-slider-gallery-item img, .employee-card__photo, .employee-card__photo img, .dropdown-v1 .dropdown-toggle, .dropdown-v1 .dropdown-menu, .employee-card-v3 .employee-card__photo, .contacts-section-v3 .contacts-section__map, .contacts-section-v3 .contacts-section__map iframe, .page-title-wrapper-v2, .info-box, .meta-box, .product-gallery-preview .product-gallery-item, .product-order-info, .nav-tabs-v2 .nav-link
+	.btn, input, textarea, select, .filter-category-item .dropdown-toggle, .category-list__item, .catalog-card-v3, .additional-equipment-list-item-v2:last-child, .additional-equipment-list-item-v2:first-child, .advantages-box-v3, .menu .dropdown-menu, .sidebar-callback, .sidebar-menu, .product-card, .product-card-v2 .product-card-wrapper, .accordion-v2 .accordion-body, .selected-filters-item, .label-radio-time .inp-radio, .catalog-card, .catalog-card__bg, .catalog-card::before, .advantages-wrapper, .accordion-v3 .accordion-body, .accordion-item, .accordion-button, .accordion-item:last-of-type .accordion-button.collapsed, .accordion-item:last-of-type, .contacts-box, .contacts-map, .contacts-map iframe, .callback-contacts-wrapper, .contacts-advantage-card, .catalog-card-v2 .catalog-card__bg, .catalog-card-v2 .catalog-card__bg img, .list-sorting li a, .additional-equipment-wrapper, .home-slider-item, .home-slider-item::before, .home-slider-item__bg, .additional-equipment-list-item:first-child, .additional-equipment-list-item:last-child, .calculate-box, .callback-offer-wrapper, .works-slider-gallery-item, .works-slider-gallery-item img, .works-slider-gallery .slick-arrow, .advantages-company-box, .certificates-slider-item, .certificates-slider-item::before, .video-reviews-slider-item, .video-reviews-slider-item:before, .employee-card, .employee-card::before, .contacts-section-wrapper, .quick-calculation-wrapper, .slider-nav-v3 .slick-arrow, .slider-nav-v2 .slick-arrow, .video-reviews-slider-item__preview, .works-slider2 .works-slider-gallery-item img, .employee-card__photo, .employee-card__photo img, .dropdown-v1 .dropdown-toggle, .dropdown-v1 .dropdown-menu, .employee-card-v3 .employee-card__photo, .contacts-section-v3 .contacts-section__map, .contacts-section-v3 .contacts-section__map iframe, .page-title-wrapper-v2, .info-box, .meta-box, .product-gallery-preview .product-gallery-item, .product-order-info, .nav-tabs-v2 .nav-link, .nav-tabs-v3 .nav-link, .nav-tabs-v4 .nav-link
 		border-radius: 0
 	.pagination .page-link
 		border-radius: 0
